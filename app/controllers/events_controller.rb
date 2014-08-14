@@ -5,7 +5,7 @@ class EventsController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render :json => { :events => @events }
-      }
+                    }
     end
   end
 
@@ -15,7 +15,7 @@ class EventsController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render :json => { :events => @events }
-      }
+                    }
     end
   end
 
@@ -25,20 +25,21 @@ class EventsController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render :json => { :events => @events }
-      }
+                    }
     end
   end
 
   def show
     @event = Event.find(params[:id])
+    render json: @event
 
     @invitations = @event.invitations
 
     respond_to do |format|
       format.html
       format.json { render :json => { :event => @event,
-        :invitations_in => @invitations }
-      }
+                                      :invitations_in => @invitations }
+                    }
     end
   end
 
@@ -59,8 +60,10 @@ class EventsController < ApplicationController
   end
 
   private
-
   def event_params
-    params.require(:event).permit(:name, :description, :start_time, :end_time, :venue, :location, :notify_user?, :notify_hours_until_event)
+    params.require(:event).permit(:name, :description, :start_time, :end_time, :venue, :location, :notification?, :notify_time)
+
+    def event_params
+      params.require(:event).permit(:name, :description, :start_time, :end_time, :venue, :location, :notify_user?, :notify_hours_until_event)
+    end
   end
-end
