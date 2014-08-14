@@ -5,6 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :invitations
-  has_many :events, through :invitations,
+  has_many :events, through: :invitations
   has_many :created_events, class_name: :Event, foreign_key: :user_id
 end

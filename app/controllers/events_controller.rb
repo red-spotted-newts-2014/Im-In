@@ -7,14 +7,14 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
-    # @invitees = @event.invitees.where(status: "in")
+    @invitations = @event.invitations.where(status: "pending")
     respond_to do |format|
-      format.json { render :=> {
-        :event => @event #,
+      format.html
+      format.json { render :json => @event#,
         # :invitees => @invitees
-        }
       }
     end
+    # render json: @event
   end
 
   def create
@@ -40,6 +40,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:name, :description, :start_time, :end_time, :venue, :location, :notification?, :notify_time)
+    params.require(:event).permit(:name, :description, :start_time, :end_time, :venue, :location, :notify_user?, :notify_hours_until_event)
   end
 end
