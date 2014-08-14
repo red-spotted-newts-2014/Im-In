@@ -4725,3 +4725,614 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 17:41:53
 
 
 Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 17:41:53 -0400
+
+
+Started GET "/events/1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.3ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered events/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 31ms (Views: 13.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 17:46:06 -0400
+
+
+Started GET "/events/1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.2ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered events/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 26ms (Views: 9.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 17:54:23 -0400
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered events/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 5.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:11 -0400
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 17:55:31 -0400
+
+
+Started GET "/events.json" for 127.0.0.1 at 2014-08-14 17:57:20 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 66ms (Views: 43.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 17:58:32 -0400
+Processing by EventsController#index as JSON
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `events' for nil:NilClass):
+  app/controllers/events_controller.rb:5:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2014-08-14 17:59:56 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 34ms (Views: 8.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:00:21 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2014-08-14 18:00:54 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:00:56 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 18:00:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 18:00:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 18:00:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 18:00:57 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 18:00:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 18:00:57 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 18:00:57 -0400
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:01:04 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 18:01:04 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 18:01:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 18:01:05 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 18:01:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 18:01:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 18:01:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 18:01:05 -0400
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:01:15 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'  [["user_id", 1]]
+SQLite3::SQLException: no such column: events.status: SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'
+  Rendered events/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: events.status: SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'):
+    4: <% end %>
+    5: <br><br>
+    6: ATTENDING EVENTS<br>
+    7: <% @attending_events.each do |event| %>
+    8:   <%= event.name %><br>
+    9: <% end %>
+   10: <br><br>
+  app/views/events/index.html.erb:7:in `_app_views_events_index_html_erb__1567687988228840660_70212755948160'
+  app/controllers/events_controller.rb:11:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:02:26 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?  [["user_id", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'[0m  [["user_id", 1]]
+SQLite3::SQLException: no such column: events.status: SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'
+  Rendered events/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: events.status: SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'):
+     5: <br><br>
+     6: ATTENDING EVENTS<br>
+     7: <% if !@attending_events.nil? %>
+     8: <% @attending_events.each do |event| %>
+     9:   <%= event.name %><br>
+    10: <% end %>
+    11: <% end %>
+  app/views/events/index.html.erb:8:in `_app_views_events_index_html_erb__1567687988228840660_70212751617300'
+  app/controllers/events_controller.rb:11:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:02:43 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:03:12 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:04:28 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:05:00 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 46ms
+
+ActiveRecord::HasManyThroughSourceAssociationNotFoundError (Could not find the source association(s) :invited_event or :invited_events in model Invitation. Try 'has_many :invited_events, :through => :invitations, :source => <name>'. Is it one of event or user?):
+  app/controllers/events_controller.rb:5:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:05:23 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?  [["user_id", 1]]
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'[0m  [["user_id", 1]]
+SQLite3::SQLException: no such column: events.status: SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'
+  Rendered events/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: events.status: SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ? AND "events"."status" = 'in'):
+     5: <br><br>
+     6: ATTENDING EVENTS<br>
+     7: <% if !@attending_events.nil? %>
+     8: <% @attending_events.each do |event| %>
+     9:   <%= event.name %><br>
+    10: <% end %>
+    11: <% end %>
+  app/views/events/index.html.erb:8:in `_app_views_events_index_html_erb__1567687988228840660_70212751304240'
+  app/controllers/events_controller.rb:11:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.6ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:08:14 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 70ms (Views: 48.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:10:56 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.2ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'[0m  [["user_id", 1]]
+Completed 500 Internal Server Error in 22ms
+
+NoMethodError (undefined method `events' for #<ActiveRecord::AssociationRelation []>):
+  app/controllers/events_controller.rb:7:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:11:58 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.1ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'[0m  [["user_id", 1]]
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `events' for #<ActiveRecord::AssociationRelation []>):
+  app/controllers/events_controller.rb:7:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+Processing by EventsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.1ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'[0m  [["user_id", 1]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?  [["user_id", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"  WHERE "events"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered events/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 109ms (Views: 15.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 18:12:39 -0400
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:14:18 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.1ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'[0m  [["user_id", 1]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?  [["user_id", 1]]
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-08-14 18:14:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.2ms)
+
+
+Started GET "/users/logout" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:24 -0400
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:14:28 -0400
+Processing by EventsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvitation Load (0.1ms)[0m  SELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'  [["user_id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2014-08-14 18:14:29 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E8jkZveqr2Eo7eSJqbh3YMurhqMgSX0fFmsEuiXrK6s=", "user"=>{"password"=>"[FILTERED]", "username"=>"user1"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."username" = 'user1' LIMIT 1
+Redirected to http://localhost:3000/events
+Completed 302 Found in 71ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvitation Load (0.1ms)[0m  SELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'  [["user_id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"  WHERE "events"."user_id" = ?  [["user_id", 1]]
+  Rendered events/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 18:14:30 -0400
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:14:44 -0400
+Processing by EventsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvitation Load (0.1ms)[0m  SELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'  [["user_id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:15:07 -0400
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.1ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'[0m  [["user_id", 1]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:18:27 -0400
+Processing by EventsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvitation Load (0.1ms)[0m  SELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'  [["user_id", 1]]
+Completed 500 Internal Server Error in 19ms
+
+NameError (uninitialized constant User::event):
+  app/controllers/events_controller.rb:14:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:18:38 -0400
+Processing by EventsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvitation Load (0.1ms)[0m  SELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'  [["user_id", 1]]
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant User::event):
+  app/controllers/events_controller.rb:14:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:20:02 -0400
+Processing by EventsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvitation Load (0.1ms)[0m  SELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'  [["user_id", 1]]
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant User::event):
+  app/controllers/events_controller.rb:14:in `index'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:20:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as JSON
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.1ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'[0m  [["user_id", 1]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?  [["user_id", 1]]
+Completed 200 OK in 105ms (Views: 14.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/events.json" for 10.0.2.214 at 2014-08-14 18:20:43 -0400
+Processing by EventsController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvitation Load (0.1ms)[0m  SELECT "invitations".* FROM "invitations"  WHERE "invitations"."user_id" = ? AND "invitations"."status" = 'in'  [["user_id", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "invitations" ON "events"."id" = "invitations"."event_id" WHERE "invitations"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms)

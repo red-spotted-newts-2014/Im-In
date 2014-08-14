@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 
   post 'users/unfollow' => 'users#unfollow', as: 'unfollow'
 
+  get 'users/:id/attending' => 'users#attending', as: "user_attending"
+
+  get 'users/:id/created' => 'users#created', as: "user_created"
+
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

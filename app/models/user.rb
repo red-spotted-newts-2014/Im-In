@@ -4,6 +4,6 @@ class User < ActiveRecord::Base
   acts_as_followable
 
   has_many :invitations
-  has_many :events, through: :invitations
-  has_many :created_events, class_name: :Event, foreign_key: :user_id
+  has_many :invited_events, through: :invitations, source: :event
+  has_many :created_events, class_name: :event, foreign_key: :user_id
 end
