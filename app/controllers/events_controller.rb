@@ -32,12 +32,12 @@ class EventsController < ApplicationController
   def show
     @event = Event.find(params[:id])
 
-    @invitations_in = @event.invitations.where(status: "in")
+    @invitations = @event.invitations
 
     respond_to do |format|
       format.html
       format.json { render :json => { :event => @event,
-        :invitations_in => @invitations_in }
+        :invitations_in => @invitations }
       }
     end
   end
