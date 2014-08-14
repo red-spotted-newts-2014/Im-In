@@ -1,27 +1,17 @@
 class EventsController < ApplicationController
 
   def index
-    @events = current_user.events
-
-    respond_to do |format|
-      format.html
-      format.json { render :json => { :events => @events }
-      }
+    # all events in feed
+    @events = current_user.invited_events
+    # all events user is "in"
+    @attending_invitations = current_user.invitations.where(status: "in")
+    @attending_events = []
+    @attending_invitations.each do |invite|
+      @attending_events << Event.find(invite.event_id)
     end
-  end
-
-  def attending
-    @events = current_user.events.where(status: "in")
-
-    respond_to do |format|
-      format.html
-      format.json { render :json => { :events => @events }
-      }
-    end
-  end
-
-  def created
-    @events = current_user.created_events
+    # @attending_events = @attending_invitations.events
+    # all events user created
+    # @created_events = current_user.created_events
 
     respond_to do |format|
       format.html
@@ -32,8 +22,6 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
-    render json: @event
-
     @invitations = @event.invitations
 
     respond_to do |format|
@@ -43,6 +31,28 @@ class EventsController < ApplicationController
       }
     end
   end
+
+  # I DONT THINK WE NEED THIS... WE CAN PROB QUERY THIS IN SWIFT THROUGH USERS EVENTS WHERE STATUS == "in"
+
+  # def attending
+  #   @events = current_user.events.where(status: "in")
+
+  #   respond_to do |format|
+  #     format.html
+  #     format.json { render :json => { :events => @events }
+  #     }
+  #   end
+  # end
+
+  # def created
+  #   @events = current_user.created_events
+
+  #   respond_to do |format|
+  #     format.html
+  #     format.json { render :json => { :events => @events }
+  #     }
+  #   end
+  # end
 
   def create
     @event = current_user.events.create(event_params)
