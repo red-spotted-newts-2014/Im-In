@@ -1,2 +1,1 @@
-
-User.create()
+require 'faker'

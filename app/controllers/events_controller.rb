@@ -7,11 +7,19 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
-   render :json @event
+    @invitees = @event.invitees.where(status: "in")
+    respond_to do |format|
+      format.json { render :=> {
+        :event => @event,
+        :invitees => @invitees
+        }
+      }
+    end
   end
 
   def create
     @event = current_user.events.create(event_params)
+    render json: @event
   end
 
   def edit
@@ -21,7 +29,7 @@ class EventsController < ApplicationController
   def update
     @event = Event.find(params[:id])
     @event.update(event_params)
-    render :json @event
+    render json: @event
   end
 
   def destroy
