@@ -7,11 +7,11 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
-    @invitees = @event.invitees.where(status: "in")
+    # @invitees = @event.invitees.where(status: "in")
     respond_to do |format|
       format.json { render :=> {
-        :event => @event,
-        :invitees => @invitees
+        :event => @event #,
+        # :invitees => @invitees
         }
       }
     end
