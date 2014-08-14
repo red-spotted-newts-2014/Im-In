@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  start_time: 2014-08-14 11:40:00
+  end_time: 2014-08-14 11:40:00
+  venue: MyString
+  location: MyString
+  notification?: false
+  notify_time: 1
+  user_id: 
+
+two:
+  name: MyString
+  description: MyString
+  start_time: 2014-08-14 11:40:00
+  end_time: 2014-08-14 11:40:00
+  venue: MyString
+  location: MyString
+  notification?: false
+  notify_time: 1
+  user_id: 
