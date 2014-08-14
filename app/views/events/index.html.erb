@@ -1,5 +1,5 @@
 ALL INVITED EVENTS FOR USER<br>
-<% @events.each do |event| %>
+<% @invited_events.each do |event| %>
   <%= event.name %><br>
 <% end %>
 <br><br>
@@ -14,3 +14,5 @@ CREATED EVENTS<br>
 <% @created_events.each do |event| %>
   <%= event.name %><br>
 <% end %>
+
+<%= link_to "add new event", new_event_path %>
