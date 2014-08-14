@@ -25,8 +25,8 @@ class UsersController < ApplicationController
   end
 
   def logout
-    session[:id].destroy
-    redirect_to root
+    session.clear
+    redirect_to root_path
   end
 
   def show
