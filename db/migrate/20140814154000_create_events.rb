@@ -7,8 +7,8 @@ class CreateEvents < ActiveRecord::Migration
       t.datetime :end_time
       t.string :venue
       t.string :location
-      t.boolean :notification?
-      t.integer :notify_time
+      t.boolean :notify_user?
+      t.integer :notify_hours_until_event
       t.references :user, index: true
 
       t.timestamps

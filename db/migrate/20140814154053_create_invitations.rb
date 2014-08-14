@@ -1,6 +1,6 @@
-class CreateInvitees < ActiveRecord::Migration
+class CreateInvitations < ActiveRecord::Migration
   def change
-    create_table :invitees do |t|
+    create_table :invitations do |t|
       t.references :event, index: true
       t.references :user, index: true
       t.string :status
