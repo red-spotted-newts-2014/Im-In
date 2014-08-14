@@ -1,29 +1,50 @@
 class EventsController < ApplicationController
   def index
+    @events = current_user.events
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => { :events => @events }
+      }
+    end
   end
 
-  def new
+  def attending
+    @events = current_user.events.where(status: "in")
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => { :events => @events }
+      }
+    end
+  end
+
+  def created
+    @events = current_user.created_events
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => { :events => @events }
+      }
+    end
   end
 
   def show
     @event = Event.find(params[:id])
-    @invitations = @event.invitations.where(status: "pending")
+
+    @invitations_in = @event.invitations.where(status: "in")
+
     respond_to do |format|
       format.html
-      format.json { render :json => @event#,
-        # :invitees => @invitees
+      format.json { render :json => { :event => @event,
+        :invitations_in => @invitations_in }
       }
     end
-    # render json: @event
   end
 
   def create
     @event = current_user.events.create(event_params)
     render json: @event
-  end
-
-  def edit
-    @event = Event.find(params[:id])
   end
 
   def update

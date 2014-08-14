@@ -25,8 +25,8 @@ party = user1.events.create(name: "Party at Elz",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
-party.invitations.create(user_id: 2, status: "pending")
-party.invitations.create(user_id: 3, status: "pending")
+party.invitations.create(user_id: 2, status: "in")
+party.invitations.create(user_id: 3, status: "in")
 party.invitations.create(user_id: 4, status: "pending")
 party.invitations.create(user_id: 5, status: "pending")
 
@@ -39,9 +39,9 @@ frisbee = user1.events.create(name: "Frisbee",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
-frisbee.invitations.create(user_id: 3, status: "pending")
+frisbee.invitations.create(user_id: 3, status: "in")
 frisbee.invitations.create(user_id: 4, status: "pending")
-frisbee.invitations.create(user_id: 5, status: "pending")
+frisbee.invitations.create(user_id: 5, status: "out")
 
 yoga = user1.events.create(name: "Yoga",
                   description: "just breathe",
@@ -52,6 +52,6 @@ yoga = user1.events.create(name: "Yoga",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
-yoga.invitations.create(user_id: 4, status: "pending")
+yoga.invitations.create(user_id: 4, status: "in")
 yoga.invitations.create(user_id: 5, status: "pending")
 
