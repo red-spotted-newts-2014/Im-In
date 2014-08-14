@@ -1,16 +1,18 @@
 Rails.application.routes.draw do
 
-  root 'events#index'
-
-  devise_for :users
-
-  root 'events#index'
+  root 'users#index'
 
   resources :events
 
+  post 'users/login' => 'users#login', as: 'login'
+
+  get 'users/logout' => 'users#logout', as: 'logout'
+
+  post 'users/follow' => 'users#follow', as: 'follow'
+
+  post 'users/unfollow' => 'users#unfollow', as: 'unfollow'
+
   resources :users
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

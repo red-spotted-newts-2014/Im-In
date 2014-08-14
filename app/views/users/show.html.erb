@@ -1,0 +1,45 @@
+<% @friends.each do |friend| %>
+<%= friend.username %><br>
+<% end %>
+<br><br>
+follow new person:
+<%= form_for :user, url: follow_path do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.submit "follow" %>
+<% end %>
+<br><br>
+
+unfollow new person:
+<%= form_for :user, url: unfollow_path do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.submit "unfollow" %>
+<% end %>
+<br><br>
+edit:
+
+<%= form_for @user, url: {action: "update"} do |f| %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+      </div>
+
+      <div class="form-group">
+        <div class="checkbox">
+          <%= f.label :username %>
+          <%= f.text_field :username %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit "Edit" %>
+      </div>
+<% end %>
+
+<%= @user.username %>
