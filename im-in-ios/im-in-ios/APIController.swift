@@ -21,12 +21,7 @@ class APIController {
     }
     
     func loadAllEvents() {
-//        
-//        // The iTunes API wants multiple terms separated by + symbols, so replace spaces with + signs
-//        let itunesSearchTerm = searchTerm.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil)
-//        
-//        // Now escape anything else that isn't URL-friendly
-//        let escapedSearchTerm = itunesSearchTerm.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        println("APIController#loadAllEvents")
         let urlPath = "http://10.0.0.28:3000/events.json"
         let url: NSURL = NSURL(string: urlPath)
         let session = NSURLSession.sharedSession()

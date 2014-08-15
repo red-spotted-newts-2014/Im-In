@@ -12,33 +12,57 @@ import UIKit
 //, APIControllerProtocol
 class EventViewController: UIViewController, APIControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
     var apiCtrl = APIController()
+    var invitedEvents: NSArray!
     
     func didReceiveAPIResults(results: NSDictionary) {
-        println(results)
+        println("EventViewController#didReceiveAPIResults")
+//        println(results)
+        invitedEvents = results.objectForKey("invited_events") as? NSArray
+//        println("****")
+        println(invitedEvents)
+        self.tableView.reloadData()
     }
-    
+
+
     @IBAction func buttonPressed(sender: AnyObject) {
-        apiCtrl.loadAllEvents()
+        //apiCtrl.loadAllEvents()
         
     }
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        return 0;
+        println("EventViewController#tableView (count)")
+        if invitedEvents == nil {
+            return 0
+        }
+        return invitedEvents.count;
     }
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        return nil;
+
+        println("EventViewController#tableView")
+        
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
+//        println("***")
+        
+//        cell.textLabel.text = "Row #\(indexPath.row)"
+        cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
+        cell.detailTextLabel.text = "Subtitle #\(indexPath.row)"
+        
+        return cell
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("EventViewController#viewDidLoad")
         apiCtrl.delegate = self
+        apiCtrl.loadAllEvents()
     }
     
     override func didReceiveMemoryWarning() {
