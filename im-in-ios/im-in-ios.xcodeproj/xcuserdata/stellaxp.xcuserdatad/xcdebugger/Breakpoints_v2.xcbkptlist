@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/EventViewController.swift"
+            timestampString = "429809812.512294"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "EventViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventViewController.lalala.getter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/stellaxp/Desktop/xcode-stella/im-in-ios/im-in-ios/EventViewController.swift"
+                  timestampString = "429809812.959729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventViewController.lalala.setter : Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/stellaxp/Desktop/xcode-stella/im-in-ios/im-in-ios/EventViewController.swift"
+                  timestampString = "429809812.962477"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventViewController.init (im_in_ios.EventViewController.Type)(nibName : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, bundle : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSBundle&gt;) -&gt; im_in_ios.EventViewController"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/stellaxp/Desktop/xcode-stella/im-in-ios/im-in-ios/EventViewController.swift"
+                  timestampString = "429809812.962768"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventViewController.init (im_in_ios.EventViewController.Type)() -&gt; im_in_ios.EventViewController"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/stellaxp/Desktop/xcode-stella/im-in-ios/im-in-ios/EventViewController.swift"
+                  timestampString = "429809812.96302"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventViewController.init (im_in_ios.EventViewController.Type)(coder : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSCoder&gt;) -&gt; im_in_ios.EventViewController"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/stellaxp/Desktop/xcode-stella/im-in-ios/im-in-ios/EventViewController.swift"
+                  timestampString = "429809812.963264"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "118">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/EventViewController.swift"
+            timestampString = "429816912.043655"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "didReceiveAPIResults(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
