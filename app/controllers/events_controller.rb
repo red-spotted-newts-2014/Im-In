@@ -5,7 +5,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render :json => { :invited_events => @invited_events, :created_events => @created_events } }
+      format.json { render :json => { :invited_events => @invited_events } }
     end
   end
 
