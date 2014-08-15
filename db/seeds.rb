@@ -55,3 +55,58 @@ yoga = user1.created_events.create(name: "Yoga",
 yoga.invitations.create(user_id: 4, status: "in")
 yoga.invitations.create(user_id: 5, status: "pending")
 
+demo_day = user2.created_events.create(name: "DBC Demo Day",
+                  description: "are you in?",
+                  start_time: "2014-08-22 10:33:09",
+                  end_time: "2014-08-22 11:33:09",
+                  venue: "DBC",
+                  location: "48 Wall St, new york, ny",
+                  notify_user?: true,
+                  notify_hours_until_event: 3)
+
+demo_day.invitations.create(user_id: 1, status: "in")
+demo_day.invitations.create(user_id: 3, status: "in")
+demo_day.invitations.create(user_id: 4, status: "pending")
+demo_day.invitations.create(user_id: 5, status: "pending")
+
+sleepover = user3.created_events.create(name: "Sleepover at DBC",
+                  description: "goodtimes",
+                  start_time: "2014-11-14 17:33:09",
+                  end_time: "2014-11-15 17:33:09",
+                  venue: "DBC",
+                  location: "48 Wall St, new york, ny",
+                  notify_user?: true,
+                  notify_hours_until_event: 3)
+
+sleepover.invitations.create(user_id: 1, status: "pending")
+sleepover.invitations.create(user_id: 3, status: "in")
+sleepover.invitations.create(user_id: 4, status: "pending")
+sleepover.invitations.create(user_id: 5, status: "pending")
+
+learningswift = user3.created_events.create(name: "Learning Swift",
+                  description: "goodtimes",
+                  start_time: "2014-11-14 17:33:09",
+                  end_time: "2014-11-15 17:33:09",
+                  venue: "DBC",
+                  location: "48 Wall St, new york, ny",
+                  notify_user?: true,
+                  notify_hours_until_event: 3)
+
+learningswift.invitations.create(user_id: 1, status: "in")
+learningswift.invitations.create(user_id: 3, status: "in")
+learningswift.invitations.create(user_id: 4, status: "pending")
+learningswift.invitations.create(user_id: 5, status: "pending")
+
+killingtime = user3.created_events.create(name: "Killing Time",
+                  description: "sleep is for the weak",
+                  start_time: "2014-11-14 17:33:09",
+                  end_time: "2014-11-15 17:33:09",
+                  venue: "DBC",
+                  location: "48 Wall St, new york, ny",
+                  notify_user?: true,
+                  notify_hours_until_event: 3)
+
+killingtime.invitations.create(user_id: 1, status: "out")
+killingtime.invitations.create(user_id: 3, status: "in")
+killingtime.invitations.create(user_id: 4, status: "pending")
+killingtime.invitations.create(user_id: 5, status: "pending")
