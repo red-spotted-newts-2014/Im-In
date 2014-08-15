@@ -6839,3 +6839,210 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 20:40:22 -0400
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 20:40:22 -0400
+
+
+Started GET "/events/1" for 127.0.0.1 at 2014-08-14 20:52:47 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.2ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered events/show.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `model_name' for Invitation::ActiveRecord_Associations_CollectionProxy:Class):
+     5: 
+     6: <br><br>
+     7: invite more people:
+     8: <%= form_for @invitations do |f| %>
+     9:   <%= f.label :username %>
+    10:   <%= f.text_field %>
+    11:   <%= f.submit "add person" %>
+  app/views/events/show.html.erb:8:in `_app_views_events_show_html_erb___3812051225580105256_70094059058780'
+  app/controllers/events_controller.rb:30:in `show'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.6ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2014-08-14 20:55:44 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.2ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered events/show.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"invitations", :id=>"1"} missing required keys: [:event_id]):
+    4: <% end %>
+    5: 
+    6: <br><br>
+    7: <%= link_to "add more people", new_event_invitation_path %>
+  app/views/events/show.html.erb:7:in `_app_views_events_show_html_erb___3812051225580105256_70094035929240'
+  app/controllers/events_controller.rb:30:in `show'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.1ms)
+
+
+Started GET "/events/1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvitation Load (0.1ms)[0m  [1mSELECT "invitations".* FROM "invitations"  WHERE "invitations"."event_id" = ?[0m  [["event_id", 1]]
+  Rendered events/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 20:55:59 -0400
+
+
+Started GET "/events/1/invitations/new" for 127.0.0.1 at 2014-08-14 20:56:00 -0400
+Processing by InvitationsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendered invitations/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: invite more people:
+    2: <%= form_for @invitations do |f| %>
+    3:   <%= f.label :username %>
+    4:   <%= f.text_field %>
+    5:   <%= f.submit "add person" %>
+  app/views/invitations/new.html.erb:2:in `_app_views_invitations_new_html_erb___50639026325474603_70094067621560'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/events/1/invitations/new" for 127.0.0.1 at 2014-08-14 20:56:01 -0400
+Processing by InvitationsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendered invitations/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: invite more people:
+    2: <%= form_for @invitations do |f| %>
+    3:   <%= f.label :username %>
+    4:   <%= f.text_field %>
+    5:   <%= f.submit "add person" %>
+  app/views/invitations/new.html.erb:2:in `_app_views_invitations_new_html_erb___50639026325474603_70094068763400'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/events/1/invitations/new" for 127.0.0.1 at 2014-08-14 20:56:27 -0400
+Processing by InvitationsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendered invitations/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: invite more people:
+    2: <%= form_for @invitation do |f| %>
+    3:   <%= f.label :username %>
+    4:   <%= f.text_field %>
+    5:   <%= f.submit "add person" %>
+  app/views/invitations/new.html.erb:2:in `_app_views_invitations_new_html_erb___50639026325474603_70094070222800'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/events/1/invitations/new" for 127.0.0.1 at 2014-08-14 20:56:28 -0400
+Processing by InvitationsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendered invitations/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: invite more people:
+    2: <%= form_for @invitation do |f| %>
+    3:   <%= f.label :username %>
+    4:   <%= f.text_field %>
+    5:   <%= f.submit "add person" %>
+  app/views/invitations/new.html.erb:2:in `_app_views_invitations_new_html_erb___50639026325474603_70094070222800'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.6ms)
+
+
+Started GET "/events/1/invitations/new" for 127.0.0.1 at 2014-08-14 20:56:33 -0400
+Processing by InvitationsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendered invitations/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..2)):
+    1: invite more people:
+    2: <%= form_for :invitation do |f| %>
+    3:   <%= f.label :username %>
+    4:   <%= f.text_field %>
+    5:   <%= f.submit "add person" %>
+    6: <% end %>
+  app/views/invitations/new.html.erb:4:in `block in _app_views_invitations_new_html_erb___50639026325474603_70094036168260'
+  app/views/invitations/new.html.erb:2:in `_app_views_invitations_new_html_erb___50639026325474603_70094036168260'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.7ms)
+
+
+Started GET "/events/1/invitations/new" for 127.0.0.1 at 2014-08-14 20:56:40 -0400
+Processing by InvitationsController#new as HTML
+  Parameters: {"event_id"=>"1"}
+  Rendered invitations/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 20:56:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 20:56:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 20:56:40 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-08-14 20:56:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 20:56:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 20:56:40 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-08-14 20:56:40 -0400

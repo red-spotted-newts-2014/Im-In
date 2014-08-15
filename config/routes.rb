@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'users#index'
 
   resources :events do
-    resources :invitations, only: [:create]
+    resources :invitations, only: [:create, :new]
   end
   resources :users
 
