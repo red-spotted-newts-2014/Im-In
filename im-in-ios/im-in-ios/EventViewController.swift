@@ -20,7 +20,7 @@ class EventViewController: UIViewController, APIControllerProtocol, UITableViewD
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        apiCtrl.searchItunesFor("steven")
+        apiCtrl.loadAllEvents()
         
     }
     
