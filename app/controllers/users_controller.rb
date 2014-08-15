@@ -34,16 +34,16 @@ class UsersController < ApplicationController
 
    respond_to do |format|
      format.html
-     format.json { render :json => { :events => @events }}
+     format.json { render :json => { :events_attending => @attending_events }}
    end
  end
 
  def created
-   @events = current_user.created_events
+   @created_events = current_user.created_events
 
    respond_to do |format|
      format.html
-     format.json { render :json => { :events => @events }}
+     format.json { render :json => { :created_events => @created_events }}
    end
  end
 
