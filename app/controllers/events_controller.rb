@@ -36,14 +36,23 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render :json => { :event => @event,
-        :invitations => @invitations } }
+      format.json { render :json => { :event => @event }
     end
   end
 
   def friends_attending
     @event = Event.find(params[:id])
     @invitations = @event.invitations.where(status: "in")
+    @friends = []
+    @invitations.each do |invite|
+      @friends << User.find(invite.user_id)
+    end
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => { :friends_attending => @friends_attending,
+        :invitations => @invitations } }
+    end
   end
   private
 

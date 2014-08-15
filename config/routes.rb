@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   post 'users/unfollow' => 'users#unfollow', as: 'unfollow'
   get 'users/:id/events_attending' => 'users#events_attending', as: "user_events_attending"
   get 'users/:id/created' => 'users#created', as: "user_events_created"
-
+  get 'events/:id/friends_attending' => 'events#friends_attending', as: "events_friends_attending"
 end
