@@ -47,8 +47,7 @@ class UsersController < ApplicationController
    end
  end
 
-  def show
-    @user = User.find(session[:id])
+  def friends
     @friends = current_user.following_users
     respond_to do |format|
       format.html
@@ -57,23 +56,21 @@ class UsersController < ApplicationController
   end
 
   def follow
-    @user = User.find(session[:id])
     @friend = User.find_by(username: params[:user][:username])
 
     if current_user
       if current_user == @friend
         flash[:error] = "You cannot follow yourself."
-        redirect_to user_path(@user)
+        redirect_to user_path(current_user)
       else
         current_user.follow(@friend)
         flash[:notice] = "You are now following #{@friend.username}."
-        redirect_to user_path(@user)
+        redirect_to user_path(current_user)
       end
     end
   end
 
   def unfollow
-    @user = User.find(session[:id])
     @friend = User.find_by(username: params[:user][:username])
 
     if current_user
@@ -84,9 +81,16 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
-    @user.update(user_params)
+    current_user.update(user_params)
     redirect_to user_path(@user)
+  end
+
+  def show
+    @user = current_user
+    respond_to do |format|
+      format.html
+      format.json { render :json => { :user => @user } }
+    end
   end
 
   private
