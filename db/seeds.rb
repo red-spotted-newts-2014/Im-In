@@ -116,4 +116,8 @@ user1.follow(user3)
 user1.follow(user4)
 user1.follow(user5)
 
+user2.follow(user1)
+user3.follow(user1)
+user4.follow(user1)
+user5.follow(user1)
 

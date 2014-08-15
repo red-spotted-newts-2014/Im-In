@@ -47,11 +47,19 @@ class UsersController < ApplicationController
    end
  end
 
-  def friends
-    @friends = current_user.following_users
+  def followers
+    @followers = current_user.followers
     respond_to do |format|
       format.html
-      format.json { render :json => { :friends => @friends } }
+      format.json { render :json => { :followers => @followers } }
+    end
+  end
+
+  def following
+    @following = current_user.following_users
+    respond_to do |format|
+      format.html
+      format.json { render :json => { :following => @following } }
     end
   end
 
