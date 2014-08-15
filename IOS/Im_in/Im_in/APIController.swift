@@ -27,7 +27,7 @@ class APIController {
         
         // Now escape anything else that isn't URL-friendly
         let escapedSearchTerm = itunesSearchTerm.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
-        let urlPath = "http://10.0.0.28:3000/events.json"
+        let urlPath = "http://10.0.0.28:3000/events/1.json"
         let url: NSURL = NSURL(string: urlPath)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
