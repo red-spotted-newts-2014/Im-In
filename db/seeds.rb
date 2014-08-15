@@ -16,7 +16,7 @@ user5 = User.create(email: "user5@imin.com",
                    username: "user5",
                    password: "password")
 
-party = user1.events.create(name: "Party at Elz",
+party = user1.created_events.create(name: "Party at Elz",
                   description: "goodtimes",
                   start_time: "2014-10-14 17:33:09",
                   end_time: "2014-10-15 17:33:09",
@@ -30,7 +30,7 @@ party.invitations.create(user_id: 3, status: "in")
 party.invitations.create(user_id: 4, status: "pending")
 party.invitations.create(user_id: 5, status: "pending")
 
-frisbee = user1.events.create(name: "Frisbee",
+frisbee = user1.created_events.create(name: "Frisbee",
                   description: "get some fresh air",
                   start_time: "2014-10-14 17:33:09",
                   end_time: "2014-10-15 17:33:09",
@@ -43,7 +43,7 @@ frisbee.invitations.create(user_id: 3, status: "in")
 frisbee.invitations.create(user_id: 4, status: "pending")
 frisbee.invitations.create(user_id: 5, status: "out")
 
-yoga = user1.events.create(name: "Yoga",
+yoga = user1.created_events.create(name: "Yoga",
                   description: "just breathe",
                   start_time: "2014-10-14 17:33:09",
                   end_time: "2014-10-15 17:33:09",

@@ -2,3 +2,6 @@
 <% @invitations.each do |invite| %>
   <%= invite.user_id %><br>
 <% end %>
+
+<br><br>
+<%= link_to "add more people", new_event_invitation_path(@event) %>

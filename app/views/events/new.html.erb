@@ -1,1 +1,37 @@
-<h1>new event</h1>
+<%= form_for @event, url: {action: "create"} do |f| %>
+<div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+</div>
+<div>
+  <%= f.label :start_time %>
+  <%= f.datetime_field :start_time %>
+</div>
+<div>
+  <%= f.label :end_time %>
+  <%= f.datetime_field :end_time %>
+</div>
+<div>
+  <%= f.label :venue %>
+  <%= f.text_field :venue %>
+</div>
+<div>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+</div>
+<div>
+  <%= f.label :notify_user? %>
+  <%= f.text_field :notify_user? %>
+</div>
+<div>
+  <%= f.label :notify_hours_until_event %>
+  <%= f.text_field :notify_hours_until_event %>
+</div>
+<div>
+  <%= f.submit "submit" %>
+</div>
+<% end %>
