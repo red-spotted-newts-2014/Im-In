@@ -3,11 +3,8 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  # signup
   def create
-    p "******** here"
     @user = User.create(user_params)
-    p "******** logged in"
     session[:id] = @user.id
     redirect_to events_path
   end
@@ -18,7 +15,6 @@ class UsersController < ApplicationController
       session[:id] = @user.id
       redirect_to events_path
     else
-      p "******** poop"
       @error = "Invalid email or password"
       redirect_to users_path
     end
@@ -40,10 +36,7 @@ class UsersController < ApplicationController
 
   def follow
     @user = User.find(session[:id])
-    p "****************"
     @friend = User.find_by(username: params[:user][:username])
-    p params[:user][:username]
-    p @friend
 
     if current_user
       if current_user == @friend
