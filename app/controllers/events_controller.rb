@@ -46,6 +46,7 @@ class EventsController < ApplicationController
     @attending_events = []
     @attending_invitations.each do |invite|
       @attending_events << Event.find(invite.event_id)
+    end
 
      respond_to do |format|
        format.html
