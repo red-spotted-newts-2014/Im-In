@@ -34,28 +34,6 @@ class EventsController < ApplicationController
     end
   end
 
-  # I DONT THINK WE NEED THIS... WE CAN PROB QUERY THIS IN SWIFT THROUGH USERS EVENTS WHERE STATUS == "in"
-
-  # def attending
-  #   @events = current_user.events.where(status: "in")
-
-  #   respond_to do |format|
-  #     format.html
-  #     format.json { render :json => { :events => @events }
-  #     }
-  #   end
-  # end
-
-  # def created
-  #   @events = current_user.created_events
-
-  #   respond_to do |format|
-  #     format.html
-  #     format.json { render :json => { :events => @events }
-  #     }
-  #   end
-  # end
-
   def create
     @event = current_user.created_events.create(event_params)
     redirect_to event_path(@event)
