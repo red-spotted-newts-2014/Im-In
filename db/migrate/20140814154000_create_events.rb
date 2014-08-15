@@ -10,6 +10,7 @@ class CreateEvents < ActiveRecord::Migration
       t.boolean :notify_user?
       t.integer :notify_hours_until_event
       t.references :user, index: true
+      t.string :username
 
       t.timestamps
     end

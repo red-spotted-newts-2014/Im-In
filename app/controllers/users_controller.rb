@@ -25,6 +25,28 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
+  def events_attending
+  @attending_invitations = current_user.invitations.where(status: "in")
+  @attending_events = []
+  @attending_invitations.each do |invite|
+    @attending_events << Event.find(invite.event_id)
+  end
+
+   respond_to do |format|
+     format.html
+     format.json { render :json => { :events_attending => @attending_events }}
+   end
+ end
+
+ def created
+   @created_events = current_user.created_events
+
+   respond_to do |format|
+     format.html
+     format.json { render :json => { :created_events => @created_events }}
+   end
+ end
+
   def show
     @user = User.find(session[:id])
     @friends = current_user.following_users

@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20140814195751) do
     t.boolean  "notify_user?"
     t.integer  "notify_hours_until_event"
     t.integer  "user_id"
+    t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
