@@ -21,6 +21,7 @@ class APIController {
     }
     
     func loadAllEvents() {
+        println("APIController#loadAllEvents")
         let urlPath = "http://10.0.0.28:3000/events.json"
         let url: NSURL = NSURL(string: urlPath)
         let session = NSURLSession.sharedSession()
