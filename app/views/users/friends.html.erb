@@ -1,0 +1,21 @@
+all friends:<br>
+<% @friends.each do |friend| %>
+<%= friend.username %><br>
+<% end %>
+<br><br>
+
+follow new person:
+<%= form_for :user, url: follow_path do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.submit "follow" %>
+<% end %>
+<br><br>
+
+unfollow new person:
+<%= form_for :user, url: unfollow_path do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.submit "unfollow" %>
+<% end %>
+<br><br>

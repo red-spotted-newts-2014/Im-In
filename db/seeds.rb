@@ -110,3 +110,10 @@ killingtime.invitations.create(user_id: 1, status: "out")
 killingtime.invitations.create(user_id: 3, status: "in")
 killingtime.invitations.create(user_id: 4, status: "pending")
 killingtime.invitations.create(user_id: 5, status: "pending")
+
+user1.follow(user2)
+user1.follow(user3)
+user1.follow(user4)
+user1.follow(user5)
+
+
