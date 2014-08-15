@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'users/logout' => 'users#logout', as: 'logout'
   post 'users/follow' => 'users#follow', as: 'follow'
   post 'users/unfollow' => 'users#unfollow', as: 'unfollow'
-  get 'users/:id/attending' => 'users#attending', as: "user_attending"
-  get 'users/:id/created' => 'users#created', as: "user_created"
+  get 'users/:id/events_attending' => 'users#events_attending', as: "user_events_attending"
+  get 'users/:id/created' => 'users#created', as: "user_events_created"
 
 end

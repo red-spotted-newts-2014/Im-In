@@ -1,4 +1,6 @@
-<%= @event.name %><br>
+event name: <%= @event.name %><br><br>
+
+invited users:<br>
 <% @invitations.each do |invite| %>
   <%= invite.user_id %><br>
 <% end %>
