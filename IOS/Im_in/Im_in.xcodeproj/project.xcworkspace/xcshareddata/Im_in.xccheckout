@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>73D0A0AA-ADF6-4ED0-B3BD-E71CD4A0A4CD</string>
+	<string>ECAAC870-A693-4E30-8F15-6FDD13AEB203</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Im_in</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5E3CCC379CA9EEFDFB267D5FAC24086D0B68D772</key>
-		<string>https://github.com/FahiaMoh/Im-In.git</string>
+		<string>https://github.com/cmoon820/Im-In.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>IOS/Im_in/Im_in.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/FahiaMoh/Im-In.git</string>
+	<string>https://github.com/cmoon820/Im-In.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
