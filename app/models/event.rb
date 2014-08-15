@@ -7,7 +7,7 @@ class Event < ActiveRecord::Base
   before_save :add_username
 
   def add_username
-    username = User.find(user_id).username
+    self.username = User.find(user_id).username
   end
 
 end
