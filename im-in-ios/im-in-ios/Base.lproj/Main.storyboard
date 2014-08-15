@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXy-A7-jFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="-1342"/>
+            <point key="canvasLocation" x="-464" y="-1342"/>
         </scene>
         <!--Event Show View Controller-->
         <scene sceneID="ZKz-bw-oZ7">
@@ -371,6 +371,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="PL4-Sm-E5e" id="6Oe-AX-TE9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AdV-t9-pVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
