@@ -42,12 +42,12 @@ class EventsController < ApplicationController
 
   def attending
     @event = Event.find(params[:id])
-    # @invitations = @event.invitations.where(status: "in")
-    # @friends = []
-    # @invitations.each do |invite|
-    #   @friends << User.find(invite.user_id)
-    # end
-    @users = @event.attending_users
+    @invitations = @event.invitations.where(status: "in")
+    @users = []
+    @invitations.each do |invite|
+      @users << User.find(invite.user_id)
+    end
+    # @users = @event.attending_users
 
     respond_to do |format|
       format.html
