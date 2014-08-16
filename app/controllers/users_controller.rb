@@ -25,16 +25,17 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-  def events_attending
-  @attending_invitations = current_user.invitations.where(status: "in")
-  @attending_events = []
-  @attending_invitations.each do |invite|
-    @attending_events << Event.find(invite.event_id)
-  end
+  def attending
+  # @attending_invitations = current_user.invitations.where(status: "in")
+  # @attending_events = []
+  # @attending_invitations.each do |invite|
+  #   @attending_events << Event.find(invite.event_id)
+  # end
+  @attending_events = current_user.attending_events
 
    respond_to do |format|
      format.html
-     format.json { render :json => { :events_attending => @attending_events }}
+     format.json { render :json => { :attending_events => @attending_events }}
    end
  end
 
