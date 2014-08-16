@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140814195751) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "events", force: true do |t|
     t.string   "name"
     t.string   "description"
@@ -28,7 +31,7 @@ ActiveRecord::Schema.define(version: 20140814195751) do
     t.datetime "updated_at"
   end
 
-  add_index "events", ["user_id"], name: "index_events_on_user_id"
+  add_index "events", ["user_id"], name: "index_events_on_user_id", using: :btree
 
   create_table "follows", force: true do |t|
     t.integer  "followable_id",                   null: false
@@ -40,8 +43,8 @@ ActiveRecord::Schema.define(version: 20140814195751) do
     t.datetime "updated_at"
   end
 
-  add_index "follows", ["followable_id", "followable_type"], name: "fk_followables"
-  add_index "follows", ["follower_id", "follower_type"], name: "fk_follows"
+  add_index "follows", ["followable_id", "followable_type"], name: "fk_followables", using: :btree
+  add_index "follows", ["follower_id", "follower_type"], name: "fk_follows", using: :btree
 
   create_table "invitations", force: true do |t|
     t.integer  "event_id"
@@ -51,8 +54,8 @@ ActiveRecord::Schema.define(version: 20140814195751) do
     t.datetime "updated_at"
   end
 
-  add_index "invitations", ["event_id"], name: "index_invitations_on_event_id"
-  add_index "invitations", ["user_id"], name: "index_invitations_on_user_id"
+  add_index "invitations", ["event_id"], name: "index_invitations_on_event_id", using: :btree
+  add_index "invitations", ["user_id"], name: "index_invitations_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string "first_name"

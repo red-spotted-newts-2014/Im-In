@@ -40,17 +40,18 @@ class EventsController < ApplicationController
     end
   end
 
-  def friends_attending
+  def attending
     @event = Event.find(params[:id])
-    @invitations = @event.invitations.where(status: "in")
-    @friends = []
-    @invitations.each do |invite|
-      @friends << User.find(invite.user_id)
-    end
+    # @invitations = @event.invitations.where(status: "in")
+    # @friends = []
+    # @invitations.each do |invite|
+    #   @friends << User.find(invite.user_id)
+    # end
+    @users = @event.attending_users
 
     respond_to do |format|
       format.html
-      format.json { render :json => { :friends_attending => @friends_attending,
+      format.json { render :json => { :attending_users => @attending_users,
         :invitations => @invitations } }
     end
   end
