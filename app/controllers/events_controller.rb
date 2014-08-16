@@ -51,8 +51,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render :json => { :attending_users => @attending_users,
-        :invitations => @invitations } }
+      format.json { render :json => { :users => @users } }
     end
   end
   private
