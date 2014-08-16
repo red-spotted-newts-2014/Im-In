@@ -10,11 +10,11 @@ import UIKit
 
 //
 //, APIControllerProtocol
-class EventViewController: UIViewController, APIControllerProtocol, UITableViewDataSource, UITableViewDelegate {
+class InvitedEventViewController: UIViewController, APIInvitedEventControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
-    var apiCtrl = APIController()
+    var apiCtrl = APIInvitedEventController()
     var invitedEvents: NSArray!
     
     func didReceiveAPIResults(results: NSDictionary) {
@@ -47,12 +47,13 @@ class EventViewController: UIViewController, APIControllerProtocol, UITableViewD
 
         println("EventViewController#tableView")
         
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "MyTestCell")
 //        println("***")
         
 //        cell.textLabel.text = "Row #\(indexPath.row)"
         cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
-        cell.detailTextLabel.text = "Subtitle #\(indexPath.row)"
+        cell.detailTextLabel.text = invitedEvents[indexPath.row].objectForKey("venue") as? String
+
         
         return cell
     }
