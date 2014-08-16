@@ -15,14 +15,14 @@ class FollowingViewController: UIViewController, APIFollowingControllerProtocol,
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
     var apiCtrl = APIFollowingController()
-    var invitedEvents: NSArray!
+    var follows: NSArray!
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("FollowingViewController#didReceiveAPIResults")
         //        println(results)
-        invitedEvents = results.objectForKey("following") as? NSArray
+        follows = results.objectForKey("following") as? NSArray
         //        println("****")
-        println(invitedEvents)
+        println(follows)
         self.tableView.reloadData()
     }
     
@@ -34,10 +34,10 @@ class FollowingViewController: UIViewController, APIFollowingControllerProtocol,
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         println("FollowingViewController#tableView (count)")
-        if invitedEvents == nil {
+        if follows == nil {
             return 0
         }
-        return invitedEvents.count;
+        return follows.count;
     }
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -51,7 +51,7 @@ class FollowingViewController: UIViewController, APIFollowingControllerProtocol,
         //        println("***")
         
         //        cell.textLabel.text = "Row #\(indexPath.row)"
-        cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("username") as? String
+        cell.textLabel.text = follows[indexPath.row].objectForKey("username") as? String
         
         
         return cell
