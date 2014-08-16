@@ -26,11 +26,6 @@ class UsersController < ApplicationController
   end
 
   def attending
-  # @attending_invitations = current_user.invitations.where(status: "in")
-  # @attending_events = []
-  # @attending_invitations.each do |invite|
-  #   @attending_events << Event.find(invite.event_id)
-  # end
   @attending_events = current_user.attending_events
 
    respond_to do |format|
