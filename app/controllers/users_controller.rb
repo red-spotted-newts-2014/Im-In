@@ -66,27 +66,28 @@ class UsersController < ApplicationController
 
   def follow
     @friend = User.find_by(username: params[:user][:username])
-
-    if current_user
+    redirect_to user_following_path unless current_user
+    # if current_user
       if current_user == @friend
         flash[:error] = "You cannot follow yourself."
         redirect_to user_path(current_user)
       else
         current_user.follow(@friend)
         flash[:notice] = "You are now following #{@friend.username}."
-        redirect_to user_path(current_user)
+        redirect_to user_following_path(current_user)
       end
-    end
+    # end
   end
 
   def unfollow
     @friend = User.find_by(username: params[:user][:username])
 
-    if current_user
+    redirect_to user_followers_path unless current_user
+    # if current_user
       current_user.stop_following(@friend)
       flash[:notice] = "You are no longer following #{@friend.username}."
-      redirect_to user_path(@user)
-    end
+      redirect_to user_follower_path(@user)
+    # end
   end
 
   def update
