@@ -22,7 +22,9 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
        invitedEvents = results.objectForKey("invited_events") as? NSArray
 //       println("****")
        println(invitedEvents)
-       self.tableView.reloadData()
+    dispatch_async(dispatch_get_main_queue(),{
+        self.tableView.reloadData()
+    })
    }
 
    

@@ -23,7 +23,9 @@ class AttendingViewController: UIViewController, APIAttendingControllerProtocol,
         attending = results.objectForKey("attending_events") as? NSArray
         //        println("****")
         println(attending)
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(),{
+            self.tableView.reloadData()
+        })
     }
     
     

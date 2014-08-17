@@ -23,7 +23,9 @@ class CreatedEventsViewController: UIViewController, APICreatedEventsControllerP
         events = results.objectForKey("created_events") as? NSArray
         //        println("****")
         println(events)
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(),{
+            self.tableView.reloadData()
+        })
     }
 
     
