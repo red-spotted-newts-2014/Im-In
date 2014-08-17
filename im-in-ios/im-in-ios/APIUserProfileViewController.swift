@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol APIFollowersControllerProtocol {
+protocol APIUserProfileViewControllerProtocol {
     func didReceiveAPIResults(results: NSDictionary)
 }
 
-class APIFollowersController {
+class APIUserProfileViewController {
     
-    var delegate: APIFollowersControllerProtocol?
+    var delegate: APIUserProfileViewControllerProtocol?
     
     init() {
         
@@ -22,7 +22,7 @@ class APIFollowersController {
     
     func loadAllEvents() {
         println("APIController#loadAllEvents")
-        let urlPath = "http://localhost:3000/users/1/followers.json"
+        let urlPath = "http://localhost:3000/users/1.json"
         let url: NSURL = NSURL(string: urlPath)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in

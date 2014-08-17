@@ -10,19 +10,19 @@ import UIKit
 
 //
 //, APIControllerProtocol
-class FriendsAttendingViewController: UIViewController, APIFriendsAttendingControllerProtocol, UITableViewDataSource, UITableViewDelegate {
+class FriendsAttendingViewController: UIViewController, APIAttendingControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
-    var apiCtrl = APIFriendsAttendingController()
-    var attendingFriends: NSArray!
+    var apiCtrl = APIAttendingController()
+    var attending: NSArray!
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("FriendsAttendingViewController#didReceiveAPIResults")
-        //        println(results)
-        attendingFriends = results.objectForKey("friends_attending") as? NSArray
+                println(results)
+        attending = results.objectForKey("attending_events") as? NSArray
         //        println("****")
-        println(attendingFriends)
+        println(attending)
         self.tableView.reloadData()
     }
     
@@ -34,10 +34,10 @@ class FriendsAttendingViewController: UIViewController, APIFriendsAttendingContr
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         println("FriendsAttendingViewController#tableView (count)")
-        if attendingFriends == nil {
+        if attending == nil {
             return 0
         }
-        return attendingFriends.count;
+        return attending.count;
     }
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -51,8 +51,7 @@ class FriendsAttendingViewController: UIViewController, APIFriendsAttendingContr
         //        println("***")
         
         //        cell.textLabel.text = "Row #\(indexPath.row)"
-        cell.textLabel.text = attendingFriends[indexPath.row].objectForKey("user_id") as? String
-        cell.detailTextLabel.text = attendingFriends[indexPath.row].objectForKey("status") as? String
+        cell.textLabel.text = attending[indexPath.row].objectForKey("username") as? String
         
         
         return cell

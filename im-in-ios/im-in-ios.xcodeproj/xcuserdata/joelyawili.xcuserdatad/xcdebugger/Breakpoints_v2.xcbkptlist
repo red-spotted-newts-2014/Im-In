@@ -9,44 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "im-in-ios/InvitedEventViewController.swift"
-            timestampString = "429769116.67076"
+            filePath = "im-in-ios/APIInvitedEventController.swift"
+            timestampString = "429927169.849766"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "InvitedEventViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "im_in_ios.EventViewController.__deallocating_deinit"
-                  moduleName = "im-in-ios"
-                  urlString = "file:///Users/joelyawili/Desktop/Im-In/im-in-ios/im-in-ios/InvitedEventViewController.swift"
-                  timestampString = "429846158.501409"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "@objc im_in_ios.EventViewController.__ivar_destroyer"
-                  moduleName = "im-in-ios"
-                  urlString = "file:///Users/joelyawili/Desktop/Im-In/im-in-ios/im-in-ios/InvitedEventViewController.swift"
-                  timestampString = "429846158.501715"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
+            startingLineNumber = "11"
+            endingLineNumber = "11">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

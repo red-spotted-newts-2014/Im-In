@@ -20,7 +20,7 @@ class AttendingViewController: UIViewController, APIAttendingControllerProtocol,
     func didReceiveAPIResults(results: NSDictionary) {
         println("AttendingViewController#didReceiveAPIResults")
         //        println(results)
-        attending = results.objectForKey("events_attending") as? NSArray
+        attending = results.objectForKey("attending_events") as? NSArray
         //        println("****")
         println(attending)
         self.tableView.reloadData()

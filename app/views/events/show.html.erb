@@ -1,7 +1,8 @@
 event name: <%= @event.name %><br><br>
 
+
 invited users:<br>
-<% @invitations.each do |invite| %>
+<% @sent_invitations.each do |invite| %>
   <%= invite.user_id %><br>
 <% end %>
 

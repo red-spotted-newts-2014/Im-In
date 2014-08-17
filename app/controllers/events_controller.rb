@@ -31,27 +31,32 @@ class EventsController < ApplicationController
   end
 
   def show
-    @event = Event.find(params[:id])
-    @invitations = @event.invitations
+    @event = Event.where(id: params[:id])
+    @sent_invitations = @event.first.invitations
+    @users = []
+    @sent_invitations.each do |invite|
+      @users << User.find(invite.user_id)
+    end
 
     respond_to do |format|
       format.html
-      format.json { render :json => { :event => @event } }
+
+      format.json { render :json => { :event => @event , :users => @users }  }
     end
   end
 
   def attending
     @event = Event.find(params[:id])
-    @invitations = @event.invitations.where(status: "in")
-    @users = []
-    @invitations.each do |invite|
-      @users << User.find(invite.user_id)
+    @confirmed_invitations = @event.invitations.where(status: "in")
+    @friends = []
+    @confirmed_invitations.each do |invite|
+      @friends << User.find(invite.user_id)
     end
     # @users = @event.attending_users
 
     respond_to do |format|
       format.html
-      format.json { render :json => { :users => @users } }
+      format.json { render :json => { :friends => @friends } }
     end
   end
   private

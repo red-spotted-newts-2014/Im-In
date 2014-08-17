@@ -10,19 +10,19 @@ import UIKit
 
 //
 //, APIControllerProtocol
-class FollowersViewController: UIViewController, APIFollowersControllerProtocol, UITableViewDataSource, UITableViewDelegate {
+class ShowProfileViewController: UIViewController, APIUserProfileViewControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
-    var apiCtrl = APIFollowersController()
-    var followers: NSArray!
+    var apiCtrl = APIUserProfileViewController()
+    var userDetails: NSArray!
     
     func didReceiveAPIResults(results: NSDictionary) {
-        println("FollowersViewController#didReceiveAPIResults")
+        println("EventViewController#didReceiveAPIResults")
         //        println(results)
-        followers = results.objectForKey("followers") as? NSArray
+        userDetails = results.objectForKey("user") as? NSArray
         //        println("****")
-        println(followers)
+        println(userDetails)
         self.tableView.reloadData()
     }
     
@@ -33,11 +33,11 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     }
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        println("FollowersViewController#tableView (count)")
-        if followers == nil {
+        println("EventViewController#tableView (count)")
+        if userDetails == nil {
             return 0
         }
-        return followers.count;
+        return userDetails.count;
     }
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -45,13 +45,14 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         
-        println("FollowersViewController#tableView")
+        println("EventViewController#tableView")
         
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "MyTestCell")
         //        println("***")
         
         //        cell.textLabel.text = "Row #\(indexPath.row)"
-        cell.textLabel.text = followers[indexPath.row].objectForKey("username") as? String
+        cell.textLabel.text = userDetails[indexPath.row].objectForKey("username") as? String
+        cell.detailTextLabel.text = userDetails[indexPath.row].objectForKey("email") as? String
         
         
         return cell
@@ -60,7 +61,7 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("FollowersViewController#viewDidLoad")
+        println("EventViewController#viewDidLoad")
         apiCtrl.delegate = self
         apiCtrl.loadAllEvents()
     }

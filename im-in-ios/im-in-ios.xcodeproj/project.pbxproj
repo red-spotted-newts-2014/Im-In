@@ -13,13 +13,23 @@
 		130970F9199F112200F46C1D /* APICreatedEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970F8199F112200F46C1D /* APICreatedEventsController.swift */; };
 		130970FB199F163700F46C1D /* APIAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FA199F163700F46C1D /* APIAttendingViewController.swift */; };
 		130970FD199F166200F46C1D /* AttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FC199F166200F46C1D /* AttendingViewController.swift */; };
-		130970FF199F1E4B00F46C1D /* APIFriendsAttendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FE199F1E4B00F46C1D /* APIFriendsAttendingController.swift */; };
-		13097101199F1E7B00F46C1D /* FriendsAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13097100199F1E7B00F46C1D /* FriendsAttendingViewController.swift */; };
 		1384626C199EF16700666DC8 /* APIFollowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626B199EF16700666DC8 /* APIFollowingController.swift */; };
 		1384626E199EF23600666DC8 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626D199EF23600666DC8 /* FollowingViewController.swift */; };
 		13866D52199DB86C00F55B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13866D50199DB86C00F55B0A /* Main.storyboard */; };
 		13866D54199DB97000F55B0A /* APIInvitedEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13866D53199DB97000F55B0A /* APIInvitedEventController.swift */; };
 		13866D56199DBA2300F55B0A /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */; };
+		13CACA6D199FEA0400A0D02F /* APIFriendsAttendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA6C199FEA0400A0D02F /* APIFriendsAttendingController.swift */; };
+		13CACA6F199FEA5800A0D02F /* FriendsAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA6E199FEA5800A0D02F /* FriendsAttendingViewController.swift */; };
+		13CACA71199FFC4400A0D02F /* APIShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA70199FFC4400A0D02F /* APIShowEventDetailsViewController.swift */; };
+		13CACA73199FFC5F00A0D02F /* ShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA72199FFC5F00A0D02F /* ShowEventDetailsViewController.swift */; };
+		13D3090C19A01B03003269D4 /* APIUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3090B19A01B03003269D4 /* APIUserProfileViewController.swift */; };
+		13D3090E19A01B1D003269D4 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3090D19A01B1D003269D4 /* ShowProfileViewController.swift */; };
+		13D3091419A02787003269D4 /* APIEditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3090F19A02787003269D4 /* APIEditProfileController.swift */; };
+		13D3091519A02787003269D4 /* APILogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091019A02787003269D4 /* APILogInController.swift */; };
+		13D3091619A02787003269D4 /* APISignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091119A02787003269D4 /* APISignUpController.swift */; };
+		13D3091719A02787003269D4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091219A02787003269D4 /* EditProfileViewController.swift */; };
+		13D3091819A02787003269D4 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091319A02787003269D4 /* LogInViewController.swift */; };
+		13D3091A19A02CD8003269D4 /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091919A02CD8003269D4 /* testController.swift */; };
 		13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2B3199DB5C20024D110 /* AppDelegate.swift */; };
 		13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DAB2BA199DB5C20024D110 /* Images.xcassets */; };
 		13DAB2C7199DB5C20024D110 /* im_in_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2C6199DB5C20024D110 /* im_in_iosTests.swift */; };
@@ -42,13 +52,23 @@
 		130970F8199F112200F46C1D /* APICreatedEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICreatedEventsController.swift; sourceTree = "<group>"; };
 		130970FA199F163700F46C1D /* APIAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAttendingViewController.swift; sourceTree = "<group>"; };
 		130970FC199F166200F46C1D /* AttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingViewController.swift; sourceTree = "<group>"; };
-		130970FE199F1E4B00F46C1D /* APIFriendsAttendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFriendsAttendingController.swift; sourceTree = "<group>"; };
-		13097100199F1E7B00F46C1D /* FriendsAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAttendingViewController.swift; sourceTree = "<group>"; };
 		1384626B199EF16700666DC8 /* APIFollowingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowingController.swift; sourceTree = "<group>"; };
 		1384626D199EF23600666DC8 /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		13866D51199DB86C00F55B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13866D53199DB97000F55B0A /* APIInvitedEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvitedEventController.swift; sourceTree = "<group>"; };
 		13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
+		13CACA6C199FEA0400A0D02F /* APIFriendsAttendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFriendsAttendingController.swift; sourceTree = "<group>"; };
+		13CACA6E199FEA5800A0D02F /* FriendsAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAttendingViewController.swift; sourceTree = "<group>"; };
+		13CACA70199FFC4400A0D02F /* APIShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIShowEventDetailsViewController.swift; sourceTree = "<group>"; };
+		13CACA72199FFC5F00A0D02F /* ShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEventDetailsViewController.swift; sourceTree = "<group>"; };
+		13D3090B19A01B03003269D4 /* APIUserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUserProfileViewController.swift; sourceTree = "<group>"; };
+		13D3090D19A01B1D003269D4 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
+		13D3090F19A02787003269D4 /* APIEditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEditProfileController.swift; sourceTree = "<group>"; };
+		13D3091019A02787003269D4 /* APILogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogInController.swift; sourceTree = "<group>"; };
+		13D3091119A02787003269D4 /* APISignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISignUpController.swift; sourceTree = "<group>"; };
+		13D3091219A02787003269D4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		13D3091319A02787003269D4 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		13D3091919A02CD8003269D4 /* testController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
 		13DAB2AE199DB5C20024D110 /* im-in-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "im-in-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAB2B2199DB5C20024D110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13DAB2B3199DB5C20024D110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +117,11 @@
 		13DAB2B0199DB5C20024D110 /* im-in-ios */ = {
 			isa = PBXGroup;
 			children = (
+				13D3090F19A02787003269D4 /* APIEditProfileController.swift */,
+				13D3091019A02787003269D4 /* APILogInController.swift */,
+				13D3091119A02787003269D4 /* APISignUpController.swift */,
+				13D3091219A02787003269D4 /* EditProfileViewController.swift */,
+				13D3091319A02787003269D4 /* LogInViewController.swift */,
 				13DAB2B3199DB5C20024D110 /* AppDelegate.swift */,
 				13866D53199DB97000F55B0A /* APIInvitedEventController.swift */,
 				13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */,
@@ -108,11 +133,16 @@
 				130970F6199F110800F46C1D /* CreatedEventsViewController.swift */,
 				130970FA199F163700F46C1D /* APIAttendingViewController.swift */,
 				130970FC199F166200F46C1D /* AttendingViewController.swift */,
-				130970FE199F1E4B00F46C1D /* APIFriendsAttendingController.swift */,
-				13097100199F1E7B00F46C1D /* FriendsAttendingViewController.swift */,
+				13CACA6C199FEA0400A0D02F /* APIFriendsAttendingController.swift */,
+				13CACA6E199FEA5800A0D02F /* FriendsAttendingViewController.swift */,
+				13CACA70199FFC4400A0D02F /* APIShowEventDetailsViewController.swift */,
+				13CACA72199FFC5F00A0D02F /* ShowEventDetailsViewController.swift */,
+				13D3090B19A01B03003269D4 /* APIUserProfileViewController.swift */,
+				13D3090D19A01B1D003269D4 /* ShowProfileViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13DAB2B1199DB5C20024D110 /* Supporting Files */,
+				13D3091919A02CD8003269D4 /* testController.swift */,
 			);
 			path = "im-in-ios";
 			sourceTree = "<group>";
@@ -241,19 +271,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CACA6D199FEA0400A0D02F /* APIFriendsAttendingController.swift in Sources */,
+				13CACA71199FFC4400A0D02F /* APIShowEventDetailsViewController.swift in Sources */,
+				13D3091819A02787003269D4 /* LogInViewController.swift in Sources */,
+				13CACA6F199FEA5800A0D02F /* FriendsAttendingViewController.swift in Sources */,
 				130970F7199F110800F46C1D /* CreatedEventsViewController.swift in Sources */,
-				13097101199F1E7B00F46C1D /* FriendsAttendingViewController.swift in Sources */,
 				130970EF199F00AA00F46C1D /* FollowersViewController.swift in Sources */,
 				130970FB199F163700F46C1D /* APIAttendingViewController.swift in Sources */,
-				130970FF199F1E4B00F46C1D /* APIFriendsAttendingController.swift in Sources */,
 				13866D56199DBA2300F55B0A /* InvitedEventViewController.swift in Sources */,
 				1384626E199EF23600666DC8 /* FollowingViewController.swift in Sources */,
 				13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */,
+				13D3090C19A01B03003269D4 /* APIUserProfileViewController.swift in Sources */,
 				130970FD199F166200F46C1D /* AttendingViewController.swift in Sources */,
 				130970F9199F112200F46C1D /* APICreatedEventsController.swift in Sources */,
+				13D3091619A02787003269D4 /* APISignUpController.swift in Sources */,
+				13D3091419A02787003269D4 /* APIEditProfileController.swift in Sources */,
+				13D3090E19A01B1D003269D4 /* ShowProfileViewController.swift in Sources */,
+				13D3091A19A02CD8003269D4 /* testController.swift in Sources */,
+				13D3091519A02787003269D4 /* APILogInController.swift in Sources */,
 				130970F1199F00C800F46C1D /* APIFollowersController.swift in Sources */,
+				13CACA73199FFC5F00A0D02F /* ShowEventDetailsViewController.swift in Sources */,
 				1384626C199EF16700666DC8 /* APIFollowingController.swift in Sources */,
 				13866D54199DB97000F55B0A /* APIInvitedEventController.swift in Sources */,
+				13D3091719A02787003269D4 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
