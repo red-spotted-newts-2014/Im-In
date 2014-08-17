@@ -25,12 +25,7 @@ class CreatedEventsViewController: UIViewController, APICreatedEventsControllerP
         println(events)
         self.tableView.reloadData()
     }
-    
-    
-    @IBAction func buttonPressed(sender: AnyObject) {
-        //apiCtrl.loadAllEvents()
-        
-    }
+
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         println("CreatedEventsViewController#tableView (count)")

@@ -24,12 +24,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
        println(invitedEvents)
        self.tableView.reloadData()
    }
-//
-//
-   @IBAction func buttonPressed(sender: AnyObject) {
-       //apiCtrl.loadAllEvents()
-       
-   }
+
    
    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
        println("EventViewController#tableView (count)")
@@ -37,6 +32,8 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
            return 0
        }
        return invitedEvents.count;
+    
+
    }
    
   // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
