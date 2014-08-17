@@ -1,27 +1,42 @@
 require 'faker'
 
-user1 = User.create(email: "user1@imin.com",
-                   username: "user1",
+user1 = User.create(email: "AriGold@imin.com",
+                   username: "AriGold",
                    password: "password")
-user2 = User.create(email: "user2@imin.com",
-                   username: "user2",
+user2 = User.create(email: "elztheman@imin.com",
+                   username: "elztheman",
                    password: "password")
-user3 = User.create(email: "user3@imin.com",
-                   username: "user3",
+user3 = User.create(email: "vincechase@imin.com",
+                   username: "VincentChase",
                    password: "password")
-user4 = User.create(email: "user4@imin.com",
-                   username: "user4",
+user4 = User.create(email: "stella@imin.com",
+                   username: "StellaKim",
                    password: "password")
-user5 = User.create(email: "user5@imin.com",
-                   username: "user5",
+user5 = User.create(email: "cmoon@imin.com",
+                   username: "ChristianTheLegendMoon",
+                   password: "password")
+user6 = User.create(email: "fahiamoh@imin.com",
+                   username: "FahiaMohSwag",
+                   password: "password")
+user7 = User.create(email: "denzel@imin.com",
+                   username: "DenzelWashington",
+                   password: "password")
+user8 = User.create(email: "denzel@imin.com",
+                   username: "denzelwashington",
+                   password: "password")
+user9 = User.create(email: "chrisbrown@imin.com",
+                   username: "chrisbrown",
+                   password: "password")
+user10 = User.create(email: "parkleesung@imin.com",
+                   username: "Parkjsung",
                    password: "password")
 
-party = user1.created_events.create(name: "Party at Elz",
-                  description: "goodtimes",
+party = user1.created_events.create(name: "Party at the Ritz",
+                  description: "Exclusive Event @ the Ritz, Dress code. Special guest appearance: Christian Moon",
                   start_time: "2014-10-14 17:33:09",
                   end_time: "2014-10-15 17:33:09",
-                  venue: "elz house",
-                  location: "elz house, new york, ny",
+                  venue: "The Ritz Carlton Hotel",
+                  location: "77 Water St, New York, NY 10005",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
@@ -30,8 +45,8 @@ party.invitations.create(user_id: 3, status: "in")
 party.invitations.create(user_id: 4, status: "pending")
 party.invitations.create(user_id: 5, status: "pending")
 
-frisbee = user1.created_events.create(name: "Frisbee",
-                  description: "get some fresh air",
+frisbee = user1.created_events.create(name: "Night @ Lavo",
+                  description: "Reach Lavo for a fun night!",
                   start_time: "2014-10-14 17:33:09",
                   end_time: "2014-10-15 17:33:09",
                   venue: "Central Park",
@@ -48,7 +63,7 @@ yoga = user1.created_events.create(name: "Yoga",
                   start_time: "2014-10-14 17:33:09",
                   end_time: "2014-10-15 17:33:09",
                   venue: "DBC",
-                  location: "48 Wall St, New York, NY",
+                  location: "17 state street, New York, NY",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
@@ -59,8 +74,8 @@ demo_day = user2.created_events.create(name: "DBC Demo Day",
                   description: "are you in?",
                   start_time: "2014-08-22 10:33:09",
                   end_time: "2014-08-22 11:33:09",
-                  venue: "DBC",
-                  location: "48 Wall St, new york, ny",
+                  venue: "Meatpacking District",
+                  location: "2 east 42nd street, new york, ny",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
@@ -73,7 +88,7 @@ sleepover = user3.created_events.create(name: "Sleepover at DBC",
                   description: "goodtimes",
                   start_time: "2014-11-14 17:33:09",
                   end_time: "2014-11-15 17:33:09",
-                  venue: "DBC",
+                  venue: "Chelsea",
                   location: "48 Wall St, new york, ny",
                   notify_user?: true,
                   notify_hours_until_event: 3)
@@ -87,8 +102,8 @@ learningswift = user3.created_events.create(name: "Learning Swift",
                   description: "goodtimes",
                   start_time: "2014-11-14 17:33:09",
                   end_time: "2014-11-15 17:33:09",
-                  venue: "DBC",
-                  location: "48 Wall St, new york, ny",
+                  venue: "Lower East Side",
+                  location: "100 East Broadway, new york, ny",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
@@ -101,8 +116,8 @@ killingtime = user3.created_events.create(name: "Killing Time",
                   description: "sleep is for the weak",
                   start_time: "2014-11-14 17:33:09",
                   end_time: "2014-11-15 17:33:09",
-                  venue: "DBC",
-                  location: "48 Wall St, new york, ny",
+                  venue: "Upper East Side",
+                  location: "102nd street, new york, ny",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
