@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130970EF199F00AA00F46C1D /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970EE199F00AA00F46C1D /* FollowersViewController.swift */; };
+		130970F1199F00C800F46C1D /* APIFollowersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970F0199F00C800F46C1D /* APIFollowersController.swift */; };
+		130970F7199F110800F46C1D /* CreatedEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970F6199F110800F46C1D /* CreatedEventsViewController.swift */; };
+		130970F9199F112200F46C1D /* APICreatedEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970F8199F112200F46C1D /* APICreatedEventsController.swift */; };
+		130970FB199F163700F46C1D /* APIAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FA199F163700F46C1D /* APIAttendingViewController.swift */; };
+		130970FD199F166200F46C1D /* AttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FC199F166200F46C1D /* AttendingViewController.swift */; };
+		130970FF199F1E4B00F46C1D /* APIFriendsAttendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FE199F1E4B00F46C1D /* APIFriendsAttendingController.swift */; };
+		13097101199F1E7B00F46C1D /* FriendsAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13097100199F1E7B00F46C1D /* FriendsAttendingViewController.swift */; };
 		1384626C199EF16700666DC8 /* APIFollowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626B199EF16700666DC8 /* APIFollowingController.swift */; };
 		1384626E199EF23600666DC8 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626D199EF23600666DC8 /* FollowingViewController.swift */; };
 		13866D52199DB86C00F55B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13866D50199DB86C00F55B0A /* Main.storyboard */; };
@@ -28,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130970EE199F00AA00F46C1D /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		130970F0199F00C800F46C1D /* APIFollowersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowersController.swift; sourceTree = "<group>"; };
+		130970F6199F110800F46C1D /* CreatedEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedEventsViewController.swift; sourceTree = "<group>"; };
+		130970F8199F112200F46C1D /* APICreatedEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICreatedEventsController.swift; sourceTree = "<group>"; };
+		130970FA199F163700F46C1D /* APIAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAttendingViewController.swift; sourceTree = "<group>"; };
+		130970FC199F166200F46C1D /* AttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingViewController.swift; sourceTree = "<group>"; };
+		130970FE199F1E4B00F46C1D /* APIFriendsAttendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFriendsAttendingController.swift; sourceTree = "<group>"; };
+		13097100199F1E7B00F46C1D /* FriendsAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAttendingViewController.swift; sourceTree = "<group>"; };
 		1384626B199EF16700666DC8 /* APIFollowingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowingController.swift; sourceTree = "<group>"; };
 		1384626D199EF23600666DC8 /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		13866D51199DB86C00F55B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +102,14 @@
 				13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */,
 				1384626B199EF16700666DC8 /* APIFollowingController.swift */,
 				1384626D199EF23600666DC8 /* FollowingViewController.swift */,
+				130970F0199F00C800F46C1D /* APIFollowersController.swift */,
+				130970EE199F00AA00F46C1D /* FollowersViewController.swift */,
+				130970F8199F112200F46C1D /* APICreatedEventsController.swift */,
+				130970F6199F110800F46C1D /* CreatedEventsViewController.swift */,
+				130970FA199F163700F46C1D /* APIAttendingViewController.swift */,
+				130970FC199F166200F46C1D /* AttendingViewController.swift */,
+				130970FE199F1E4B00F46C1D /* APIFriendsAttendingController.swift */,
+				13097100199F1E7B00F46C1D /* FriendsAttendingViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13DAB2B1199DB5C20024D110 /* Supporting Files */,
@@ -217,9 +241,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130970F7199F110800F46C1D /* CreatedEventsViewController.swift in Sources */,
+				13097101199F1E7B00F46C1D /* FriendsAttendingViewController.swift in Sources */,
+				130970EF199F00AA00F46C1D /* FollowersViewController.swift in Sources */,
+				130970FB199F163700F46C1D /* APIAttendingViewController.swift in Sources */,
+				130970FF199F1E4B00F46C1D /* APIFriendsAttendingController.swift in Sources */,
 				13866D56199DBA2300F55B0A /* InvitedEventViewController.swift in Sources */,
 				1384626E199EF23600666DC8 /* FollowingViewController.swift in Sources */,
 				13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */,
+				130970FD199F166200F46C1D /* AttendingViewController.swift in Sources */,
+				130970F9199F112200F46C1D /* APICreatedEventsController.swift in Sources */,
+				130970F1199F00C800F46C1D /* APIFollowersController.swift in Sources */,
 				1384626C199EF16700666DC8 /* APIFollowingController.swift in Sources */,
 				13866D54199DB97000F55B0A /* APIInvitedEventController.swift in Sources */,
 			);
