@@ -1,21 +1,27 @@
 class UsersController < ApplicationController
+  skip_before_filter  :verify_authenticity_token
+
   def index
     @user = User.new
   end
 
   def create
-    @user = User.create(user_params)
+    @user = User.create(username: params[:username],
+                        email: params[:email],
+                        password: params[:password])
     session[:id] = @user.id
     redirect_to events_path
   end
 
   def login
-    @user = User.find_by(username: params[:user][:username])
-    if @user && @user.authenticate(params[:user][:password])
+    p "here"
+    @user = User.find_by(username: params[:username])
+    if @user && @user.authenticate(params[:password])
+      p "logged in!!"
       session[:id] = @user.id
       redirect_to events_path
     else
-      @error = "Invalid email or password"
+      p @error = "Invalid email or password"
       redirect_to users_path
     end
   end

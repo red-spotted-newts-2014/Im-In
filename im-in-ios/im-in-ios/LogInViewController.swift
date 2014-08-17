@@ -14,7 +14,7 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("LogInViewController#didReceiveAPIResults")

@@ -15,6 +15,36 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.APIInvitedEventController.deinit"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/joelyawili/Desktop/Im-In/im-in-ios/im-in-ios/APIInvitedEventController.swift"
+                  timestampString = "429946889.306318"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.APIInvitedEventController.__deallocating_deinit"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/joelyawili/Desktop/Im-In/im-in-ios/im-in-ios/APIInvitedEventController.swift"
+                  timestampString = "429946889.306716"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

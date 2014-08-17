@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  skip_before_filter  :verify_authenticity_token
 
   def index
     @invited_events = current_user.invited_events
