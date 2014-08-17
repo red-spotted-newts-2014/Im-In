@@ -15,6 +15,7 @@
 		130970FD199F166200F46C1D /* AttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FC199F166200F46C1D /* AttendingViewController.swift */; };
 		130B82E519A04866004AD487 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B82E419A04866004AD487 /* CreateEventViewController.swift */; };
 		130B82E719A049B9004AD487 /* APICreateEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B82E619A049B9004AD487 /* APICreateEventController.swift */; };
+		133F235919A10C0B00F6B24D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F235819A10C0B00F6B24D /* SignUpViewController.swift */; };
 		1384626C199EF16700666DC8 /* APIFollowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626B199EF16700666DC8 /* APIFollowingController.swift */; };
 		1384626E199EF23600666DC8 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626D199EF23600666DC8 /* FollowingViewController.swift */; };
 		13866D52199DB86C00F55B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13866D50199DB86C00F55B0A /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 		13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2B3199DB5C20024D110 /* AppDelegate.swift */; };
 		13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DAB2BA199DB5C20024D110 /* Images.xcassets */; };
 		13DAB2C7199DB5C20024D110 /* im_in_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2C6199DB5C20024D110 /* im_in_iosTests.swift */; };
+		13FD37B519A0894B00D3887C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FD37B419A0894B00D3887C /* Default@2x.png */; };
+		13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13FD380E19A0F59E00D3887C /* Im'in.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,7 @@
 		130970FC199F166200F46C1D /* AttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingViewController.swift; sourceTree = "<group>"; };
 		130B82E419A04866004AD487 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		130B82E619A049B9004AD487 /* APICreateEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICreateEventController.swift; sourceTree = "<group>"; };
+		133F235819A10C0B00F6B24D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1384626B199EF16700666DC8 /* APIFollowingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowingController.swift; sourceTree = "<group>"; };
 		1384626D199EF23600666DC8 /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		13866D51199DB86C00F55B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		13DAB2C0199DB5C20024D110 /* im-in-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "im-in-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAB2C5199DB5C20024D110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13DAB2C6199DB5C20024D110 /* im_in_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = im_in_iosTests.swift; sourceTree = "<group>"; };
+		13FD37B419A0894B00D3887C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images.xcassets/LaunchImage.launchimage/Default@2x.png"; sourceTree = "<group>"; };
+		13FD380E19A0F59E00D3887C /* Im'in.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Im'in.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +127,13 @@
 		13DAB2B0199DB5C20024D110 /* im-in-ios */ = {
 			isa = PBXGroup;
 			children = (
+				13FD380E19A0F59E00D3887C /* Im'in.jpg */,
 				13D3090F19A02787003269D4 /* APIEditProfileController.swift */,
 				13D3091019A02787003269D4 /* APILogInController.swift */,
-				13D3091119A02787003269D4 /* APISignUpController.swift */,
-				13D3091219A02787003269D4 /* EditProfileViewController.swift */,
 				13D3091319A02787003269D4 /* LogInViewController.swift */,
+				13D3091119A02787003269D4 /* APISignUpController.swift */,
+				133F235819A10C0B00F6B24D /* SignUpViewController.swift */,
+				13D3091219A02787003269D4 /* EditProfileViewController.swift */,
 				13DAB2B3199DB5C20024D110 /* AppDelegate.swift */,
 				13866D53199DB97000F55B0A /* APIInvitedEventController.swift */,
 				13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */,
@@ -146,6 +154,7 @@
 				130B82E619A049B9004AD487 /* APICreateEventController.swift */,
 				130B82E419A04866004AD487 /* CreateEventViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
+				13FD37B419A0894B00D3887C /* Default@2x.png */,
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13DAB2B1199DB5C20024D110 /* Supporting Files */,
 				13D3091919A02CD8003269D4 /* testController.swift */,
@@ -259,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */,
+				13FD37B519A0894B00D3887C /* Default@2x.png in Resources */,
 				13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */,
 				13866D52199DB86C00F55B0A /* Main.storyboard in Resources */,
 			);
@@ -283,6 +294,7 @@
 				13D3091819A02787003269D4 /* LogInViewController.swift in Sources */,
 				13CACA6F199FEA5800A0D02F /* FriendsAttendingViewController.swift in Sources */,
 				130970F7199F110800F46C1D /* CreatedEventsViewController.swift in Sources */,
+				133F235919A10C0B00F6B24D /* SignUpViewController.swift in Sources */,
 				130970EF199F00AA00F46C1D /* FollowersViewController.swift in Sources */,
 				130970FB199F163700F46C1D /* APIAttendingViewController.swift in Sources */,
 				13866D56199DBA2300F55B0A /* InvitedEventViewController.swift in Sources */,
@@ -372,8 +384,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator ipados iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -408,7 +422,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				New_Setting = "";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator ipados iphoneos";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

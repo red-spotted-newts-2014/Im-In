@@ -17,6 +17,8 @@ class SignUpViewController: UIViewController, APISignUpControllerProtocol, NSURL
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     
+    
+    
     func didReceiveAPIResults(results: NSDictionary) {
         println("SignUpViewController#didReceiveAPIResults")
     }
