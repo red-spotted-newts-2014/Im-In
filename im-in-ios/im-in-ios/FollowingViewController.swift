@@ -23,7 +23,9 @@ class FollowingViewController: UIViewController, APIFollowingControllerProtocol,
         follows = results.objectForKey("following") as? NSArray
         //        println("****")
         println(follows)
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(),{
+            self.tableView.reloadData()
+        })
     }
     
     

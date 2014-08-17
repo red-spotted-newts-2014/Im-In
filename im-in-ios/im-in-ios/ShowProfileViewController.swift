@@ -23,7 +23,9 @@ class ShowProfileViewController: UIViewController, APIUserProfileViewControllerP
         userDetails = results.objectForKey("user") as? NSArray
         //        println("****")
         println(userDetails)
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(),{
+            self.tableView.reloadData()
+        })
     }
     
     
@@ -64,6 +66,7 @@ class ShowProfileViewController: UIViewController, APIUserProfileViewControllerP
         println("EventViewController#viewDidLoad")
         apiCtrl.delegate = self
         apiCtrl.loadAllEvents()
+        
     }
     
     override func didReceiveMemoryWarning() {

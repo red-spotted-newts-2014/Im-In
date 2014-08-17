@@ -23,7 +23,9 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
         followers = results.objectForKey("followers") as? NSArray
         //        println("****")
         println(followers)
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(),{
+            self.tableView.reloadData()
+        })
     }
     
     
