@@ -37,7 +37,7 @@ class APIShowEventDetailsViewController {
                 // If there is an error parsing JSON, print it to the console
                 println("JSON Error \(err!.localizedDescription)")
             }
-            self.delegate?.didReceiveAPIResults(jsonResult) // THIS IS THE NEW LINE!!
+            self.delegate?.didReceiveAPIResults(jsonResult)
         })
         task.resume()
     }

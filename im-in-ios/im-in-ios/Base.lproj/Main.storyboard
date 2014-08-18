@@ -96,7 +96,7 @@
                                 <color key="textColor" red="0.67450982332229614" green="0.66666668653488159" blue="0.086274512112140656" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="center" minimumFontSize="17" id="qFO-84-05e">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" id="qFO-84-05e">
                                 <rect key="frame" x="16" y="161" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.67450982329999998" green="0.66666668650000005" blue="0.086274512110000007" alpha="1" colorSpace="deviceRGB"/>
@@ -106,7 +106,7 @@
                                     <outlet property="delegate" destination="MR6-X5-dh9" id="SS1-ct-bpe"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="center" minimumFontSize="17" id="PuC-ud-KXC">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" id="PuC-ud-KXC">
                                 <rect key="frame" x="16" y="199" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.67450982329999998" green="0.66666668650000005" blue="0.086274512110000007" alpha="1" colorSpace="deviceRGB"/>
@@ -136,6 +136,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="MR6-X5-dh9" eventType="touchUpInside" id="wX3-5p-hob"/>
+                                    <segue destination="CcU-Vc-QHU" kind="modal" id="kdB-ff-qrK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7LJ-RV-036">
@@ -478,6 +479,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MHX-UE-ZaD"/>
                     <connections>
                         <outlet property="tableView" destination="Hlc-Pg-Tmv" id="pkg-bj-Fhe"/>
                         <outlet property="view" destination="Pp5-HY-cnr" id="UGn-FH-yWA"/>
@@ -485,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0B-dh-lJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6791.1999999999998" y="-7619.0100000000002"/>
+            <point key="canvasLocation" x="-6852" y="-7820"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="326-Nh-tOA">
