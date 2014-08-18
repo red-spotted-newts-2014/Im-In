@@ -10,17 +10,18 @@ import UIKit
 
 //
 //, APIControllerProtocol
-class FriendsAttendingViewController: UIViewController, APIAttendingControllerProtocol, UITableViewDataSource, UITableViewDelegate {
+class FriendsAttendingViewController: UIViewController, APIFriendsAttendingControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
-    var apiCtrl = APIAttendingController()
+    var apiCtrl = APIFriendsAttendingController()
     var attending: NSArray!
+    var eventID: NSString!
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("FriendsAttendingViewController#didReceiveAPIResults")
-                println(results)
-        attending = results.objectForKey("attending_events") as? NSArray
+        println(results)
+        attending = results.objectForKey("friends") as? NSArray
         //        println("****")
         println(attending)
         dispatch_async(dispatch_get_main_queue(),{
@@ -71,7 +72,8 @@ class FriendsAttendingViewController: UIViewController, APIAttendingControllerPr
     {
         // Code to refresh table view
         apiCtrl.delegate = self
-        apiCtrl.loadAllEvents()
+        println(eventID)
+        apiCtrl.loadAllEvents(eventID)
         self.refreshControl.endRefreshing()
     }
     
@@ -84,9 +86,9 @@ class FriendsAttendingViewController: UIViewController, APIAttendingControllerPr
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl)
         
-        
+        println(eventID)
         apiCtrl.delegate = self
-        apiCtrl.loadAllEvents()
+        apiCtrl.loadAllEvents(eventID)
     }
     
 }

@@ -44,5 +44,12 @@ class EventShowViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//        if (segue!.identifier == "showDetails"){
+//            var eventDetailViewController:EventDetailViewController = segue!.destinationViewController as EventDetailViewController
+//            eventDetailViewController.eventData = events.objectAtIndex(selectedIndexPath.row) as NSDictionary
+        var friendsAttendingViewController:FriendsAttendingViewController = segue!.destinationViewController as FriendsAttendingViewController
+        friendsAttendingViewController.eventID = eventIDField.text
+        }
+//    }
 }
