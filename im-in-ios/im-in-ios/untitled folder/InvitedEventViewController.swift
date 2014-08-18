@@ -12,7 +12,7 @@ import UIKit
 class InvitedEventViewController: UIViewController, APIInvitedEventControllerProtocol, UITableViewDataSource, UITableViewDelegate {
    
    @IBOutlet weak var tableView: UITableView!
-   @IBOutlet weak var button: UIButton!
+    
    var apiCtrl = APIInvitedEventController()
    var invitedEvents: NSArray!
    

@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol APICreateEventControllerProtocol {
+protocol APIAddEventControllerProtocol {
     func didReceiveAPIResults(results: NSDictionary)
 }
 
-class APICreateEventController {
+class APIAddEventController {
     
-    var delegate: APICreateEventControllerProtocol?
+    var delegate: APIAddEventControllerProtocol?
     
     init() {
         
@@ -24,7 +24,7 @@ class APICreateEventController {
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
-        var params = ["name": info.objectForKey("name"),"description": info.objectForKey("description"), "start_time": info.objectForKey("start_time"), "end_time": info.objectForKey("end_time"), "venue": info.objectForKey("venue"), "location": info.objectForKey("location"), "notify_user?": info.objectForKey("notify_user?"), "notify_hours_until_event": info.objectForKey("notify_hours_until_event")] as Dictionary
+        var params = ["name": info.objectForKey("name"),"description": info.objectForKey("description"), "start_time": info.objectForKey("start_time"), "end_time": info.objectForKey("end_time"), "venue": info.objectForKey("venue"), "location": info.objectForKey("location")] as Dictionary
         
         var err: NSError?
         request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)
