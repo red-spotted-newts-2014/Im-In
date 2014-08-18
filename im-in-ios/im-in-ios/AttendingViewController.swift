@@ -60,20 +60,35 @@ class AttendingViewController: UIViewController, APIAttendingControllerProtocol,
         return cell
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        println("AttendingViewController#viewDidLoad")
-        apiCtrl.delegate = self
-        apiCtrl.loadAllEvents()
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    var refreshControl:UIRefreshControl!  // An optional variable
     
+    
+    func refresh(sender:AnyObject)
+    {
+        // Code to refresh table view
+        apiCtrl.delegate = self
+        apiCtrl.loadAllEvents()
+        self.refreshControl.endRefreshing()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        println("AttendingViewController#viewDidLoad")
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl)
+        
+        
+        apiCtrl.delegate = self
+        apiCtrl.loadAllEvents()
+    }
 }
 
 
