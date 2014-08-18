@@ -1,10 +1,28 @@
-event name: <%= @event.name %><br><br>
+<div class="container">
+<h1><%= @event_rails.name %></h1>
+<p><strong><span class="blue">description</strong>: </span><%= @event_rails.description %></p>
+<p><strong><span class="blue">location</strong>:  </span><%= @event_rails.location %></p>
+<p><strong><span class="blue">start time</strong>:  </span><%= @event_rails.start_time %></p>
+<p><strong><span class="blue">end time</strong>:  </span><%= @event_rails.end_time %></p>
 
 
-invited users:<br>
+
+<h3>ATTENDING</h3>
+<% if @sent_invitations.length == 0 %>
+  No friends attending, yet.
+  <% else %>
 <% @sent_invitations.each do |invite| %>
-  <%= invite.user_id %><br>
+  <%= invite.find_username(invite.user_id) %><br>
 <% end %>
-
+<% end %>
 <br><br>
-<%= link_to "add more people", new_event_invitation_path(@event) %>
+<button>
+<%= link_to "INVITED INS", events_path %>
+</button>
+<button>
+<%= link_to "CREATED INS", user_events_created_path(current_user) %>
+</button>
+<button>
+<%= link_to "ADD FRIENDS", new_event_invitation_path(@event_rails) %>
+</button>
+</div>

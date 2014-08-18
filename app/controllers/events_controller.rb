@@ -33,6 +33,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.where(id: params[:id])
+    @event_rails = Event.find(params[:id])
     @sent_invitations = @event.first.invitations
     @users = []
     @sent_invitations.each do |invite|

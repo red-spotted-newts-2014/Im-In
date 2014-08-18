@@ -15,6 +15,9 @@ class UsersController < ApplicationController
 
   def login
     p "here"
+    p params
+    params[:password] = params[:user][:password]
+    params[:username] = params[:user][:username]
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
       p "logged in!!"
@@ -74,25 +77,25 @@ class UsersController < ApplicationController
     @friend = User.find_by(username: params[:user][:username])
     redirect_to user_following_path unless current_user
     # if current_user
-    if current_user == @friend
-      flash[:error] = "You cannot follow yourself."
-      redirect_to user_path(current_user)
-    else
+    # if current_user == @friend
+      # flash[:error] = "You cannot follow yourself."
+      # redirect_to user_following_path(current_user)
+    # else
       current_user.follow(@friend)
-      flash[:notice] = "You are now following #{@friend.username}."
+      # flash[:notice] = "You are now following #{@friend.username}."
       redirect_to user_following_path(current_user)
-    end
+    # end
     # end
   end
 
   def unfollow
     @friend = User.find_by(username: params[:user][:username])
 
-    redirect_to user_followers_path unless current_user
+    redirect_to user_following_path unless current_user
     # if current_user
     current_user.stop_following(@friend)
     flash[:notice] = "You are no longer following #{@friend.username}."
-    redirect_to user_follower_path(@user)
+    redirect_to user_following_path(@user)
     # end
   end
 

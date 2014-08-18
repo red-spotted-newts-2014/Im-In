@@ -1,6 +1,11 @@
-invite more people:
+<div class="container">
+
+<h3>invite more people</h3>
+
 <%= form_for :invitation, url: event_invitations_path do |f| %>
   <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.submit "add person" %>
+  <%= f.text_field :username %><br><br>
+  <%= f.submit "add person", class: "button" %>
 <% end %>
+
+</div>

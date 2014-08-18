@@ -1,4 +1,16 @@
-ATTENDING EVENTS:<br>
+<div class="container">
+<h1>ATTENDING EVENTS</h1><br>
 <% @attending_events.each do |event| %>
-  <%= event.name %><br>
+  <%= link_to "#{event.name} - #{event.location}", event_path(event) %><br>
 <% end %>
+<br><br>
+<button>
+<%= link_to "INVITED INS", events_path %>
+</button>
+<button>
+<%= link_to "CREATED INS", user_events_created_path(current_user) %>
+</button>
+<button>
+<%= link_to "CREATE NEW IN", new_event_path %>
+</button>
+</div>

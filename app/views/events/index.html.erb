@@ -1,8 +1,17 @@
-ALL INVITED EVENTS FOR USER<br>
+<div class="container">
+<h1>EVENTS YOU ARE INVITED TO</h1>
 <% @invited_events.each do |event| %>
-  <%= event.name %><br>
+  <%= link_to "#{event.name} - #{event.location}", event_path(event) %><br>
 <% end %>
 <br><br>
 
-
-<%= link_to "add new event", new_event_path %>
+<button>
+<%= link_to "ATTENDING INS", user_events_attending_path(current_user) %>
+</button>
+<button>
+<%= link_to "CREATED INS", user_events_created_path(current_user) %>
+</button>
+<button>
+<%= link_to "CREATE NEW IN", new_event_path %>
+</button>
+</div>

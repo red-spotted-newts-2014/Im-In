@@ -1,5 +1,17 @@
-followers<br><br>
+<div class="container">
+<h1>FOLLOWERS</h1>
 
 <% @followers.each do |friend| %>
   <%= friend.username %><br>
 <% end %>
+<br><br>
+<button>
+<%= link_to "ATTENDING INS", user_events_attending_path(current_user) %>
+</button>
+<button>
+<%= link_to "CREATED INS", user_events_created_path(current_user) %>
+</button>
+<button>
+<%= link_to "CREATE NEW IN", new_event_path %>
+</button>
+</div>
