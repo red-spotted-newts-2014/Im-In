@@ -15,13 +15,15 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    
     func didReceiveAPIResults(results: NSDictionary) {
         println("LogInViewController#didReceiveAPIResults")
     }
     @IBOutlet weak var incorrectEntry: UITextField!
     
+    
     func sendLogInInfo(info: NSDictionary) {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://10.0.2.26:3000/users/login_ios"))
+        var request = NSMutableURLRequest(URL: NSURL(string: "http:10.0.2.26:3000/users/login_ios"))
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
@@ -38,9 +40,13 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
         connection.start()
         println("Sending request")
     }
+
     
     @IBAction func buttonPressed(sender: AnyObject) {
+        
+
         println("pressed")
+
         var params = ["username": usernameField.text, "password": passwordField.text] as Dictionary
         apiCtrl.sendLogInInfo(params)
     }
