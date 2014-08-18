@@ -725,6 +725,12 @@
                                     <segue destination="GJ6-HY-VJs" kind="push" id="fSu-tw-hi1"/>
                                 </connections>
                             </button>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xgc-p6-gKT">
+                                <rect key="frame" x="16" y="525" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6yN-NI-qP1">
                                 <rect key="frame" x="16" y="79" width="57" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -745,17 +751,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xgc-p6-gKT">
-                                <rect key="frame" x="16" y="525" width="33" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r9U-dr-aU2">
+                                <rect key="frame" x="16" y="510" width="288" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <color key="backgroundColor" red="0.0" green="0.0027882601730730983" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="ARE YOU IN??? or nah">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="areuin:" destination="jM9-bO-iRe" eventType="touchUpInside" id="lTk-za-DFd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="f97-Br-0uq"/>
                     <connections>
+                        <outlet property="areuin" destination="r9U-dr-aU2" id="Dq2-KA-eJI"/>
                         <outlet property="creatorField" destination="D8A-Iu-QWe" id="i2o-oD-MiM"/>
                         <outlet property="descTextField" destination="mxz-aI-S3c" id="wdZ-Gk-bSR"/>
                         <outlet property="endTextField" destination="ezK-Lh-9C5" id="Emb-bY-MV3"/>

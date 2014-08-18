@@ -19,11 +19,24 @@ class EventShowViewController: UIViewController {
     @IBOutlet var creatorField: UITextField!
     @IBOutlet var eventIDField: UITextField!
 
+    @IBOutlet var areuin: UIButton!
+    
+    
     var eventData:NSDictionary = NSDictionary()
     
+    @IBAction func areuin(sender: AnyObject) {
+        if (areuin.backgroundColor == UIColor.purpleColor()) {
+            areuin.backgroundColor = UIColor.blueColor()
+            areuin.setTitle("ARE YOU IN ??? or nah", forState: .Normal)
+        } else {
+            areuin.backgroundColor = UIColor.purpleColor()
+            areuin.setTitle("I'M IN", forState: .Normal)
+        }
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        areuin.tintColor = UIColor.redColor()
         nameTextField.userInteractionEnabled = false
         descTextField.userInteractionEnabled = false
         venueTextField.userInteractionEnabled = false
@@ -32,6 +45,7 @@ class EventShowViewController: UIViewController {
         endTextField.userInteractionEnabled = false
         creatorField.userInteractionEnabled = false
         eventIDField.userInteractionEnabled = false
+        
         
         nameTextField.text = eventData.objectForKey("name") as String
         creatorField.text = eventData.objectForKey("username") as String
