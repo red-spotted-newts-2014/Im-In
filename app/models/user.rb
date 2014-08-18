@@ -10,4 +10,6 @@ class User < ActiveRecord::Base
   def attending_events
     self.invitations.where(status: "in").map { |invite| Event.find(invite.event_id) }
   end
+
+
 end
