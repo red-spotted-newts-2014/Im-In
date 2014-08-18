@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+ html {
+  background: url("http://skilal.com/wp-content/uploads/2014/07/Black-and-White-City-No-Cross-Walk-TLG-Skyline.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Quicksand";
+}
+
+.container {
+  border: 1px solid black;
+  padding: 10px;
+  width: 600px;
+  background-color: #575757;
+  background-color: rgba(87,87,87, 0.6);
+  margin: 120px auto;
+  color: white;
+  text-align: center;
+}
+
+button {
+  background-color: #1fbad6;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+}
+
+.button {
+  background-color: #1fbad6;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+/*.blue {
+  color: #1fbad6;
+  size: 20px;
+}*/
+
+nav {
+  text-align: right;
+}
