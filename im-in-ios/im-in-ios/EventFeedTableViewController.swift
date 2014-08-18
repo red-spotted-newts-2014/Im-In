@@ -46,6 +46,7 @@ class EventFeedTableViewController: UITableViewController {
         
         var event:NSDictionary = events.objectAtIndex(indexPath.row) as NSDictionary
         cell.textLabel.text = event.objectForKey("name") as String
+        cell.detailTextLabel.text = event.objectForKey("username") as String
         
         return cell
         
