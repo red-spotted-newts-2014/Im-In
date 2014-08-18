@@ -644,7 +644,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="1SV-tU-FbS" kind="push" identifier="showDetail" id="A37-xv-46w"/>
+                                    <segue destination="1SV-tU-FbS" kind="push" identifier="showDetails" id="A37-xv-46w"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -652,7 +652,7 @@
                     <navigationItem key="navigationItem" title="Event Feed" id="2Bn-5g-Bmv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8gP-6Q-Pu5">
                             <connections>
-                                <segue destination="qJd-hz-hSh" kind="push" id="RQf-Oa-T5X"/>
+                                <segue destination="qJd-hz-hSh" kind="push" identifier="" id="RQf-Oa-T5X"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -669,13 +669,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="63Z-d8-Fzr">
-                                <rect key="frame" x="16" y="67" width="288" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="SQ5-Ok-bK0">
                                 <rect key="frame" x="113" y="339" width="197" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -766,14 +759,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="63Z-d8-Fzr">
+                                <rect key="frame" x="16" y="67" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9IP-b2-gmE"/>
+                    <connections>
+                        <outlet property="descTextField" destination="YYQ-OG-A1R" id="mku-W3-eDS"/>
+                        <outlet property="endTextField" destination="77s-ga-nY8" id="s5f-x2-Bhh"/>
+                        <outlet property="locationTextField" destination="TKB-WJ-5in" id="x9E-VW-rBY"/>
+                        <outlet property="nameTextField" destination="F3m-ea-hLY" id="8e3-Nq-UHX"/>
+                        <outlet property="startTextField" destination="4F9-bY-tSf" id="nhq-7o-4FM"/>
+                        <outlet property="venueTextField" destination="SQ5-Ok-bK0" id="B0O-3w-Vw8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pp3-vB-idl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5512" y="-9514"/>
+            <point key="canvasLocation" x="-5512" y="-9398"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="noW-ob-YKH">
