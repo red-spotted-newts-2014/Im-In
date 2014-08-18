@@ -20,9 +20,13 @@ class APIFriendsAttendingController {
         
     }
     
-    func loadAllEvents() {
+    func loadAllEvents(eventID: AnyObject) {
         println("APIController#loadAllEvents")
-        let urlPath = "http://10.0.2.26:3000/events/1/attending.json"
+        let eventID = eventID as String
+        println("***")
+        println(eventID)
+        let urlPath = "http://localhost:3000/events/" + eventID + "/attending.json"
+        println(urlPath)
         let url: NSURL = NSURL(string: urlPath)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
