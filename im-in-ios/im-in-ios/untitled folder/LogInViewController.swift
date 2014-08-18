@@ -39,30 +39,11 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
         println("Sending request")
     }
     
-    @IBAction func loginButton(sender: AnyObject) {
-        var usr = "usr"
-        var pass = "pass"
-        
-        if usernameField.text == usr &&
-            passwordField.text == pass
-        {
-            usernameField.resignFirstResponder()
-            passwordField.resignFirstResponder()
-            
-        }
-        else
-        {
-            incorrectEntry.text = "Incorrect username/password"
-            usernameField.resignFirstResponder()
-            passwordField.resignFirstResponder()
+    @IBAction func buttonPressed(sender: AnyObject) {
+        println("pressed")
+        var params = ["username": usernameField.text, "password": passwordField.text] as Dictionary
+        apiCtrl.sendLogInInfo(params)
     }
-//    @IBAction func buttonPressed(sender: AnyObject) {
-//        println("pressed")
-//        var params = ["username": usernameField.text, "password": passwordField.text] as Dictionary
-//        apiCtrl.sendLogInInfo(params)
-    }
-    
-    
 }
 
 
