@@ -22,7 +22,7 @@ class APIInvitedEventController {
     
     func loadAllEvents() {
         println("APIController#loadAllEvents")
-        let urlPath = "http://10.0.2.26:3000/events.json"
+        let urlPath = "http://10.0.2.87:3000/events.json"
         let url: NSURL = NSURL(string: urlPath)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
