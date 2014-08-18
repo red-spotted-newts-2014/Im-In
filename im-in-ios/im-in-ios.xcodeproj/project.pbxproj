@@ -7,35 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130970EF199F00AA00F46C1D /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970EE199F00AA00F46C1D /* FollowersViewController.swift */; };
-		130970F1199F00C800F46C1D /* APIFollowersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970F0199F00C800F46C1D /* APIFollowersController.swift */; };
-		130970F7199F110800F46C1D /* CreatedEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970F6199F110800F46C1D /* CreatedEventsViewController.swift */; };
-		130970F9199F112200F46C1D /* APICreatedEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970F8199F112200F46C1D /* APICreatedEventsController.swift */; };
-		130970FB199F163700F46C1D /* APIAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FA199F163700F46C1D /* APIAttendingViewController.swift */; };
-		130970FD199F166200F46C1D /* AttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130970FC199F166200F46C1D /* AttendingViewController.swift */; };
-		130B82E519A04866004AD487 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B82E419A04866004AD487 /* CreateEventViewController.swift */; };
-		130B82E719A049B9004AD487 /* APICreateEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B82E619A049B9004AD487 /* APICreateEventController.swift */; };
-		133F235919A10C0B00F6B24D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F235819A10C0B00F6B24D /* SignUpViewController.swift */; };
-		1384626C199EF16700666DC8 /* APIFollowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626B199EF16700666DC8 /* APIFollowingController.swift */; };
-		1384626E199EF23600666DC8 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384626D199EF23600666DC8 /* FollowingViewController.swift */; };
+		13245BF519A1AAE000201E2F /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BDA19A1AAE000201E2F /* AddFriendsViewController.swift */; };
+		13245BF619A1AAE000201E2F /* APIAddFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BDB19A1AAE000201E2F /* APIAddFriendsController.swift */; };
+		13245BF719A1AAE000201E2F /* APIAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BDC19A1AAE000201E2F /* APIAttendingViewController.swift */; };
+		13245BF819A1AAE000201E2F /* APICreatedEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BDD19A1AAE000201E2F /* APICreatedEventsController.swift */; };
+		13245BF919A1AAE000201E2F /* APIAddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BDE19A1AAE000201E2F /* APIAddEventController.swift */; };
+		13245BFA19A1AAE000201E2F /* APIEditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BDF19A1AAE000201E2F /* APIEditProfileController.swift */; };
+		13245BFB19A1AAE000201E2F /* APIFollowersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE019A1AAE000201E2F /* APIFollowersController.swift */; };
+		13245BFC19A1AAE000201E2F /* APIFollowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE119A1AAE000201E2F /* APIFollowingController.swift */; };
+		13245BFD19A1AAE000201E2F /* APIFriendsAttendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE219A1AAE000201E2F /* APIFriendsAttendingController.swift */; };
+		13245BFE19A1AAE000201E2F /* APIInvitedEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */; };
+		13245BFF19A1AAE000201E2F /* APILogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE419A1AAE000201E2F /* APILogInController.swift */; };
+		13245C0019A1AAE000201E2F /* APIShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE519A1AAE000201E2F /* APIShowEventDetailsViewController.swift */; };
+		13245C0119A1AAE000201E2F /* APISignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE619A1AAE000201E2F /* APISignUpController.swift */; };
+		13245C0219A1AAE000201E2F /* APIUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE719A1AAE000201E2F /* APIUserProfileViewController.swift */; };
+		13245C0319A1AAE000201E2F /* AttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE819A1AAE000201E2F /* AttendingViewController.swift */; };
+		13245C0419A1AAE000201E2F /* CreatedEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BE919A1AAE000201E2F /* CreatedEventsViewController.swift */; };
+		13245C0619A1AAE000201E2F /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BEB19A1AAE000201E2F /* EditProfileViewController.swift */; };
+		13245C0719A1AAE000201E2F /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BEC19A1AAE000201E2F /* FollowersViewController.swift */; };
+		13245C0819A1AAE000201E2F /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BED19A1AAE000201E2F /* FollowingViewController.swift */; };
+		13245C0919A1AAE000201E2F /* FriendsAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */; };
+		13245C0A19A1AAE000201E2F /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BEF19A1AAE000201E2F /* InvitedEventViewController.swift */; };
+		13245C0B19A1AAE000201E2F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF019A1AAE000201E2F /* LogInViewController.swift */; };
+		13245C0C19A1AAE000201E2F /* ShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */; };
+		13245C0D19A1AAE000201E2F /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF219A1AAE000201E2F /* ShowProfileViewController.swift */; };
+		13245C0E19A1AAE000201E2F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF319A1AAE000201E2F /* SignUpViewController.swift */; };
+		13245C0F19A1AAE000201E2F /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF419A1AAE000201E2F /* testController.swift */; };
+		13245C1119A1AE4000201E2F /* EventFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */; };
+		13245C1519A1AF2800201E2F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245C1419A1AF2800201E2F /* EventDetailViewController.swift */; };
 		13866D52199DB86C00F55B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13866D50199DB86C00F55B0A /* Main.storyboard */; };
-		13866D54199DB97000F55B0A /* APIInvitedEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13866D53199DB97000F55B0A /* APIInvitedEventController.swift */; };
-		13866D56199DBA2300F55B0A /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */; };
-		13CACA6D199FEA0400A0D02F /* APIFriendsAttendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA6C199FEA0400A0D02F /* APIFriendsAttendingController.swift */; };
-		13CACA6F199FEA5800A0D02F /* FriendsAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA6E199FEA5800A0D02F /* FriendsAttendingViewController.swift */; };
-		13CACA71199FFC4400A0D02F /* APIShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA70199FFC4400A0D02F /* APIShowEventDetailsViewController.swift */; };
-		13CACA73199FFC5F00A0D02F /* ShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CACA72199FFC5F00A0D02F /* ShowEventDetailsViewController.swift */; };
-		13D3090C19A01B03003269D4 /* APIUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3090B19A01B03003269D4 /* APIUserProfileViewController.swift */; };
-		13D3090E19A01B1D003269D4 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3090D19A01B1D003269D4 /* ShowProfileViewController.swift */; };
-		13D3091419A02787003269D4 /* APIEditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3090F19A02787003269D4 /* APIEditProfileController.swift */; };
-		13D3091519A02787003269D4 /* APILogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091019A02787003269D4 /* APILogInController.swift */; };
-		13D3091619A02787003269D4 /* APISignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091119A02787003269D4 /* APISignUpController.swift */; };
-		13D3091719A02787003269D4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091219A02787003269D4 /* EditProfileViewController.swift */; };
-		13D3091819A02787003269D4 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091319A02787003269D4 /* LogInViewController.swift */; };
-		13D3091A19A02CD8003269D4 /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3091919A02CD8003269D4 /* testController.swift */; };
 		13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2B3199DB5C20024D110 /* AppDelegate.swift */; };
 		13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DAB2BA199DB5C20024D110 /* Images.xcassets */; };
 		13DAB2C7199DB5C20024D110 /* im_in_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2C6199DB5C20024D110 /* im_in_iosTests.swift */; };
+		13E655D919A1DD8300B4C117 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245C1419A1AF2800201E2F /* EventDetailViewController.swift */; };
+		13E655DC19A1E55800B4C117 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E655DB19A1E55800B4C117 /* AddEventViewController.swift */; };
 		13FD37B519A0894B00D3887C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FD37B419A0894B00D3887C /* Default@2x.png */; };
 		13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13FD380E19A0F59E00D3887C /* Im'in.jpg */; };
 /* End PBXBuildFile section */
@@ -51,32 +56,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		130970EE199F00AA00F46C1D /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
-		130970F0199F00C800F46C1D /* APIFollowersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowersController.swift; sourceTree = "<group>"; };
-		130970F6199F110800F46C1D /* CreatedEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedEventsViewController.swift; sourceTree = "<group>"; };
-		130970F8199F112200F46C1D /* APICreatedEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICreatedEventsController.swift; sourceTree = "<group>"; };
-		130970FA199F163700F46C1D /* APIAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAttendingViewController.swift; sourceTree = "<group>"; };
-		130970FC199F166200F46C1D /* AttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingViewController.swift; sourceTree = "<group>"; };
-		130B82E419A04866004AD487 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
-		130B82E619A049B9004AD487 /* APICreateEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICreateEventController.swift; sourceTree = "<group>"; };
-		133F235819A10C0B00F6B24D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		1384626B199EF16700666DC8 /* APIFollowingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowingController.swift; sourceTree = "<group>"; };
-		1384626D199EF23600666DC8 /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		13245BDA19A1AAE000201E2F /* AddFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		13245BDB19A1AAE000201E2F /* APIAddFriendsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAddFriendsController.swift; sourceTree = "<group>"; };
+		13245BDC19A1AAE000201E2F /* APIAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIAttendingViewController.swift; sourceTree = "<group>"; };
+		13245BDD19A1AAE000201E2F /* APICreatedEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICreatedEventsController.swift; sourceTree = "<group>"; };
+		13245BDE19A1AAE000201E2F /* APIAddEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIAddEventController.swift; path = "untitled folder/APIAddEventController.swift"; sourceTree = "<group>"; };
+		13245BDF19A1AAE000201E2F /* APIEditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEditProfileController.swift; sourceTree = "<group>"; };
+		13245BE019A1AAE000201E2F /* APIFollowersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowersController.swift; sourceTree = "<group>"; };
+		13245BE119A1AAE000201E2F /* APIFollowingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowingController.swift; sourceTree = "<group>"; };
+		13245BE219A1AAE000201E2F /* APIFriendsAttendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFriendsAttendingController.swift; sourceTree = "<group>"; };
+		13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvitedEventController.swift; sourceTree = "<group>"; };
+		13245BE419A1AAE000201E2F /* APILogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogInController.swift; sourceTree = "<group>"; };
+		13245BE519A1AAE000201E2F /* APIShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIShowEventDetailsViewController.swift; sourceTree = "<group>"; };
+		13245BE619A1AAE000201E2F /* APISignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISignUpController.swift; sourceTree = "<group>"; };
+		13245BE719A1AAE000201E2F /* APIUserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUserProfileViewController.swift; sourceTree = "<group>"; };
+		13245BE819A1AAE000201E2F /* AttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingViewController.swift; sourceTree = "<group>"; };
+		13245BE919A1AAE000201E2F /* CreatedEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedEventsViewController.swift; sourceTree = "<group>"; };
+		13245BEB19A1AAE000201E2F /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		13245BEC19A1AAE000201E2F /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		13245BED19A1AAE000201E2F /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAttendingViewController.swift; sourceTree = "<group>"; };
+		13245BEF19A1AAE000201E2F /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
+		13245BF019A1AAE000201E2F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEventDetailsViewController.swift; sourceTree = "<group>"; };
+		13245BF219A1AAE000201E2F /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
+		13245BF319A1AAE000201E2F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		13245BF419A1AAE000201E2F /* testController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
+		13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedTableViewController.swift; sourceTree = "<group>"; };
+		13245C1419A1AF2800201E2F /* EventDetailViewController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		13866D51199DB86C00F55B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13866D53199DB97000F55B0A /* APIInvitedEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvitedEventController.swift; sourceTree = "<group>"; };
-		13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
-		13CACA6C199FEA0400A0D02F /* APIFriendsAttendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFriendsAttendingController.swift; sourceTree = "<group>"; };
-		13CACA6E199FEA5800A0D02F /* FriendsAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAttendingViewController.swift; sourceTree = "<group>"; };
-		13CACA70199FFC4400A0D02F /* APIShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIShowEventDetailsViewController.swift; sourceTree = "<group>"; };
-		13CACA72199FFC5F00A0D02F /* ShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEventDetailsViewController.swift; sourceTree = "<group>"; };
-		13D3090B19A01B03003269D4 /* APIUserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUserProfileViewController.swift; sourceTree = "<group>"; };
-		13D3090D19A01B1D003269D4 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
-		13D3090F19A02787003269D4 /* APIEditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEditProfileController.swift; sourceTree = "<group>"; };
-		13D3091019A02787003269D4 /* APILogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogInController.swift; sourceTree = "<group>"; };
-		13D3091119A02787003269D4 /* APISignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISignUpController.swift; sourceTree = "<group>"; };
-		13D3091219A02787003269D4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		13D3091319A02787003269D4 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		13D3091919A02CD8003269D4 /* testController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
 		13DAB2AE199DB5C20024D110 /* im-in-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "im-in-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAB2B2199DB5C20024D110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13DAB2B3199DB5C20024D110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 		13DAB2C0199DB5C20024D110 /* im-in-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "im-in-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAB2C5199DB5C20024D110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13DAB2C6199DB5C20024D110 /* im_in_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = im_in_iosTests.swift; sourceTree = "<group>"; };
+		13E655DB19A1E55800B4C117 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		13FD37B419A0894B00D3887C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images.xcassets/LaunchImage.launchimage/Default@2x.png"; sourceTree = "<group>"; };
 		13FD380E19A0F59E00D3887C /* Im'in.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Im'in.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +115,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13245BD919A1AAE000201E2F /* untitled folder */ = {
+			isa = PBXGroup;
+			children = (
+				13245BDA19A1AAE000201E2F /* AddFriendsViewController.swift */,
+				13245BDB19A1AAE000201E2F /* APIAddFriendsController.swift */,
+				13245BDC19A1AAE000201E2F /* APIAttendingViewController.swift */,
+				13245BDD19A1AAE000201E2F /* APICreatedEventsController.swift */,
+				13245BDF19A1AAE000201E2F /* APIEditProfileController.swift */,
+				13245BE019A1AAE000201E2F /* APIFollowersController.swift */,
+				13245BE119A1AAE000201E2F /* APIFollowingController.swift */,
+				13245BE219A1AAE000201E2F /* APIFriendsAttendingController.swift */,
+				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
+				13245BE419A1AAE000201E2F /* APILogInController.swift */,
+				13245BE519A1AAE000201E2F /* APIShowEventDetailsViewController.swift */,
+				13245BE619A1AAE000201E2F /* APISignUpController.swift */,
+				13245BE719A1AAE000201E2F /* APIUserProfileViewController.swift */,
+				13245BE819A1AAE000201E2F /* AttendingViewController.swift */,
+				13245BE919A1AAE000201E2F /* CreatedEventsViewController.swift */,
+				13245BEB19A1AAE000201E2F /* EditProfileViewController.swift */,
+				13245BEC19A1AAE000201E2F /* FollowersViewController.swift */,
+				13245BED19A1AAE000201E2F /* FollowingViewController.swift */,
+				13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */,
+				13245BEF19A1AAE000201E2F /* InvitedEventViewController.swift */,
+				13245BF019A1AAE000201E2F /* LogInViewController.swift */,
+				13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */,
+				13245BF219A1AAE000201E2F /* ShowProfileViewController.swift */,
+				13245BF319A1AAE000201E2F /* SignUpViewController.swift */,
+				13245BF419A1AAE000201E2F /* testController.swift */,
+			);
+			path = "untitled folder";
+			sourceTree = "<group>";
+		};
 		13DAB2A5199DB5C20024D110 = {
 			isa = PBXGroup;
 			children = (
@@ -128,36 +169,16 @@
 			isa = PBXGroup;
 			children = (
 				13FD380E19A0F59E00D3887C /* Im'in.jpg */,
-				13D3090F19A02787003269D4 /* APIEditProfileController.swift */,
-				13D3091019A02787003269D4 /* APILogInController.swift */,
-				13D3091319A02787003269D4 /* LogInViewController.swift */,
-				13D3091119A02787003269D4 /* APISignUpController.swift */,
-				133F235819A10C0B00F6B24D /* SignUpViewController.swift */,
-				13D3091219A02787003269D4 /* EditProfileViewController.swift */,
 				13DAB2B3199DB5C20024D110 /* AppDelegate.swift */,
-				13866D53199DB97000F55B0A /* APIInvitedEventController.swift */,
-				13866D55199DBA2300F55B0A /* InvitedEventViewController.swift */,
-				1384626B199EF16700666DC8 /* APIFollowingController.swift */,
-				1384626D199EF23600666DC8 /* FollowingViewController.swift */,
-				130970F0199F00C800F46C1D /* APIFollowersController.swift */,
-				130970EE199F00AA00F46C1D /* FollowersViewController.swift */,
-				130970F8199F112200F46C1D /* APICreatedEventsController.swift */,
-				130970F6199F110800F46C1D /* CreatedEventsViewController.swift */,
-				130970FA199F163700F46C1D /* APIAttendingViewController.swift */,
-				130970FC199F166200F46C1D /* AttendingViewController.swift */,
-				13CACA6C199FEA0400A0D02F /* APIFriendsAttendingController.swift */,
-				13CACA6E199FEA5800A0D02F /* FriendsAttendingViewController.swift */,
-				13CACA70199FFC4400A0D02F /* APIShowEventDetailsViewController.swift */,
-				13CACA72199FFC5F00A0D02F /* ShowEventDetailsViewController.swift */,
-				13D3090B19A01B03003269D4 /* APIUserProfileViewController.swift */,
-				13D3090D19A01B1D003269D4 /* ShowProfileViewController.swift */,
-				130B82E619A049B9004AD487 /* APICreateEventController.swift */,
-				130B82E419A04866004AD487 /* CreateEventViewController.swift */,
+				13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */,
+				13245BDE19A1AAE000201E2F /* APIAddEventController.swift */,
+				13E655DB19A1E55800B4C117 /* AddEventViewController.swift */,
+				13245C1419A1AF2800201E2F /* EventDetailViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
 				13FD37B419A0894B00D3887C /* Default@2x.png */,
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
+				13245BD919A1AAE000201E2F /* untitled folder */,
 				13DAB2B1199DB5C20024D110 /* Supporting Files */,
-				13D3091919A02CD8003269D4 /* testController.swift */,
 			);
 			path = "im-in-ios";
 			sourceTree = "<group>";
@@ -289,32 +310,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13CACA6D199FEA0400A0D02F /* APIFriendsAttendingController.swift in Sources */,
-				13CACA71199FFC4400A0D02F /* APIShowEventDetailsViewController.swift in Sources */,
-				13D3091819A02787003269D4 /* LogInViewController.swift in Sources */,
-				13CACA6F199FEA5800A0D02F /* FriendsAttendingViewController.swift in Sources */,
-				130970F7199F110800F46C1D /* CreatedEventsViewController.swift in Sources */,
-				133F235919A10C0B00F6B24D /* SignUpViewController.swift in Sources */,
-				130970EF199F00AA00F46C1D /* FollowersViewController.swift in Sources */,
-				130970FB199F163700F46C1D /* APIAttendingViewController.swift in Sources */,
-				13866D56199DBA2300F55B0A /* InvitedEventViewController.swift in Sources */,
-				1384626E199EF23600666DC8 /* FollowingViewController.swift in Sources */,
+				13245C1519A1AF2800201E2F /* EventDetailViewController.swift in Sources */,
+				13E655DC19A1E55800B4C117 /* AddEventViewController.swift in Sources */,
+				13245BFA19A1AAE000201E2F /* APIEditProfileController.swift in Sources */,
+				13245BFD19A1AAE000201E2F /* APIFriendsAttendingController.swift in Sources */,
+				13245BF719A1AAE000201E2F /* APIAttendingViewController.swift in Sources */,
+				13245C1119A1AE4000201E2F /* EventFeedTableViewController.swift in Sources */,
+				13245C0419A1AAE000201E2F /* CreatedEventsViewController.swift in Sources */,
+				13245C0819A1AAE000201E2F /* FollowingViewController.swift in Sources */,
+				13245BFB19A1AAE000201E2F /* APIFollowersController.swift in Sources */,
+				13245C0E19A1AAE000201E2F /* SignUpViewController.swift in Sources */,
+				13245BFE19A1AAE000201E2F /* APIInvitedEventController.swift in Sources */,
+				13245C0319A1AAE000201E2F /* AttendingViewController.swift in Sources */,
+				13245C0619A1AAE000201E2F /* EditProfileViewController.swift in Sources */,
+				13245BF519A1AAE000201E2F /* AddFriendsViewController.swift in Sources */,
+				13245BFF19A1AAE000201E2F /* APILogInController.swift in Sources */,
+				13245C0A19A1AAE000201E2F /* InvitedEventViewController.swift in Sources */,
+				13245C0219A1AAE000201E2F /* APIUserProfileViewController.swift in Sources */,
+				13245BFC19A1AAE000201E2F /* APIFollowingController.swift in Sources */,
+				13245C0C19A1AAE000201E2F /* ShowEventDetailsViewController.swift in Sources */,
+				13245C0719A1AAE000201E2F /* FollowersViewController.swift in Sources */,
+				13245C0119A1AAE000201E2F /* APISignUpController.swift in Sources */,
+				13245BF619A1AAE000201E2F /* APIAddFriendsController.swift in Sources */,
+				13245BF919A1AAE000201E2F /* APIAddEventController.swift in Sources */,
+				13245C0D19A1AAE000201E2F /* ShowProfileViewController.swift in Sources */,
+				13245BF819A1AAE000201E2F /* APICreatedEventsController.swift in Sources */,
+				13245C0019A1AAE000201E2F /* APIShowEventDetailsViewController.swift in Sources */,
+				13245C0F19A1AAE000201E2F /* testController.swift in Sources */,
+				13245C0B19A1AAE000201E2F /* LogInViewController.swift in Sources */,
+				13245C0919A1AAE000201E2F /* FriendsAttendingViewController.swift in Sources */,
 				13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */,
-				13D3090C19A01B03003269D4 /* APIUserProfileViewController.swift in Sources */,
-				130970FD199F166200F46C1D /* AttendingViewController.swift in Sources */,
-				130970F9199F112200F46C1D /* APICreatedEventsController.swift in Sources */,
-				13D3091619A02787003269D4 /* APISignUpController.swift in Sources */,
-				130B82E719A049B9004AD487 /* APICreateEventController.swift in Sources */,
-				13D3091419A02787003269D4 /* APIEditProfileController.swift in Sources */,
-				13D3090E19A01B1D003269D4 /* ShowProfileViewController.swift in Sources */,
-				13D3091A19A02CD8003269D4 /* testController.swift in Sources */,
-				13D3091519A02787003269D4 /* APILogInController.swift in Sources */,
-				130970F1199F00C800F46C1D /* APIFollowersController.swift in Sources */,
-				13CACA73199FFC5F00A0D02F /* ShowEventDetailsViewController.swift in Sources */,
-				1384626C199EF16700666DC8 /* APIFollowingController.swift in Sources */,
-				13866D54199DB97000F55B0A /* APIInvitedEventController.swift in Sources */,
-				13D3091719A02787003269D4 /* EditProfileViewController.swift in Sources */,
-				130B82E519A04866004AD487 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E655D919A1DD8300B4C117 /* EventDetailViewController.swift in Sources */,
 				13DAB2C7199DB5C20024D110 /* im_in_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
