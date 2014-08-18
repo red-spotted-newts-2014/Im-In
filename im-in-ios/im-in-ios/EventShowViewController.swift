@@ -11,7 +11,6 @@ import UIKit
 class EventShowViewController: UIViewController {
     
     @IBOutlet var nameTextField: UITextField!
-   
     @IBOutlet var descTextField: UITextView!
     @IBOutlet var venueTextField: UITextField!
     @IBOutlet var locationTextField: UITextField!

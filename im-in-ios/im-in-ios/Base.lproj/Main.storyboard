@@ -73,13 +73,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXy-A7-jFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="kSN-co-Efk">
-                    <connections>
-                        <segue destination="MR6-X5-dh9" kind="modal" id="nzY-H7-fTN"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="kSN-co-Efk"/>
             </objects>
-            <point key="canvasLocation" x="-6322.3999999999996" y="-8458.2299999999996"/>
+            <point key="canvasLocation" x="-7385" y="-8695"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="n4r-uH-ItD">
@@ -139,6 +135,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mLS-kw-jPN"/>
                     <connections>
                         <outlet property="logInButton" destination="NIx-y0-KNW" id="hJV-a4-Ji4"/>
                         <outlet property="passwordField" destination="PuC-ud-KXC" id="cWe-B6-qXp"/>
@@ -147,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEe-kY-ZZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6852" y="-8464"/>
+            <point key="canvasLocation" x="-7385" y="-9439"/>
         </scene>
         <!--Event Feed-->
         <scene sceneID="z8W-q9-Bsf">
@@ -183,7 +180,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="jM9-bO-iRe" kind="push" identifier="showInvited" id="MAq-Bk-9I0"/>
+                                            <segue destination="jM9-bO-iRe" kind="push" identifier="showInvited" id="rVB-eb-A2y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -202,7 +199,7 @@
                     <navigationItem key="navigationItem" title="Event Feed" id="34E-oK-CEj">
                         <barButtonItem key="rightBarButtonItem" title="My Events" id="ZtY-R2-0Eb">
                             <connections>
-                                <segue destination="8z3-BH-QXL" kind="push" id="aBK-QG-fBT"/>
+                                <segue destination="8z3-BH-QXL" kind="push" identifier="toCreatedEvents" id="aBK-QG-fBT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -213,7 +210,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAP-IH-bF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="SwC-eu-8xh"/>
             </objects>
-            <point key="canvasLocation" x="-6876" y="-9771"/>
+            <point key="canvasLocation" x="-6472" y="-9439"/>
         </scene>
         <!--Attending View Controller-->
         <scene sceneID="Lkm-Dw-mp6">
@@ -257,7 +254,7 @@
                 <swipeGestureRecognizer direction="right" id="Wrm-uE-RBX"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="V2R-mx-O0j"/>
             </objects>
-            <point key="canvasLocation" x="-5145.1999999999998" y="-8233.1599999999999"/>
+            <point key="canvasLocation" x="-5524" y="-8695"/>
         </scene>
         <!--Following View Controller-->
         <scene sceneID="Jhd-Wy-yw8">
@@ -619,7 +616,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgw-bH-MGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6306" y="-9879"/>
+            <point key="canvasLocation" x="-5990" y="-9439"/>
         </scene>
         <!--Event Show View Controller-->
         <scene sceneID="sNS-rf-6fB">
@@ -667,13 +664,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZI0-5O-2yL">
-                                <rect key="frame" x="119" y="538" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Friends">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qHI-I7-tdL">
                                 <rect key="frame" x="12" y="477" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -723,6 +713,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZI0-5O-2yL">
+                                <rect key="frame" x="109" y="526" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Attending">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -738,7 +735,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLj-7L-aBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6876" y="-9087"/>
+            <point key="canvasLocation" x="-6472" y="-8695"/>
         </scene>
         <!--Event Detail View Controller-->
         <scene sceneID="obq-pJ-HIc">
@@ -857,7 +854,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pp3-vB-idl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6306" y="-9076"/>
+            <point key="canvasLocation" x="-5990" y="-8695"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="noW-ob-YKH">
@@ -945,13 +942,6 @@
                                     <outlet property="delegate" destination="qJd-hz-hSh" id="gK0-6z-Gez"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hOd-WV-mVo">
-                                <rect key="frame" x="131" y="506" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create It">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Som-Br-SYj">
                                 <rect key="frame" x="11" y="472" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1000,7 +990,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0B-Oq-ztN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5774" y="-9879"/>
+            <point key="canvasLocation" x="-5524" y="-9439"/>
         </scene>
         <!--Edit Event View Controller-->
         <scene sceneID="7Hy-Ak-KIa">
@@ -1141,18 +1131,19 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVA-SU-zTK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Fjq-aS-68z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2fA-Xh-nLd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Qm8-U0-ZUD" kind="relationship" relationship="rootViewController" id="t0c-4c-Z6F"/>
+                        <segue destination="Qm8-U0-ZUD" kind="relationship" relationship="rootViewController" id="o9j-Vk-H41"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rf-sO-ntL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7381" y="-9756"/>
+            <point key="canvasLocation" x="-6923" y="-9434"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
