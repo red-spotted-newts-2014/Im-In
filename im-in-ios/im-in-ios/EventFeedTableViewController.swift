@@ -9,6 +9,8 @@
 import UIKit
 
 class EventFeedTableViewController: UITableViewController {
+    
+    
 
     
     var events:NSMutableArray = NSMutableArray();
@@ -50,18 +52,23 @@ class EventFeedTableViewController: UITableViewController {
         return cell
         
     }
+    
+    
 
 
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-//        if (segue!.identifier == "showDetails"){
-//            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
-//            var eventDetailViewController:EventDetailViewController = segue!.destinationViewController as EventDetailViewController
-//            eventDetailViewController.eventsData = events.objectAtIndex(selectedIndexPath.row) as NSDictionary
-//        }
+        if (segue!.identifier == "showDetails"){
+            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
+            var eventDetailViewController:EventDetailViewController = segue!.destinationViewController as EventDetailViewController
+            eventDetailViewController.eventData = events.objectAtIndex(selectedIndexPath.row) as NSDictionary
+        }
     }
     
 }
+
+
+
     
 
 
