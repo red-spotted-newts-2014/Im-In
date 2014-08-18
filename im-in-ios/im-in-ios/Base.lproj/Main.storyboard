@@ -46,7 +46,7 @@
                                 <rect key="frame" x="16" y="128" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="cfC-fS-2eY" id="jDi-CZ-qe8"/>
                                 </connections>
@@ -1069,6 +1069,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="1FK-Ha-bLK"/>
-        <segue reference="D8J-fr-6nP"/>
+        <segue reference="58i-Ci-8AB"/>
     </inferredMetricsTieBreakers>
 </document>
