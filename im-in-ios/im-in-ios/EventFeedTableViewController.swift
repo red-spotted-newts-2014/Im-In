@@ -51,8 +51,6 @@ class EventFeedTableViewController: UITableViewController {
         
     }
     
-
-    
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         if (segue!.identifier == "showDetails"){
             var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()

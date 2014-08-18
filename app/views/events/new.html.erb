@@ -1,3 +1,5 @@
+<div class="container">
+
 <%= form_for @event, url: {action: "create"} do |f| %>
 <div>
   <%= f.label :name %>
@@ -31,7 +33,10 @@
   <%= f.label :notify_hours_until_event %>
   <%= f.text_field :notify_hours_until_event %>
 </div>
+<br><br>
 <div>
-  <%= f.submit "submit" %>
+  <%= f.submit "submit", :class => 'button' %>
 </div>
 <% end %>
+
+</div>

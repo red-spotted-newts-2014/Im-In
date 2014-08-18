@@ -1,11 +1,10 @@
-<div class="panel-heading">
-    <div class="panel-title">
-      <h2>Sign Up</h2>
-    </div>
-  </div>
-  <div>
+<div class="container">
+    <h2><strong>SIGN UP</strong></h2>
     <%= form_for @user, url: {action: "create"} do |f| %>
-
+      <div class="form-group">
+          <%= f.label :username %>
+          <%= f.text_field :username %>
+      </div>
       <div class="form-group">
         <%= f.label :email %>
         <%= f.email_field :email %>
@@ -16,43 +15,32 @@
         <%= f.password_field :password %>
       </div>
 
+<br>
       <div class="form-group">
-        <div class="checkbox">
-          <%= f.label :username %>
-          <%= f.text_field :username %>
-        </div>
-      </div>
 
-      <div class="form-group">
-        <%= f.submit "Sign up" %>
+        <%= f.submit "Sign up", class: "button" %>
+
       </div>
     <% end %>
-  </div>
 </div>
 
-<div class="panel-heading">
-    <div class="panel-title">
-      <h2>Log In</h2>
-    </div>
-  </div>
-  <div>
+<div class="container">
+      <h2><strong>LOG IN</strong></h2>
     <%= form_for @user, url: login_path do |f| %>
 
+      <div class="form-group">
+          <%= f.label :username %>
+          <%= f.text_field :username %>
+      </div>
       <div class="form-group">
         <%= f.label :password %>
         <%= f.password_field :password %>
       </div>
 
+  <br>
       <div class="form-group">
-        <div class="checkbox">
-          <%= f.label :username %>
-          <%= f.text_field :username %>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <%= f.submit "Login" %>
+        <%= f.submit "Login", class: "button" %>
       </div>
     <% end %>
-  </div>
 </div>
+

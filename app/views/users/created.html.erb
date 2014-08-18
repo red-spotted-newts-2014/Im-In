@@ -1,4 +1,16 @@
-Created EVENTS:<br>
-<% @events.each do |event| %>
-  <%= event.name %><br>
+<div class="container">
+<h1>CREATED INS</h1><br>
+<% @created_events.each do |event| %>
+  <%= link_to "#{event.name} - #{event.location}", event_path(event) %><br>
 <% end %>
+<br><br>
+<button>
+<%= link_to "INVITED INS", events_path %>
+</button>
+<button>
+<%= link_to "ATENDING INS", user_events_attending_path(current_user) %>
+</button>
+<button>
+<%= link_to "CREATE NEW IN", new_event_path %>
+</button>
+</div>

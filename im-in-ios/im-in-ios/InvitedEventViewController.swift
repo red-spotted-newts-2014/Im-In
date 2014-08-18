@@ -5,7 +5,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     
     @IBOutlet weak var tableView: UITableView!
     
-    var events:NSMutableArray = NSMutableArray();
+    var events: NSMutableArray = NSMutableArray();
     var apiCtrl = APIInvitedEventController()
     var invitedEvents: NSArray!
     
@@ -37,14 +37,15 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         //
         println("EventViewController#tableView")
+        let cell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+//        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "Cell")
+//        var event:NSDictionary = events.objectAtIndex(indexPath.row) as NSDictionary
+//        cell.textLabel.text = event.objectForKey("name") as String
         
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "MyTestCell")
-        //       println("***")
-        
-        //       cell.textLabel.text = "Row #\(indexPath.row)"
+//               cell.textLabel.text = "Row #\(indexPath.row)"
         cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
-        cell.detailTextLabel.text = invitedEvents[indexPath.row].objectForKey("venue") as? String
-        //
+//        cell.detailTextLabel.text = invitedEvents[indexPath.row].objectForKey("venue") as? String
+        
         
         return cell
     }
@@ -78,15 +79,19 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     }
     
     
-//    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-//        if (segue!.identifier == "showInvited"){
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue!.identifier == "showInvited"){
+            println("here")
+            println(self.tableView.indexPathForSelectedRow())
+            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
+            var invitedEventViewController:EventShowViewController = segue!.destinationViewController as EventShowViewController
+            invitedEventViewController.eventData = invitedEvents.objectAtIndex(selectedIndexPath.row) as NSDictionary
+        } else if (segue!.identifier == "toCreatedEvents") {
+            println("to created events")
 //            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
-//            var invitedEventViewController:EventShowViewController = segue!.destinationViewController as EventShowViewController
+//            var invitedEventViewController:EventFeedViewController = segue!.destinationViewController as EventFeedViewController
 //            invitedEventViewController.eventData = invitedEvents.objectAtIndex(selectedIndexPath.row) as NSDictionary
-//        }else{
-//            
-//            
-//        }
-//    }
-    
+        }
+    }
+
 }
