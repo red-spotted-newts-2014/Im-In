@@ -40,11 +40,87 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "im-in-ios/EventDetailViewController.swift"
-            timestampString = "430042035.085328"
+            timestampString = "430043730.344854"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30">
+            startingLineNumber = "48"
+            endingLineNumber = "48">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/EventFeedTableViewController.swift"
+            timestampString = "430044789.495209"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/EventFeedTableViewController.swift"
+            timestampString = "430044790.883315"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventFeedTableViewController.prepareForSegue (im_in_ios.EventFeedTableViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIStoryboardSegue&gt;, sender : Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt;) -&gt; ()"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/joelyawili/Desktop/Im-In/im-in-ios/im-in-ios/EventFeedTableViewController.swift"
+                  timestampString = "430044790.889016"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventFeedTableViewController.prepareForSegue (im_in_ios.EventFeedTableViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIStoryboardSegue&gt;, sender : Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt;) -&gt; ()"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/joelyawili/Desktop/Im-In/im-in-ios/im-in-ios/EventFeedTableViewController.swift"
+                  timestampString = "430044790.889263"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.EventFeedTableViewController.prepareForSegue (im_in_ios.EventFeedTableViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIStoryboardSegue&gt;, sender : Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt;) -&gt; ()"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/joelyawili/Desktop/Im-In/im-in-ios/im-in-ios/EventFeedTableViewController.swift"
+                  timestampString = "430044790.889501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "2276">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
