@@ -16,6 +16,7 @@ class EventShowViewController: UIViewController {
     @IBOutlet var locationTextField: UITextField!
     @IBOutlet var startTextField: UITextField!
     @IBOutlet var endTextField: UITextField!
+    @IBOutlet var creatorField: UITextField!
     @IBOutlet var eventIDField: UITextField!
 
     var eventData:NSDictionary = NSDictionary()
@@ -29,9 +30,11 @@ class EventShowViewController: UIViewController {
         locationTextField.userInteractionEnabled = false
         startTextField.userInteractionEnabled = false
         endTextField.userInteractionEnabled = false
+        creatorField.userInteractionEnabled = false
         eventIDField.userInteractionEnabled = false
         
         nameTextField.text = eventData.objectForKey("name") as String
+        creatorField.text = eventData.objectForKey("username") as String
         descTextField.text = eventData.objectForKey("description") as String
         venueTextField.text = eventData.objectForKey("venue") as String
         locationTextField.text = eventData.objectForKey("location") as String
