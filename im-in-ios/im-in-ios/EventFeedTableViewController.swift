@@ -53,8 +53,6 @@ class EventFeedTableViewController: UITableViewController {
         
     }
     
-    
-
 
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
