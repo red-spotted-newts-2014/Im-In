@@ -11,8 +11,6 @@ import UIKit
 class EventFeedTableViewController: UITableViewController {
     
     
-
-    
     var events:NSMutableArray = NSMutableArray();
     
     override func viewDidAppear(animated: Bool) {

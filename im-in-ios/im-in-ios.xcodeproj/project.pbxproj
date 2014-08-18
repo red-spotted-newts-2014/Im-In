@@ -27,7 +27,6 @@
 		13245C0719A1AAE000201E2F /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BEC19A1AAE000201E2F /* FollowersViewController.swift */; };
 		13245C0819A1AAE000201E2F /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BED19A1AAE000201E2F /* FollowingViewController.swift */; };
 		13245C0919A1AAE000201E2F /* FriendsAttendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */; };
-		13245C0A19A1AAE000201E2F /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BEF19A1AAE000201E2F /* InvitedEventViewController.swift */; };
 		13245C0B19A1AAE000201E2F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF019A1AAE000201E2F /* LogInViewController.swift */; };
 		13245C0C19A1AAE000201E2F /* ShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */; };
 		13245C0D19A1AAE000201E2F /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF219A1AAE000201E2F /* ShowProfileViewController.swift */; };
@@ -43,6 +42,8 @@
 		13E655DC19A1E55800B4C117 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E655DB19A1E55800B4C117 /* AddEventViewController.swift */; };
 		13FD37B519A0894B00D3887C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FD37B419A0894B00D3887C /* Default@2x.png */; };
 		13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13FD380E19A0F59E00D3887C /* Im'in.jpg */; };
+		6C86CE2919A206A200FE0DA9 /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */; };
+		6C86CE2B19A20F4F00FE0DA9 /* EventShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,7 @@
 		13245BE019A1AAE000201E2F /* APIFollowersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowersController.swift; sourceTree = "<group>"; };
 		13245BE119A1AAE000201E2F /* APIFollowingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFollowingController.swift; sourceTree = "<group>"; };
 		13245BE219A1AAE000201E2F /* APIFriendsAttendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFriendsAttendingController.swift; sourceTree = "<group>"; };
-		13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvitedEventController.swift; sourceTree = "<group>"; };
+		13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIInvitedEventController.swift; path = "untitled folder/APIInvitedEventController.swift"; sourceTree = "<group>"; };
 		13245BE419A1AAE000201E2F /* APILogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogInController.swift; sourceTree = "<group>"; };
 		13245BE519A1AAE000201E2F /* APIShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIShowEventDetailsViewController.swift; sourceTree = "<group>"; };
 		13245BE619A1AAE000201E2F /* APISignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISignUpController.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		13245BEC19A1AAE000201E2F /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		13245BED19A1AAE000201E2F /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAttendingViewController.swift; sourceTree = "<group>"; };
-		13245BEF19A1AAE000201E2F /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
 		13245BF019A1AAE000201E2F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEventDetailsViewController.swift; sourceTree = "<group>"; };
 		13245BF219A1AAE000201E2F /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +95,8 @@
 		13E655DB19A1E55800B4C117 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		13FD37B419A0894B00D3887C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images.xcassets/LaunchImage.launchimage/Default@2x.png"; sourceTree = "<group>"; };
 		13FD380E19A0F59E00D3887C /* Im'in.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Im'in.jpg"; sourceTree = "<group>"; };
+		6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
+		6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,6 @@
 				13245BE019A1AAE000201E2F /* APIFollowersController.swift */,
 				13245BE119A1AAE000201E2F /* APIFollowingController.swift */,
 				13245BE219A1AAE000201E2F /* APIFriendsAttendingController.swift */,
-				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
 				13245BE419A1AAE000201E2F /* APILogInController.swift */,
 				13245BE519A1AAE000201E2F /* APIShowEventDetailsViewController.swift */,
 				13245BE619A1AAE000201E2F /* APISignUpController.swift */,
@@ -137,7 +138,6 @@
 				13245BEC19A1AAE000201E2F /* FollowersViewController.swift */,
 				13245BED19A1AAE000201E2F /* FollowingViewController.swift */,
 				13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */,
-				13245BEF19A1AAE000201E2F /* InvitedEventViewController.swift */,
 				13245BF019A1AAE000201E2F /* LogInViewController.swift */,
 				13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */,
 				13245BF219A1AAE000201E2F /* ShowProfileViewController.swift */,
@@ -170,8 +170,11 @@
 			children = (
 				13FD380E19A0F59E00D3887C /* Im'in.jpg */,
 				13DAB2B3199DB5C20024D110 /* AppDelegate.swift */,
-				13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */,
+				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
 				13245BDE19A1AAE000201E2F /* APIAddEventController.swift */,
+				6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */,
+				6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */,
+				13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */,
 				13E655DB19A1E55800B4C117 /* AddEventViewController.swift */,
 				13245C1419A1AF2800201E2F /* EventDetailViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
@@ -319,13 +322,13 @@
 				13245C0419A1AAE000201E2F /* CreatedEventsViewController.swift in Sources */,
 				13245C0819A1AAE000201E2F /* FollowingViewController.swift in Sources */,
 				13245BFB19A1AAE000201E2F /* APIFollowersController.swift in Sources */,
+				6C86CE2B19A20F4F00FE0DA9 /* EventShowViewController.swift in Sources */,
 				13245C0E19A1AAE000201E2F /* SignUpViewController.swift in Sources */,
 				13245BFE19A1AAE000201E2F /* APIInvitedEventController.swift in Sources */,
 				13245C0319A1AAE000201E2F /* AttendingViewController.swift in Sources */,
 				13245C0619A1AAE000201E2F /* EditProfileViewController.swift in Sources */,
 				13245BF519A1AAE000201E2F /* AddFriendsViewController.swift in Sources */,
 				13245BFF19A1AAE000201E2F /* APILogInController.swift in Sources */,
-				13245C0A19A1AAE000201E2F /* InvitedEventViewController.swift in Sources */,
 				13245C0219A1AAE000201E2F /* APIUserProfileViewController.swift in Sources */,
 				13245BFC19A1AAE000201E2F /* APIFollowingController.swift in Sources */,
 				13245C0C19A1AAE000201E2F /* ShowEventDetailsViewController.swift in Sources */,
@@ -337,6 +340,7 @@
 				13245BF819A1AAE000201E2F /* APICreatedEventsController.swift in Sources */,
 				13245C0019A1AAE000201E2F /* APIShowEventDetailsViewController.swift in Sources */,
 				13245C0F19A1AAE000201E2F /* testController.swift in Sources */,
+				6C86CE2919A206A200FE0DA9 /* InvitedEventViewController.swift in Sources */,
 				13245C0B19A1AAE000201E2F /* LogInViewController.swift in Sources */,
 				13245C0919A1AAE000201E2F /* FriendsAttendingViewController.swift in Sources */,
 				13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */,
