@@ -136,7 +136,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="MR6-X5-dh9" eventType="touchUpInside" id="wX3-5p-hob"/>
-                                    <segue destination="CcU-Vc-QHU" kind="modal" id="kdB-ff-qrK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7LJ-RV-036">
