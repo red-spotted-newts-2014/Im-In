@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
+  post 'events/create_ios' => 'events#create_ios'
   get 'events/:id/attending' => 'events#attending', as: "events_users_attending"
 
   resources :events do
@@ -20,7 +21,7 @@ Rails.application.routes.draw do
   get 'users/:id/following' => 'users#following', as: "user_following"
   get 'users/:id/followers' => 'users#followers', as: "user_followers"
 
-  post 'events/create_ios' => 'event#create_ios'
+
   # get 'events/:id/attending' => 'events#attending', as: "events_users_attending"
 
   resources :users

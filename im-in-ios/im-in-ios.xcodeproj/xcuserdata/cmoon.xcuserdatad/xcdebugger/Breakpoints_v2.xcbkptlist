@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "im-in-ios/untitled folder/FollowersViewController.swift"
-            timestampString = "430153222.786199"
+            timestampString = "430155254.104242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
             <Locations>
@@ -98,11 +98,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "im-in-ios/untitled folder/FollowersViewController.swift"
-            timestampString = "430153199.950751"
+            timestampString = "430155254.104242"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "inviteFriendsButton(_:)"
             landmarkType = "5">
             <Locations>

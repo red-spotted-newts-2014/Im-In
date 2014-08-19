@@ -29,6 +29,12 @@ class EventsController < ApplicationController
   def create_ios
     p params
     @event = current_user.created_events.create(event_params)
+    p params[:users]
+    p count = params[:users].length-1
+    params[:users].each do |user|
+      @event.invitations.create(user_id: user["id"], status: "pending")
+    end
+    redirect_to event_path(@event)
   end
 
   def update

@@ -7,7 +7,7 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     var apiCtrl = APIFollowersController()
     var apiPOSTCtrl = APIAddEventController()
     var followers: NSArray!
-    var users: NSMutableArray = []
+    
     var params: NSDictionary!
 
     func didReceiveAPIResultsFollowers(results: NSDictionary) {
@@ -20,6 +20,7 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     }
     
     @IBAction func inviteFriendsButton(sender: AnyObject) {
+        var users: NSMutableArray = []
         println("********HERE**********")
         for index in 0...(followers.count-1) {
             var user = followers[index] as NSDictionary
@@ -94,7 +95,7 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
         apiCtrl.delegate = self
         apiCtrl.loadAllEvents()
     }
-    
+
 }
 
 

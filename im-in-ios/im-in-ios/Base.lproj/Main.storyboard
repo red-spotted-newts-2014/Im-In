@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KX1-of-CHy">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
@@ -312,11 +313,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="j4z-qQ-QLa" id="dF6-5W-Jpp"/>
+                        <segue destination="8z3-BH-QXL" kind="push" identifier="backToCreated" id="4Pi-AB-3MU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqG-QZ-QQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5524" y="-8695"/>
+            <point key="canvasLocation" x="-5500" y="-8635"/>
         </scene>
         <!--Friends Attending View Controller-->
         <scene sceneID="5nZ-2c-cgP">
@@ -1165,4 +1167,7 @@
             <size key="landscapeSize" width="568" height="320"/>
         </simulatedScreenMetrics>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Pi-AB-3MU"/>
+    </inferredMetricsTieBreakers>
 </document>
