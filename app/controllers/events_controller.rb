@@ -17,7 +17,12 @@ class EventsController < ApplicationController
 
   def create
     @event = current_user.created_events.create(event_params)
-    redirect_to event_path(@event)
+    render json: @event
+    # respond_to do |format|
+    #   format.html
+    #   format.json { render :json => { :events => @events, :invitations => @invitations } }
+    # end
+    # redirect_to event_path(@event)
   end
 
   def update
