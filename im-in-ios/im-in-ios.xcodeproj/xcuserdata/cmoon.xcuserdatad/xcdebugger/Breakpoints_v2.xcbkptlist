@@ -35,5 +35,51 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/untitled folder/FollowersViewController.swift"
+            timestampString = "430135927.550997"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.FollowersViewController.tableView (im_in_ios.FollowersViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;, cellForRowAtIndexPath : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSIndexPath&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableViewCell&gt;"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/final-project/Im-In/im-in-ios/im-in-ios/untitled%20folder/FollowersViewController.swift"
+                  timestampString = "430120633.358951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.FollowersViewController.tableView (im_in_ios.FollowersViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableView&gt;, cellForRowAtIndexPath : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSIndexPath&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITableViewCell&gt;"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/final-project/Im-In/im-in-ios/im-in-ios/untitled%20folder/FollowersViewController.swift"
+                  timestampString = "430120633.359187"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "357">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

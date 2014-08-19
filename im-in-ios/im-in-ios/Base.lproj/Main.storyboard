@@ -307,13 +307,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hha-ZH-NHd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dVd-jg-2ei">
+                            <connections>
+                                <action selector="inviteFriendsButton:" destination="GJO-zE-Wte" id="V9r-Me-jFP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="j4z-qQ-QLa" id="dF6-5W-Jpp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqG-QZ-QQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6729" y="-6793"/>
+            <point key="canvasLocation" x="-5524" y="-8751"/>
         </scene>
         <!--Friends Attending View Controller-->
         <scene sceneID="5nZ-2c-cgP">
@@ -848,13 +855,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bbt-YS-3Mc">
-                                <rect key="frame" x="123" y="451" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Friends">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f7x-z8-YgR">
                                 <rect key="frame" x="12" y="303" width="47" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -992,16 +992,21 @@
                                     <outlet property="delegate" destination="qJd-hz-hSh" id="O8A-hV-AND"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bbt-YS-3Mc">
+                                <rect key="frame" x="118" y="506" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Friends">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addEventButton:" destination="qJd-hz-hSh" eventType="touchUpInside" id="rJD-CX-hj1"/>
+                                    <segue destination="GJO-zE-Wte" kind="push" identifier="inviteFriendSegue" id="aHa-0G-jS8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VJP-0j-iV3">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="yJz-W1-sTy">
-                            <connections>
-                                <action selector="addEventButton:" destination="qJd-hz-hSh" id="ZtR-XQ-Cp6"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="VJP-0j-iV3"/>
                     <connections>
                         <outlet property="descTextField" destination="bH6-13-0AP" id="0Km-HF-Fvg"/>
                         <outlet property="endTextField" destination="8PQ-RI-xUH" id="JXq-Fi-N8J"/>
