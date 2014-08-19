@@ -1,38 +1,38 @@
-//
-//  ViewController.swift
-//  Im_in
-//
-//  Created by fahia mohamed on 2014-08-14.
-//  Copyright (c) 2014 fahia mohamed. All rights reserved.
-//
-
 import UIKit
 
-//
-//, APIControllerProtocol
 class FollowersViewController: UIViewController, APIFollowersControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
     var apiCtrl = APIFollowersController()
     var followers: NSArray!
+    var postInvitations: NSArray!
+
+
+//    var invite = ["invite": ""] as NSDictionary
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("FollowersViewController#didReceiveAPIResults")
-        //        println(results)
         followers = results.objectForKey("followers") as? NSArray
-        //        println("****")
         println(followers)
         dispatch_async(dispatch_get_main_queue(),{
             self.tableView.reloadData()
         })
     }
     
-    
-    @IBAction func buttonPressed(sender: AnyObject) {
-        //apiCtrl.loadAllEvents()
-        
+    @IBAction func inviteFriendsButton(sender: AnyObject) {
+        println("********HERE**********")
+//        for index in 0...(followers.count-1) {
+        for user in followers {
+//            var user = followers[index] as NSDictionary
+            if (user.objectForKey("invite") as NSString == "true") {
+                print(user)
+//                apiCtrl.sendInviteInfo(user)
+            }
+        }
+        println(postInvitations)
     }
+
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         println("FollowersViewController#tableView (count)")
@@ -42,20 +42,12 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
         return followers.count;
     }
     
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-    
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        
-        println("FollowersViewController#tableView")
-        
+ 
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "MyTestCell")
-        //        println("***")
-        
-        //        cell.textLabel.text = "Row #\(indexPath.row)"
+        followers[indexPath.row].setValuesForKeysWithDictionary(["invite": "pending"])
         cell.textLabel.text = followers[indexPath.row].objectForKey("username") as? String
-        
-        
+        println(followers[indexPath.row])
         return cell
     }
     
@@ -66,15 +58,18 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
         
         if (cell.accessoryType == UITableViewCellAccessoryType.None) {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            followers[indexPath.row].setValuesForKeysWithDictionary(["invite": "true"])
         } else if (cell.accessoryType == UITableViewCellAccessoryType.Checkmark) {
             cell.accessoryType = UITableViewCellAccessoryType.None;
+            followers[indexPath.row].setValuesForKeysWithDictionary(["invite": "false"])
         }
+        
+        
     }
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     var refreshControl:UIRefreshControl!  // An optional variable
