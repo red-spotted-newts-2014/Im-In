@@ -2,6 +2,7 @@
 //  ChatViewController.swift
 //  im-in-ios
 //
+<<<<<<< HEAD
 //  Created by Christian Moon on 8/19/14.
 //  Copyright (c) 2014 joel yawili. All rights reserved.
 //
@@ -44,10 +45,8 @@ class ChatViewController: GlobalController {
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
         textField.endEditing(true)
-        
         self.firebase!.childByAutoId().setValue(["name": self.name, "text": msgInput.text])
-        
-        textField.text = ""
+       textField.text = ""
         return false
     }
     
@@ -67,5 +66,4 @@ class ChatViewController: GlobalController {
         
         return cell
     }
-
 }

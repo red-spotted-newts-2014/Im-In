@@ -52,6 +52,7 @@
 		6C4DAC5719A3B4C4000A45CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4DAC5619A3B4C4000A45CE /* ProfileViewController.swift */; };
 		6C86CE2919A206A200FE0DA9 /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */; };
 		6C86CE2B19A20F4F00FE0DA9 /* EventShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */; };
+		E8BF32DE19A3CFC300D17B87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF32DD19A3CFC300D17B87 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,9 @@
 		6C4DAC5619A3B4C4000A45CE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
 		6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventShowViewController.swift; sourceTree = "<group>"; };
+		A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-im-in-ios.xcconfig"; path = "Pods/Pods-im-in-ios.xcconfig"; sourceTree = "<group>"; };
+		E8BF32D019A3C8DC00D17B87 /* im-in-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "im-in-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8BF32DD19A3CFC300D17B87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +172,12 @@
 				13DAB2B0199DB5C20024D110 /* im-in-ios */,
 				13DAB2C3199DB5C20024D110 /* im-in-iosTests */,
 				13DAB2AF199DB5C20024D110 /* Products */,
+<<<<<<< HEAD
 				4B093AA41F66471499FF45DA /* Pods-im-in-ios.xcconfig */,
 				3B4579FFB7D9407BBBF8194A /* Frameworks */,
+=======
+				A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */,
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			);
 			sourceTree = "<group>";
 		};
@@ -208,9 +216,14 @@
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13245BD919A1AAE000201E2F /* untitled folder */,
 				13DAB2B1199DB5C20024D110 /* Supporting Files */,
+<<<<<<< HEAD
 				6C2C489919A3E4E70074DC9C /* im-in-ios-Bridging-Header.h */,
 				6C2C489C19A3E5170074DC9C /* ChatViewController.swift */,
 				6C2C48A819A3FC840074DC9C /* GlobalController.swift */,
+=======
+				E8BF32D019A3C8DC00D17B87 /* im-in-ios-Bridging-Header.h */,
+				E8BF32DD19A3CFC300D17B87 /* ChatViewController.swift */,
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			);
 			path = "im-in-ios";
 			sourceTree = "<group>";
@@ -259,11 +272,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13DAB2CA199DB5C20024D110 /* Build configuration list for PBXNativeTarget "im-in-ios" */;
 			buildPhases = (
+<<<<<<< HEAD
 				499ED5AA25454A23BDBA9304 /* Check Pods Manifest.lock */,
 				13DAB2AA199DB5C20024D110 /* Sources */,
 				13DAB2AB199DB5C20024D110 /* Frameworks */,
 				13DAB2AC199DB5C20024D110 /* Resources */,
 				B49D8AF0D993420B9BB4B6F3 /* Copy Pods Resources */,
+=======
+				883C08D134144655A675ACC7 /* Check Pods Manifest.lock */,
+				13DAB2AA199DB5C20024D110 /* Sources */,
+				13DAB2AB199DB5C20024D110 /* Frameworks */,
+				13DAB2AC199DB5C20024D110 /* Resources */,
+				5354616FCCF742DEB0C92D3B /* Copy Pods Resources */,
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			);
 			buildRules = (
 			);
@@ -352,34 +373,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+<<<<<<< HEAD
 		499ED5AA25454A23BDBA9304 /* Check Pods Manifest.lock */ = {
+=======
+		5354616FCCF742DEB0C92D3B /* Copy Pods Resources */ = {
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "Check Pods Manifest.lock";
+=======
+			name = "Copy Pods Resources";
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B49D8AF0D993420B9BB4B6F3 /* Copy Pods Resources */ = {
+=======
+			shellScript = "\"${SRCROOT}/Pods/Pods-im-in-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883C08D134144655A675ACC7 /* Check Pods Manifest.lock */ = {
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "Copy Pods Resources";
+=======
+			name = "Check Pods Manifest.lock";
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "\"${SRCROOT}/Pods/Pods-im-in-ios-resources.sh\"\n";
+=======
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,6 +454,7 @@
 				13245BFF19A1AAE000201E2F /* APILogInController.swift in Sources */,
 				13245C0219A1AAE000201E2F /* APIFriendsProfileViewController.swift in Sources */,
 				13245BFC19A1AAE000201E2F /* APIFollowingController.swift in Sources */,
+				E8BF32DE19A3CFC300D17B87 /* ChatViewController.swift in Sources */,
 				13245C0C19A1AAE000201E2F /* ShowEventDetailsViewController.swift in Sources */,
 				13245C0719A1AAE000201E2F /* FollowersViewController.swift in Sources */,
 				13245C0119A1AAE000201E2F /* APISignUpController.swift in Sources */,
@@ -540,7 +585,11 @@
 		};
 		13DAB2CB199DB5C20024D110 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 4B093AA41F66471499FF45DA /* Pods-im-in-ios.xcconfig */;
+=======
+			baseConfigurationReference = A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */;
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -573,7 +622,11 @@
 		};
 		13DAB2CC199DB5C20024D110 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 4B093AA41F66471499FF45DA /* Pods-im-in-ios.xcconfig */;
+=======
+			baseConfigurationReference = A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */;
+>>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
