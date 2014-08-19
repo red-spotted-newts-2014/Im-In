@@ -1,0 +1,12 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, “7.0”
+
+
+target "im-in-ios" do
+	pod 'Firebase', '>= 1.1.11'
+end
+
+target "im-in-iosTests" do
+
+end
+
