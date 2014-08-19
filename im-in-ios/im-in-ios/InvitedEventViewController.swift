@@ -91,6 +91,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        println("here")
         if (segue!.identifier == "showInvited"){
             println("here")
             println(self.tableView.indexPathForSelectedRow())

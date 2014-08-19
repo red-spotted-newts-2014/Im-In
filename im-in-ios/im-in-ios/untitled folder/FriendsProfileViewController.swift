@@ -10,63 +10,33 @@ import UIKit
 
 //
 //, APIControllerProtocol
-class FriendsProfileViewController: UIViewController, APIFriendsProfileViewControllerProtocol, UITableViewDataSource, UITableViewDelegate {
+class FriendsProfileViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var button: UIButton!
-    var apiCtrl = APIFriendsProfileViewController()
-    var userDetails: NSArray!
+    @IBOutlet var firstNameField: UITextField!
+    @IBOutlet var lastNameField: UITextField!
+    @IBOutlet var usernameField: UITextField!
+    @IBOutlet var phoneField: UITextField!
+    @IBOutlet var emailField: UITextField!
+
     
-    func didReceiveAPIResults(results: NSDictionary) {
-        println("EventViewController#didReceiveAPIResults")
-        //        println(results)
-        userDetails = results.objectForKey("user") as? NSArray
-        //        println("****")
-        println(userDetails)
-        dispatch_async(dispatch_get_main_queue(),{
-            self.tableView.reloadData()
-        })
-    }
-    
-    
-    @IBAction func buttonPressed(sender: AnyObject) {
-        //apiCtrl.loadAllEvents()
-        
-    }
-    
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        println("EventViewController#tableView (count)")
-        if userDetails == nil {
-            return 0
-        }
-        return userDetails.count;
-    }
-    
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-    
-    func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        
-        println("EventViewController#tableView")
-        
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "MyTestCell")
-        //        println("***")
-        
-        //        cell.textLabel.text = "Row #\(indexPath.row)"
-        cell.textLabel.text = userDetails[indexPath.row].objectForKey("username") as? String
-        cell.detailTextLabel.text = userDetails[indexPath.row].objectForKey("email") as? String
-        
-        
-        return cell
-    }
-    
+    var friendData:NSDictionary = NSDictionary()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("EventViewController#viewDidLoad")
-        apiCtrl.delegate = self
-        apiCtrl.loadAllEvents()
         
+        firstNameField.userInteractionEnabled = false
+        lastNameField.userInteractionEnabled = false
+        usernameField.userInteractionEnabled = false
+        phoneField.userInteractionEnabled = false
+        emailField.userInteractionEnabled = false
+        
+        
+        firstNameField.text = friendData.objectForKey("first_name") as String
+        lastNameField.text = friendData.objectForKey("last_name") as String
+        usernameField.text = friendData.objectForKey("username") as String
+        phoneField.text = friendData.objectForKey("phone_number") as String
+        emailField.text = friendData.objectForKey("email") as String
+
     }
     
     override func didReceiveMemoryWarning() {
