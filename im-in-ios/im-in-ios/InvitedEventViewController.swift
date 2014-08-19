@@ -47,8 +47,10 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
 //               cell.textLabel.text = "Row #\(indexPath.row)"
         cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
 //        cell.detailTextLabel.text = invitedEvents[indexPath.row].objectForKey("venue") as? String
-        
-        
+        var status = invitations[indexPath.row].objectForKey("status") as String
+        if (status == "in") {
+            cell.backgroundColor = UIColor.purpleColor()
+        }
         return cell
     }
     
