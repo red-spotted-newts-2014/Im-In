@@ -42,14 +42,8 @@
 		13E655DC19A1E55800B4C117 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E655DB19A1E55800B4C117 /* CreateEventViewController.swift */; };
 		13FD37B519A0894B00D3887C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FD37B419A0894B00D3887C /* Default@2x.png */; };
 		13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13FD380E19A0F59E00D3887C /* Im'in.jpg */; };
-		29590387EA7E44EFA70E9771 /* libPods-im-in-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E531F929264BB29CF0656E /* libPods-im-in-ios.a */; };
 		6C86CE2919A206A200FE0DA9 /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */; };
 		6C86CE2B19A20F4F00FE0DA9 /* EventShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */; };
-		E8BF32D419A3CC5E00D17B87 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF32D319A3CC5E00D17B87 /* SystemConfiguration.framework */; };
-		E8BF32D619A3CC6900D17B87 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF32D519A3CC6900D17B87 /* CFNetwork.framework */; };
-		E8BF32D819A3CC7800D17B87 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF32D719A3CC7800D17B87 /* libicucore.dylib */; };
-		E8BF32DA19A3CC8600D17B87 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF32D919A3CC8600D17B87 /* libc++.dylib */; };
-		E8BF32DC19A3CC9200D17B87 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BF32DB19A3CC9200D17B87 /* Security.framework */; };
 		E8BF32DE19A3CFC300D17B87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF32DD19A3CFC300D17B87 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,13 +100,7 @@
 		6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventShowViewController.swift; sourceTree = "<group>"; };
 		A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-im-in-ios.xcconfig"; path = "Pods/Pods-im-in-ios.xcconfig"; sourceTree = "<group>"; };
 		E8BF32D019A3C8DC00D17B87 /* im-in-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "im-in-ios-Bridging-Header.h"; sourceTree = "<group>"; };
-		E8BF32D319A3CC5E00D17B87 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		E8BF32D519A3CC6900D17B87 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		E8BF32D719A3CC7800D17B87 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		E8BF32D919A3CC8600D17B87 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		E8BF32DB19A3CC9200D17B87 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E8BF32DD19A3CFC300D17B87 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		F2E531F929264BB29CF0656E /* libPods-im-in-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-im-in-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8BF32DC19A3CC9200D17B87 /* Security.framework in Frameworks */,
-				E8BF32DA19A3CC8600D17B87 /* libc++.dylib in Frameworks */,
-				E8BF32D819A3CC7800D17B87 /* libicucore.dylib in Frameworks */,
-				E8BF32D619A3CC6900D17B87 /* CFNetwork.framework in Frameworks */,
-				E8BF32D419A3CC5E00D17B87 /* SystemConfiguration.framework in Frameworks */,
-				29590387EA7E44EFA70E9771 /* libPods-im-in-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +152,6 @@
 				13DAB2C3199DB5C20024D110 /* im-in-iosTests */,
 				13DAB2AF199DB5C20024D110 /* Products */,
 				A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */,
-				8BD8DC8EE327472594D0C068 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,19 +216,6 @@
 				13DAB2C5199DB5C20024D110 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8BD8DC8EE327472594D0C068 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E8BF32DB19A3CC9200D17B87 /* Security.framework */,
-				E8BF32D919A3CC8600D17B87 /* libc++.dylib */,
-				E8BF32D719A3CC7800D17B87 /* libicucore.dylib */,
-				E8BF32D519A3CC6900D17B87 /* CFNetwork.framework */,
-				E8BF32D319A3CC5E00D17B87 /* SystemConfiguration.framework */,
-				F2E531F929264BB29CF0656E /* libPods-im-in-ios.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
