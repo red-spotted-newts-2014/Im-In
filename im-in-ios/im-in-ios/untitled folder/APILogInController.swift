@@ -20,7 +20,7 @@ class APILogInController {
     }
     
     func sendLogInInfo(info: NSDictionary) {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://10.0.2.26:3000/users/login_ios"))
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/users/login_ios"))
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         

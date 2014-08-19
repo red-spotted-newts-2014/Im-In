@@ -12,10 +12,8 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("EventViewController#didReceiveAPIResults")
-        //       println(results)
         invitedEvents = results.objectForKey("invited_events") as? NSArray
         invitations = results.objectForKey("invitations") as? NSArray
-        //       println("****")
         println(invitedEvents)
         dispatch_async(dispatch_get_main_queue(),{
             self.tableView.reloadData()
@@ -33,22 +31,24 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         
     }
     
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    //Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-    
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         //
         println("EventViewController#tableView")
         let cell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-//        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "Cell")
-//        var event:NSDictionary = events.objectAtIndex(indexPath.row) as NSDictionary
-//        cell.textLabel.text = event.objectForKey("name") as String
-        
-//               cell.textLabel.text = "Row #\(indexPath.row)"
         cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
-//        cell.detailTextLabel.text = invitedEvents[indexPath.row].objectForKey("venue") as? String
+
+        var eventId = invitedEvents[indexPath.row].objectForKey("id").stringValue as String
+        var invitationEventId = invitations[indexPath.row].objectForKey("event_id").stringValue as String
+        var status = invitations[indexPath.row].objectForKey("status") as String
+        println(eventId)
+        println(invitationEventId)
+        println(status)
         
-        
+        if (status == "in") {
+            cell.backgroundColor = UIColor.purpleColor()
+        } else {
+            cell.backgroundColor = UIColor.clearColor()
+        }
         return cell
     }
     
@@ -66,6 +66,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         apiCtrl.delegate = self
         apiCtrl.loadAllEvents()
         self.refreshControl.endRefreshing()
+        println("REFRESHED")
     }
     
     override func viewDidLoad() {
@@ -91,9 +92,6 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
             invitedEventViewController.invitationData = invitations.objectAtIndex(selectedIndexPath.row) as NSDictionary
         } else if (segue!.identifier == "toCreatedEvents") {
             println("to created events")
-//            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
-//            var invitedEventViewController:EventFeedViewController = segue!.destinationViewController as EventFeedViewController
-//            invitedEventViewController.eventData = invitedEvents.objectAtIndex(selectedIndexPath.row) as NSDictionary
         }
     }
 

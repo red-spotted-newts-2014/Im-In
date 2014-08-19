@@ -20,7 +20,7 @@ class APIAddEventController {
     }
     
     func sendCreateEventInfo(info: NSDictionary) {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://10.0.2.26:3000/events"))
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/events"))
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
