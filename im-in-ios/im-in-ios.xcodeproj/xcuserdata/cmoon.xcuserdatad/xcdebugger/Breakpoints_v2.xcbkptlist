@@ -137,5 +137,51 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/untitled folder/FollowersViewController.swift"
+            timestampString = "430157079.30185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "inviteFriendsButton(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.FollowersViewController.inviteFriendsButton (im_in_ios.FollowersViewController)(Swift.AnyObject) -&gt; ()"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/final-project/Im-In/im-in-ios/im-in-ios/untitled%20folder/FollowersViewController.swift"
+                  timestampString = "430157079.306922"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "5706">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.FollowersViewController.inviteFriendsButton (im_in_ios.FollowersViewController)(Swift.AnyObject) -&gt; ()"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/final-project/Im-In/im-in-ios/im-in-ios/untitled%20folder/FollowersViewController.swift"
+                  timestampString = "430157079.30742"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "5720">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
