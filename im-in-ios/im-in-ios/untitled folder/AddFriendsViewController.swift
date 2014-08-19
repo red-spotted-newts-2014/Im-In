@@ -57,7 +57,6 @@ class AddFriendsViewController: UIViewController, APIAddFriendsControllerProtoco
         return cell
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("AddFriendsViewController#viewDidLoad")
@@ -69,7 +68,6 @@ class AddFriendsViewController: UIViewController, APIAddFriendsControllerProtoco
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }
 

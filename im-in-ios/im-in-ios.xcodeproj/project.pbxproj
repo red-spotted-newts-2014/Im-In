@@ -44,6 +44,7 @@
 		13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13FD380E19A0F59E00D3887C /* Im'in.jpg */; };
 		6C86CE2919A206A200FE0DA9 /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */; };
 		6C86CE2B19A20F4F00FE0DA9 /* EventShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */; };
+		BEC5520119A2E9F10019C36A /* 2014-New-York-City-Street-Night-Lights.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEC5520019A2E9F10019C36A /* 2014-New-York-City-Street-Night-Lights.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		13FD380E19A0F59E00D3887C /* Im'in.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Im'in.jpg"; sourceTree = "<group>"; };
 		6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
 		6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventShowViewController.swift; sourceTree = "<group>"; };
+		BEC5520019A2E9F10019C36A /* 2014-New-York-City-Street-Night-Lights.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "2014-New-York-City-Street-Night-Lights.jpg"; path = "../../../Downloads/2014-New-York-City-Street-Night-Lights.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				13E655DB19A1E55800B4C117 /* AddEventViewController.swift */,
 				13245C1419A1AF2800201E2F /* EventDetailViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
+				BEC5520019A2E9F10019C36A /* 2014-New-York-City-Street-Night-Lights.jpg */,
 				13FD37B419A0894B00D3887C /* Default@2x.png */,
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13245BD919A1AAE000201E2F /* untitled folder */,
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC5520119A2E9F10019C36A /* 2014-New-York-City-Street-Night-Lights.jpg in Resources */,
 				13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */,
 				13FD37B519A0894B00D3887C /* Default@2x.png in Resources */,
 				13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */,

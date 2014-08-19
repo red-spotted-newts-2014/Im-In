@@ -59,6 +59,19 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
         return cell
     }
     
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        tableView.deselectRowAtIndexPath((tableView.indexPathForSelectedRow()), animated: Bool())
+        
+        var cell: UITableViewCell = tableView.cellForRowAtIndexPath(indexPath);
+        
+        if (cell.accessoryType == UITableViewCellAccessoryType.None) {
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        } else if (cell.accessoryType == UITableViewCellAccessoryType.Checkmark) {
+            cell.accessoryType = UITableViewCellAccessoryType.None;
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
