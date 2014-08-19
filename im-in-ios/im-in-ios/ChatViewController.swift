@@ -20,12 +20,17 @@ class ChatViewController: UIViewController {
 //    @IBOutlet var tableView : UITableView = nil
 //    @IBOutlet var msgInput : UITextField = nil
     
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var msgInput: UITextField!
+    
     var chat: NSMutableArray = NSMutableArray()
     var firebase: Firebase
     var name: String
     
-    init(coder aDecoder: NSCoder!) {
-        firebase = Firebase(url: "ADD YOUR FIREBASE URL HERE!")
+    required init(coder aDecoder: NSCoder!) {
+        firebase = Firebase(url: "https://amber-inferno-1117.firebaseio.com/")
         name = "Guest \(arc4random() % 1000)"
         
         super.init(coder: aDecoder)
@@ -68,7 +73,7 @@ class ChatViewController: UIViewController {
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
         var rowData: NSDictionary = self.chat[indexPath.row] as NSDictionary
-        cell.text = rowData["text"] as String
+        cell.textLabel.text = rowData["text"] as String
         cell.detailTextLabel.text = rowData["name"] as String
         
         return cell
