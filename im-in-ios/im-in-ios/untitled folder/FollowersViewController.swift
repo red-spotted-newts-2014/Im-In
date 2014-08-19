@@ -5,34 +5,30 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
     var apiCtrl = APIFollowersController()
+    var apiPOSTCtrl = APIAddEventController()
     var followers: NSArray!
-    var postInvitations: NSArray!
-    var newEventId: NSString!
+    var users: NSMutableArray = []
+    var params: NSDictionary!
 
-    func didReceiveAPIResults(results: NSDictionary) {
+    func didReceiveAPIResultsFollowers(results: NSDictionary) {
         println("FollowersViewController#didReceiveAPIResults")
         followers = results.objectForKey("followers") as? NSArray
         println(followers)
         dispatch_async(dispatch_get_main_queue(),{
             self.tableView.reloadData()
         })
-        println("lets double check this")
-        println(newEventId)
     }
     
     @IBAction func inviteFriendsButton(sender: AnyObject) {
         println("********HERE**********")
         for index in 0...(followers.count-1) {
-//        for user in followers {
             var user = followers[index] as NSDictionary
             if (user.objectForKey("invite") as NSString == "true") {
-//                print(user)
                 println(user)
-                println(newEventId)
-//                apiCtrl.sendInviteInfo(user)
+                users.addObject(user)
             }
-        }
-        println(postInvitations)
+        }        
+        apiPOSTCtrl.sendInviteInfo(users, params: params)
     }
 
     
