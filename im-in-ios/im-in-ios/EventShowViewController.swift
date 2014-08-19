@@ -44,6 +44,7 @@ class EventShowViewController: UIViewController {
             info = ["eventId": eventId, "invitationId": invitationId, "invitationStatus": invitationStatus] as NSDictionary
             apiCtrl.sendInvitationStatusInfo(info)
         }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,7 +73,7 @@ class EventShowViewController: UIViewController {
         
         if (invitationStatus == "pending") {
             areuin.backgroundColor = UIColor.blueColor()
-            areuin.setTitle("ARE YOU IN?", forState: .Normal)
+            areuin.setTitle("ARE YOU IN ?", forState: .Normal)
         } else if (invitationStatus == "in") {
             areuin.backgroundColor = UIColor.purpleColor()
             areuin.setTitle("I'M IN", forState: .Normal)

@@ -11,8 +11,8 @@ import UIKit
 //
 //, APIControllerProtocol
 class FriendsAttendingViewController: UIViewController, APIFriendsAttendingControllerProtocol, UITableViewDataSource, UITableViewDelegate {
-    
-    @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
     var apiCtrl = APIFriendsAttendingController()
     var attending: NSArray!
@@ -91,6 +91,15 @@ class FriendsAttendingViewController: UIViewController, APIFriendsAttendingContr
         apiCtrl.loadAllEvents(eventID)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue!.identifier == "test"){
+            println("here")
+            println(self.tableView.indexPathForSelectedRow())
+            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
+            var friendsAttendingViewController:FriendsProfileViewController = segue!.destinationViewController as FriendsProfileViewController
+            friendsAttendingViewController.friendData = attending.objectAtIndex(selectedIndexPath.row) as NSDictionary
+        }
+    }
 }
 
 
