@@ -170,8 +170,8 @@
 			children = (
 				13FD380E19A0F59E00D3887C /* Im'in.jpg */,
 				13DAB2B3199DB5C20024D110 /* AppDelegate.swift */,
-				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
 				13245BDE19A1AAE000201E2F /* APIAddEventController.swift */,
+				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
 				6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */,
 				6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */,
 				13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */,
