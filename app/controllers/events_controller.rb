@@ -16,13 +16,19 @@ class EventsController < ApplicationController
   end
 
   def create
+    p params
     @event = current_user.created_events.create(event_params)
     render json: @event
-    # respond_to do |format|
-    #   format.html
-    #   format.json { render :json => { :events => @events, :invitations => @invitations } }
-    # end
-    # redirect_to event_path(@event)
+    respond_to do |format|
+      format.html
+      format.json { render :json => { :events => @events, :invitations => @invitations } }
+    end
+    redirect_to event_path(@event)
+  end
+
+  def create_ios
+    p params
+    @event = current_user.created_events.create(event_params)
   end
 
   def update
