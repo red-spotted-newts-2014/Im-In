@@ -8,11 +8,13 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     var events: NSMutableArray = NSMutableArray();
     var apiCtrl = APIInvitedEventController()
     var invitedEvents: NSArray!
+    var invitations: NSArray!
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("EventViewController#didReceiveAPIResults")
         //       println(results)
         invitedEvents = results.objectForKey("invited_events") as? NSArray
+        invitations = results.objectForKey("invitations") as? NSArray
         //       println("****")
         println(invitedEvents)
         dispatch_async(dispatch_get_main_queue(),{
@@ -86,6 +88,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
             var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
             var invitedEventViewController:EventShowViewController = segue!.destinationViewController as EventShowViewController
             invitedEventViewController.eventData = invitedEvents.objectAtIndex(selectedIndexPath.row) as NSDictionary
+            invitedEventViewController.invitationData = invitations.objectAtIndex(selectedIndexPath.row) as NSDictionary
         } else if (segue!.identifier == "toCreatedEvents") {
             println("to created events")
 //            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()

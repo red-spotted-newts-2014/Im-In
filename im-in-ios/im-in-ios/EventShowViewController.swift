@@ -18,17 +18,19 @@ class EventShowViewController: UIViewController {
     @IBOutlet var endTextField: UITextField!
     @IBOutlet var creatorField: UITextField!
     @IBOutlet var eventIDField: UITextField!
+    var invitation_status: String!
 
     @IBOutlet var areuin: UIButton!
     
     
     var eventData:NSDictionary = NSDictionary()
+    var invitationData:NSDictionary = NSDictionary()
     
     @IBAction func areuin(sender: AnyObject) {
-        if (areuin.backgroundColor == UIColor.purpleColor()) {
+        if (invitation_status == "pending") {
             areuin.backgroundColor = UIColor.blueColor()
             areuin.setTitle("ARE YOU IN ??? or nah", forState: .Normal)
-        } else {
+        } else if (invitation_status == "in") {
             areuin.backgroundColor = UIColor.purpleColor()
             areuin.setTitle("I'M IN", forState: .Normal)
         }
@@ -36,7 +38,7 @@ class EventShowViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        areuin.tintColor = UIColor.redColor()
+        
         nameTextField.userInteractionEnabled = false
         descTextField.userInteractionEnabled = false
         venueTextField.userInteractionEnabled = false
@@ -55,6 +57,17 @@ class EventShowViewController: UIViewController {
         startTextField.text = eventData.objectForKey("start_time") as String
         endTextField.text = eventData.objectForKey("end_time") as String
         eventIDField.text = eventData.objectForKey("id").stringValue as String
+        
+        invitation_status = invitationData.objectForKey("status") as String
+        
+        if (invitation_status == "pending") {
+            areuin.backgroundColor = UIColor.blueColor()
+            areuin.setTitle("ARE YOU IN ??? or nah", forState: .Normal)
+        } else if (invitation_status == "in") {
+            areuin.backgroundColor = UIColor.purpleColor()
+            areuin.setTitle("I'M IN", forState: .Normal)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
