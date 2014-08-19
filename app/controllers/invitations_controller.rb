@@ -5,6 +5,11 @@ class InvitationsController < ApplicationController
     redirect_to event_path(@event)
   end
 
+  def update
+    @invitation = Invitation.find(params[:id])
+    @invitaiton.update(status: params[:status])
+  end
+  
   private
 
   def invitation_params

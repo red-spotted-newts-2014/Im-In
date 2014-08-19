@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'events/:id/attending' => 'events#attending', as: "events_users_attending"
 
   resources :events do
-    resources :invitations, only: [:create, :new]
+    resources :invitations, only: [:create, :new, :update]
   end
 
   post 'users/login' => 'users#login', as: 'login'
