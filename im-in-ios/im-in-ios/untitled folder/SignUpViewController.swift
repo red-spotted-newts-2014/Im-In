@@ -17,7 +17,20 @@ class SignUpViewController: UIViewController, APISignUpControllerProtocol, NSURL
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     
-    
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        let touch = event.allTouches().anyObject() as UITouch
+        if usernameField.isFirstResponder() && touch.view != usernameField {
+            usernameField.resignFirstResponder()}
+            
+        else if passwordField.isFirstResponder() && touch.view != passwordField {
+            passwordField.resignFirstResponder()}
+        
+        else if emailField.isFirstResponder() && touch.view != emailField {
+            emailField.resignFirstResponder()}
+        
+        super.touchesBegan(touches, withEvent: event)
+    }
+
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("SignUpViewController#didReceiveAPIResults")
