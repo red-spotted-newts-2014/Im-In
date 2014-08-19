@@ -10,11 +10,11 @@ import UIKit
 
 //
 //, APIControllerProtocol
-class ShowProfileViewController: UIViewController, APIUserProfileViewControllerProtocol, UITableViewDataSource, UITableViewDelegate {
+class FriendsProfileViewController: UIViewController, APIFriendsProfileViewControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var button: UIButton!
-    var apiCtrl = APIUserProfileViewController()
+    var apiCtrl = APIFriendsProfileViewController()
     var userDetails: NSArray!
     
     func didReceiveAPIResults(results: NSDictionary) {

@@ -14,6 +14,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         println("EventViewController#didReceiveAPIResults")
         invitedEvents = results.objectForKey("invited_events") as? NSArray
         invitations = results.objectForKey("invitations") as? NSArray
+        //       println("****")
         println(invitedEvents)
         dispatch_async(dispatch_get_main_queue(),{
             self.tableView.reloadData()
@@ -43,12 +44,19 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         println(eventId)
         println(invitationEventId)
         println(status)
-        
-        if (status == "in") {
-            cell.backgroundColor = UIColor.purpleColor()
-        } else {
-            cell.backgroundColor = UIColor.clearColor()
+        for index in 1...invitations.count {
+            var invitationsEventId = invitations[index-1].objectForKey("event_id").stringValue as String
+            if (invitationsEventId == eventId) {
+                var status = invitations[index-1].objectForKey("status") as String
+                if (status == "in") {
+                    cell.backgroundColor = UIColor.purpleColor()
+                } else {
+                    cell.backgroundColor = UIColor.clearColor()
+                }
+            }
+
         }
+
         return cell
     }
     

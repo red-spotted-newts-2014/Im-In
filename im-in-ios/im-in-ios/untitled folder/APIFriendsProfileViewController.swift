@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol APIUserProfileViewControllerProtocol {
+protocol APIFriendsProfileViewControllerProtocol {
     func didReceiveAPIResults(results: NSDictionary)
 }
 
-class APIUserProfileViewController {
+class APIFriendsProfileViewController {
     
-    var delegate: APIUserProfileViewControllerProtocol?
+    var delegate: APIFriendsProfileViewControllerProtocol?
     
     init() {
         
