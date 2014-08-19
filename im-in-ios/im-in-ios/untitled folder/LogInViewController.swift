@@ -21,6 +21,20 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
     }
     @IBOutlet weak var incorrectEntry: UITextField!
     
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        let touch = event.allTouches().anyObject() as UITouch
+        if usernameField.isFirstResponder() && touch.view != usernameField {
+            usernameField.resignFirstResponder()}
+            
+        else if passwordField.isFirstResponder() && touch.view != passwordField {
+            passwordField.resignFirstResponder()
+         }
+
+        super.touchesBegan(touches, withEvent: event)
+    }
+
+
+    
     
     func sendLogInInfo(info: NSDictionary) {
         var request = NSMutableURLRequest(URL: NSURL(string: "http:localhost:3000/users/login_ios"))
