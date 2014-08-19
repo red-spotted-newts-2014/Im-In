@@ -3,10 +3,11 @@ class EventsController < ApplicationController
 
   def index
     @invited_events = current_user.invited_events
+    @invitations = current_user.invitations
 
     respond_to do |format|
       format.html
-      format.json { render :json => { :invited_events => @invited_events } }
+      format.json { render :json => { :invited_events => @invited_events, :invitations => @invitations } }
     end
   end
 

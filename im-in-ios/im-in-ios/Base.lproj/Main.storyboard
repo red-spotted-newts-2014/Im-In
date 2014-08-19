@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KX1-of-CHy">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
@@ -189,7 +188,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jC3-rJ-lKa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invited Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jC3-rJ-lKa">
                                 <rect key="frame" x="13" y="27" width="294" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -246,50 +245,6 @@
                 <swipeGestureRecognizer direction="right" id="SwC-eu-8xh"/>
             </objects>
             <point key="canvasLocation" x="-6472" y="-9439"/>
-        </scene>
-        <!--Attending View Controller-->
-        <scene sceneID="Lkm-Dw-mp6">
-            <objects>
-                <viewController id="Y6c-d6-kas" customClass="AttendingViewController" customModule="im_in_ios" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ctA-hc-oc4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2DZ-0e-8lo">
-                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y6c-d6-kas" id="RbV-fl-Ua9"/>
-                                    <outlet property="delegate" destination="Y6c-d6-kas" id="2cH-4P-s0W"/>
-                                </connections>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your INs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gJs-aO-tx3">
-                                <rect key="frame" x="13" y="20" width="294" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Wrm-uE-RBX" appends="YES" id="bFz-4k-ar6"/>
-                            <outletCollection property="gestureRecognizers" destination="V2R-mx-O0j" appends="YES" id="E9X-SE-onM"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="vDn-Vq-T9b"/>
-                    <value key="contentSizeForViewInPopover" type="size" width="320" height="568"/>
-                    <connections>
-                        <outlet property="tableView" destination="2DZ-0e-8lo" id="Apa-rh-cu8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wF3-Mh-Eel" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Wrm-uE-RBX"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="V2R-mx-O0j"/>
-            </objects>
-            <point key="canvasLocation" x="-5524" y="-8695"/>
         </scene>
         <!--Following View Controller-->
         <scene sceneID="Jhd-Wy-yw8">
@@ -736,7 +691,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xgc-p6-gKT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZI0-5O-2yL">
+                                <rect key="frame" x="114" y="452" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Attending">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GJ6-HY-VJs" kind="push" id="fSu-tw-hi1"/>
+                                </connections>
+                            </button>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xgc-p6-gKT">
                                 <rect key="frame" x="16" y="525" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -762,14 +727,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZI0-5O-2yL">
-                                <rect key="frame" x="114" y="452" width="103" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r9U-dr-aU2">
+                                <rect key="frame" x="16" y="510" width="288" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View Attending">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0027882601730730983" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <state key="normal" title="ARE YOU IN??? or nah">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GJ6-HY-VJs" kind="push" id="fSu-tw-hi1"/>
+                                    <action selector="areuin:" destination="jM9-bO-iRe" eventType="touchUpInside" id="lTk-za-DFd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -777,6 +744,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="f97-Br-0uq"/>
                     <connections>
+                        <outlet property="areuin" destination="r9U-dr-aU2" id="Dq2-KA-eJI"/>
                         <outlet property="creatorField" destination="D8A-Iu-QWe" id="i2o-oD-MiM"/>
                         <outlet property="descTextField" destination="mxz-aI-S3c" id="wdZ-Gk-bSR"/>
                         <outlet property="endTextField" destination="ezK-Lh-9C5" id="Emb-bY-MV3"/>
