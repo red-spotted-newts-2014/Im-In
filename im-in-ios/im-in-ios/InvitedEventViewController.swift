@@ -12,10 +12,8 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("EventViewController#didReceiveAPIResults")
-        //       println(results)
         invitedEvents = results.objectForKey("invited_events") as? NSArray
         invitations = results.objectForKey("invitations") as? NSArray
-        //       println("****")
         println(invitedEvents)
         dispatch_async(dispatch_get_main_queue(),{
             self.tableView.reloadData()
@@ -32,9 +30,6 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         
         
     }
-    
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    //Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         //
@@ -54,13 +49,6 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         } else {
             cell.backgroundColor = UIColor.clearColor()
         }
-//        for index in 1...invitations.count {
-//            var invitationEventId = invitations[index-1].objectForKey("event_id").stringValue as String
-//            var status = invitations[index-1].objectForKey("status") as String
-//            if (eventId == invitationEventId) {
-
-//            }
-//        }
         return cell
     }
     
@@ -104,9 +92,6 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
             invitedEventViewController.invitationData = invitations.objectAtIndex(selectedIndexPath.row) as NSDictionary
         } else if (segue!.identifier == "toCreatedEvents") {
             println("to created events")
-//            var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
-//            var invitedEventViewController:EventFeedViewController = segue!.destinationViewController as EventFeedViewController
-//            invitedEventViewController.eventData = invitedEvents.objectAtIndex(selectedIndexPath.row) as NSDictionary
         }
     }
 
