@@ -86,11 +86,13 @@ class EventShowViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-//        if (segue!.identifier == "showDetails"){
-//            var eventDetailViewController:EventDetailViewController = segue!.destinationViewController as EventDetailViewController
-//            eventDetailViewController.eventData = events.objectAtIndex(selectedIndexPath.row) as NSDictionary
-        var friendsAttendingViewController:FriendsAttendingViewController = segue!.destinationViewController as FriendsAttendingViewController
-        friendsAttendingViewController.eventID = eventIDField.text
+        if (segue!.identifier == "toAttending"){
+            var friendsAttendingViewController:FriendsAttendingViewController = segue!.destinationViewController as FriendsAttendingViewController
+            friendsAttendingViewController.eventID = eventIDField.text
+        } else if (segue!.identifier == "chatSegue"){
+            var chatViewController:ChatViewController = segue!.destinationViewController as ChatViewController
+            chatViewController.eventId = eventIDField.text
+            chatViewController.eventName = nameTextField.text
         }
-//    }
+    }
 }

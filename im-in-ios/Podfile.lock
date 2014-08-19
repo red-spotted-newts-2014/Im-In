@@ -1,1 +1,10 @@
+PODS:
+  - Firebase (1.1.11)
+
+DEPENDENCIES:
+  - Firebase (>= 1.1.11)
+
+SPEC CHECKSUMS:
+  Firebase: 05357817d13cec124e8090df21dee3130046e59a
+
 COCOAPODS: 0.33.1

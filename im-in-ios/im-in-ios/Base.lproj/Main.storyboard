@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KX1-of-CHy">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
@@ -287,6 +286,54 @@
             </objects>
             <point key="canvasLocation" x="-5328" y="-6579"/>
         </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="DlH-jp-Ymg">
+            <objects>
+                <viewController id="FIn-iw-mA6" customClass="ChatViewController" customModule="im_in_ios" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s3H-Bp-7ob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Ory-cm-bEE">
+                                <rect key="frame" x="16" y="479" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FIn-iw-mA6" id="3ox-Qh-IaJ"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="82U-1Y-8vA">
+                                <rect key="frame" x="16" y="110" width="288" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FIn-iw-mA6" id="vHh-zT-LAP"/>
+                                    <outlet property="delegate" destination="FIn-iw-mA6" id="D5b-Ma-b0Y"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E8u-By-97e">
+                                <rect key="frame" x="16" y="68" width="288" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YUC-mx-bLg"/>
+                    <connections>
+                        <outlet property="msgInput" destination="Ory-cm-bEE" id="UMb-GH-1vv"/>
+                        <outlet property="nameLabel" destination="E8u-By-97e" id="eub-4W-Jxj"/>
+                        <outlet property="tableView" destination="82U-1Y-8vA" id="6zc-lf-dgS"/>
+                        <outlet property="view" destination="82U-1Y-8vA" id="FJG-aX-ZMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOc-a5-bmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6660" y="-5915"/>
+        </scene>
         <!--Friends Attending View Controller-->
         <scene sceneID="5nZ-2c-cgP">
             <objects>
@@ -326,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfw-Ny-VTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6276" y="-5881"/>
+            <point key="canvasLocation" x="-6183" y="-5864"/>
         </scene>
         <!--Show Event Details View Controller-->
         <scene sceneID="dVG-BT-16M">
@@ -684,7 +731,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GJ6-HY-VJs" kind="push" id="fSu-tw-hi1"/>
+                                    <segue destination="GJ6-HY-VJs" kind="push" identifier="toAttending" id="fSu-tw-hi1"/>
                                 </connections>
                             </button>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xgc-p6-gKT">
@@ -723,6 +770,16 @@
                                 </state>
                                 <connections>
                                     <action selector="areuin:" destination="jM9-bO-iRe" eventType="touchUpInside" id="lTk-za-DFd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sbb-Zn-YaC">
+                                <rect key="frame" x="28" y="465" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FIn-iw-mA6" kind="push" identifier="chatSegue" id="7xk-LP-2yW"/>
                                 </connections>
                             </button>
                         </subviews>
