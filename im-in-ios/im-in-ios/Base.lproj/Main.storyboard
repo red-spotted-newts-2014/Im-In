@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqG-QZ-QQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5500" y="-8635"/>
+            <point key="canvasLocation" x="-5524" y="-8695"/>
         </scene>
         <!--Friends Attending View Controller-->
         <scene sceneID="5nZ-2c-cgP">
@@ -592,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRa-PB-maX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5586" y="-7926"/>
+            <point key="canvasLocation" x="-5524" y="-7990"/>
         </scene>
         <!--My Events-->
         <scene sceneID="Yvj-sl-Kjp">
