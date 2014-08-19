@@ -28,11 +28,13 @@ class EventShowViewController: UIViewController {
     
     @IBAction func areuin(sender: AnyObject) {
         if (invitation_status == "pending") {
-            areuin.backgroundColor = UIColor.blueColor()
-            areuin.setTitle("ARE YOU IN ??? or nah", forState: .Normal)
-        } else if (invitation_status == "in") {
             areuin.backgroundColor = UIColor.purpleColor()
             areuin.setTitle("I'M IN", forState: .Normal)
+            invitation_status = "in"
+        } else if (invitation_status == "in") {
+            areuin.backgroundColor = UIColor.blueColor()
+            areuin.setTitle("ARE YOU IN ??? or nah", forState: .Normal)
+            invitation_status = "pending"
         }
 
     }

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "im-in-ios/EventShowViewController.swift"
-            timestampString = "430102602.365054"
+            timestampString = "430102916.714908"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "areuin(_:)"
             landmarkType = "5">
          </BreakpointContent>
