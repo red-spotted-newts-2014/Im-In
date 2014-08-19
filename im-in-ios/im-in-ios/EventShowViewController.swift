@@ -18,26 +18,32 @@ class EventShowViewController: UIViewController {
     @IBOutlet var endTextField: UITextField!
     @IBOutlet var creatorField: UITextField!
     @IBOutlet var eventIDField: UITextField!
-    var invitation_status: String!
+    var invitationStatus: String!
+    var invitationId: String!
+    var eventId: String!
+    var info: NSDictionary!
 
     @IBOutlet var areuin: UIButton!
     
-    
+    var apiCtrl = APIEventShowController()
     var eventData:NSDictionary = NSDictionary()
     var invitationData:NSDictionary = NSDictionary()
+    var invitedEventCtrl = InvitedEventViewController()
     
-    @IBAction func areuin(sender: AnyObject) {
-        if (invitation_status == "pending") {
-            areuin.backgroundColor = UIColor.purpleColor()
-            areuin.setTitle("I'M IN", forState: .Normal)
-            invitation_status = "in"
-        } else if (invitation_status == "in") {
-            areuin.backgroundColor = UIColor.blueColor()
-            areuin.setTitle("ARE YOU IN ??? or nah", forState: .Normal)
-            invitation_status = "pending"
+    
+        @IBAction func areuin(sender: AnyObject) {
+            if (invitationStatus == "pending") {
+                areuin.backgroundColor = UIColor.purpleColor()
+                areuin.setTitle("I'M IN", forState: .Normal)
+                invitationStatus = "in"
+            } else if (invitationStatus == "in") {
+                areuin.backgroundColor = UIColor.blueColor()
+                areuin.setTitle("ARE YOU IN?", forState: .Normal)
+                invitationStatus = "pending"
+            }
+            info = ["eventId": eventId, "invitationId": invitationId, "invitationStatus": invitationStatus] as NSDictionary
+            apiCtrl.sendInvitationStatusInfo(info)
         }
-
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,12 +66,14 @@ class EventShowViewController: UIViewController {
         endTextField.text = eventData.objectForKey("end_time") as String
         eventIDField.text = eventData.objectForKey("id").stringValue as String
         
-        invitation_status = invitationData.objectForKey("status") as String
+        eventId = eventIDField.text
+        invitationStatus = invitationData.objectForKey("status") as String
+        invitationId = invitationData.objectForKey("id").stringValue as String
         
-        if (invitation_status == "pending") {
+        if (invitationStatus == "pending") {
             areuin.backgroundColor = UIColor.blueColor()
-            areuin.setTitle("ARE YOU IN ??? or nah", forState: .Normal)
-        } else if (invitation_status == "in") {
+            areuin.setTitle("ARE YOU IN?", forState: .Normal)
+        } else if (invitationStatus == "in") {
             areuin.backgroundColor = UIColor.purpleColor()
             areuin.setTitle("I'M IN", forState: .Normal)
         }

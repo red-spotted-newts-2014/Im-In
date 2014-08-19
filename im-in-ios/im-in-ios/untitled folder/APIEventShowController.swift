@@ -20,13 +20,15 @@ class APIEventShowController {
         
     }
     
-    func sendLogInInfo(info: NSDictionary) {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/users/login_ios"))
+    func sendInvitationStatusInfo(info: AnyObject) {
+        var eventId = info.objectForKey("eventId") as String
+        var invitationId = info.objectForKey("invitationId") as String
+        println("http://localhost:3000/events/" + eventId + "/invitations/" + invitationId)
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/events/" + eventId + "/invitations/" + invitationId))
         var session = NSURLSession.sharedSession()
-        request.HTTPMethod = "POST"
+        request.HTTPMethod = "PATCH"
         
-        var params = ["username": info.objectForKey("username"),"password": info.objectForKey("password")] as Dictionary
-        
+        var params = ["status": info.objectForKey("invitationStatus")] as Dictionary
         var err: NSError?
         request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
