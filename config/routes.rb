@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
+  post 'events/create_ios' => 'events#create_ios'
   get 'events/:id/attending' => 'events#attending', as: "events_users_attending"
 
   resources :events do

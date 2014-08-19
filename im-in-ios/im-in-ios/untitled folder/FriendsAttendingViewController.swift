@@ -13,7 +13,6 @@ import UIKit
 class FriendsAttendingViewController: UIViewController, APIFriendsAttendingControllerProtocol, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
-    @IBOutlet weak var button: UIButton!
     var apiCtrl = APIFriendsAttendingController()
     var attending: NSArray!
     var eventID: NSString!
@@ -22,17 +21,11 @@ class FriendsAttendingViewController: UIViewController, APIFriendsAttendingContr
         println("FriendsAttendingViewController#didReceiveAPIResults")
         println(results)
         attending = results.objectForKey("friends") as? NSArray
-        //        println("****")
         println(attending)
+        println(eventID)
         dispatch_async(dispatch_get_main_queue(),{
             self.tableView.reloadData()
         })
-    }
-    
-    
-    @IBAction func buttonPressed(sender: AnyObject) {
-        //apiCtrl.loadAllEvents()
-        
     }
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
@@ -42,9 +35,6 @@ class FriendsAttendingViewController: UIViewController, APIFriendsAttendingContr
         }
         return attending.count;
     }
-    
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         
