@@ -98,4 +98,3 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
 
 }
 
-
