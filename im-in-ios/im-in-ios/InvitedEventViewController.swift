@@ -40,17 +40,27 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         //
         println("EventViewController#tableView")
         let cell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-//        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "Cell")
-//        var event:NSDictionary = events.objectAtIndex(indexPath.row) as NSDictionary
-//        cell.textLabel.text = event.objectForKey("name") as String
-        
-//               cell.textLabel.text = "Row #\(indexPath.row)"
         cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
-//        cell.detailTextLabel.text = invitedEvents[indexPath.row].objectForKey("venue") as? String
+
+        var eventId = invitedEvents[indexPath.row].objectForKey("id").stringValue as String
+        var invitationEventId = invitations[indexPath.row].objectForKey("event_id").stringValue as String
         var status = invitations[indexPath.row].objectForKey("status") as String
+        println(eventId)
+        println(invitationEventId)
+        println(status)
+        
         if (status == "in") {
             cell.backgroundColor = UIColor.purpleColor()
+        } else {
+            cell.backgroundColor = UIColor.clearColor()
         }
+//        for index in 1...invitations.count {
+//            var invitationEventId = invitations[index-1].objectForKey("event_id").stringValue as String
+//            var status = invitations[index-1].objectForKey("status") as String
+//            if (eventId == invitationEventId) {
+
+//            }
+//        }
         return cell
     }
     
@@ -68,6 +78,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         apiCtrl.delegate = self
         apiCtrl.loadAllEvents()
         self.refreshControl.endRefreshing()
+        println("REFRESHED")
     }
     
     override func viewDidLoad() {

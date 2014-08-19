@@ -25,7 +25,7 @@ class APIFriendsAttendingController {
         let eventID = eventID as String
         println("***")
         println(eventID)
-        let urlPath = "http://10.0.2.26:3000/events/" + eventID + "/attending.json"
+        let urlPath = "http://localhost:3000/events/" + eventID + "/attending.json"
         println(urlPath)
         let url: NSURL = NSURL(string: urlPath)
         let session = NSURLSession.sharedSession()

@@ -56,7 +56,7 @@ frisbee = user1.created_events.create(name: "Night @ Lavo",
 
 frisbee.invitations.create(user_id: 3, status: "in")
 frisbee.invitations.create(user_id: 4, status: "pending")
-frisbee.invitations.create(user_id: 5, status: "out")
+frisbee.invitations.create(user_id: 5, status: "pending")
 
 yoga = user1.created_events.create(name: "Yoga",
                   description: "just breathe",
@@ -121,7 +121,7 @@ killingtime = user3.created_events.create(name: "Killing Time",
                   notify_user?: true,
                   notify_hours_until_event: 3)
 
-killingtime.invitations.create(user_id: 1, status: "out")
+killingtime.invitations.create(user_id: 1, status: "pending")
 killingtime.invitations.create(user_id: 3, status: "in")
 killingtime.invitations.create(user_id: 4, status: "pending")
 killingtime.invitations.create(user_id: 5, status: "pending")
