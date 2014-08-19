@@ -1000,7 +1000,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addEventButton:" destination="qJd-hz-hSh" eventType="touchUpInside" id="rJD-CX-hj1"/>
-                                    <segue destination="GJO-zE-Wte" kind="push" id="aHa-0G-jS8"/>
+                                    <segue destination="GJO-zE-Wte" kind="push" identifier="inviteFriendSegue" id="aHa-0G-jS8"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -42,8 +42,11 @@ class APIFollowersController {
         task.resume()
     }
     
-//    func sendInviteInfo(info: NSDictionary) {
-//        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/events"))
+    func sendInviteInfo(info: NSDictionary) {
+            println("at the api")
+            println(info)
+//            println(newEventId)
+//        var request = NSMutableURLRequest(URL: NSURL(string: ""))
 //        var session = NSURLSession.sharedSession()
 //        request.HTTPMethod = "POST"
 //        
@@ -59,6 +62,6 @@ class APIFollowersController {
 //        
 //        connection.start()
 //        println("Sending request")
-//    }
+    }
     
 }

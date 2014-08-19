@@ -15,15 +15,18 @@ class CreateEventViewController: UIViewController, APIAddEventControllerProtocol
     @IBOutlet var locationTextField: UITextField!
     @IBOutlet var startTextField: UITextField!
     @IBOutlet var endTextField: UITextField!
-    var newEventId: NSString?
+    var newEventId: NSString!
     var apiCtrl = APIAddEventController()
-
+    var followersViewController = FollowersViewController()
  
 
     func didReceiveAPIResults(results: AnyObject!) {
         println("AddEventViewController#didReceiveAPIResults")
         newEventId = results.objectForKey("id").stringValue as String
         println(newEventId)
+        followersViewController.newEventId = newEventId
+        println(followersViewController.newEventId)
+//        println(results)
     }
     
     override func viewDidLoad() {
@@ -81,8 +84,14 @@ class CreateEventViewController: UIViewController, APIAddEventControllerProtocol
 //        self.navigationController.popToRootViewControllerAnimated(true)
     }
     
+//    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//        if (segue!.identifier == "inviteFriendSegue"){
+//            var followersViewController:FollowersViewController = segue!.destinationViewController as FollowersViewController
+//            followersViewController.newEventId = newEventId
+//        }
+//    }
     
-    }
+}
     
 
 

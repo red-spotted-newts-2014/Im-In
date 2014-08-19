@@ -7,10 +7,8 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     var apiCtrl = APIFollowersController()
     var followers: NSArray!
     var postInvitations: NSArray!
+    var newEventId: NSString!
 
-
-//    var invite = ["invite": ""] as NSDictionary
-    
     func didReceiveAPIResults(results: NSDictionary) {
         println("FollowersViewController#didReceiveAPIResults")
         followers = results.objectForKey("followers") as? NSArray
@@ -18,15 +16,19 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
         dispatch_async(dispatch_get_main_queue(),{
             self.tableView.reloadData()
         })
+        println("lets double check this")
+        println(newEventId)
     }
     
     @IBAction func inviteFriendsButton(sender: AnyObject) {
         println("********HERE**********")
-//        for index in 0...(followers.count-1) {
-        for user in followers {
-//            var user = followers[index] as NSDictionary
+        for index in 0...(followers.count-1) {
+//        for user in followers {
+            var user = followers[index] as NSDictionary
             if (user.objectForKey("invite") as NSString == "true") {
-                print(user)
+//                print(user)
+                println(user)
+                println(newEventId)
 //                apiCtrl.sendInviteInfo(user)
             }
         }
