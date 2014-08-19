@@ -8,26 +8,27 @@
 
 import UIKit
 
-class CreateEventViewController: UIViewController, APIAddEventControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
+class CreateEventViewController: UIViewController
+//, APIAddEventControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate
+{
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var descTextField: UITextView!
     @IBOutlet var venueTextField: UITextField!
     @IBOutlet var locationTextField: UITextField!
     @IBOutlet var startTextField: UITextField!
     @IBOutlet var endTextField: UITextField!
-    var newEventId: NSString!
-    var apiCtrl = APIAddEventController()
-    var followersViewController = FollowersViewController()
- 
+    var params: NSDictionary?
+    
+    var inviteFriendsCtrl = FollowersViewController()
+//    var newEventId: NSString!
+//    var apiCtrl = APIAddEventController()
 
-    func didReceiveAPIResults(results: AnyObject!) {
-        println("AddEventViewController#didReceiveAPIResults")
-        newEventId = results.objectForKey("id").stringValue as String
-        println(newEventId)
-        followersViewController.newEventId = newEventId
-        println(followersViewController.newEventId)
-//        println(results)
-    }
+//    func didReceiveAPIResults(results: AnyObject!) {
+//        println("AddEventViewController#didReceiveAPIResults")
+//        newEventId = results.objectForKey("id").stringValue as String
+//        println(newEventId)
+////        println(results)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +44,9 @@ class CreateEventViewController: UIViewController, APIAddEventControllerProtocol
     
     @IBAction func addEventButton(sender: AnyObject) {
         println("print this SHIT!")
-        var params = ["name": nameTextField.text, "description": descTextField.text, "start_time": startTextField.text, "end_time": endTextField.text, "venue": venueTextField.text, "location": locationTextField.text] as Dictionary
-        apiCtrl.delegate = self
-        apiCtrl.sendCreateEventInfo(params)
+        params = ["name": nameTextField.text, "description": descTextField.text, "start_time": startTextField.text, "end_time": endTextField.text, "venue": venueTextField.text, "location": locationTextField.text] as Dictionary
+//        apiCtrl.delegate = self
+//        apiCtrl.sendCreateEventInfo(params)
         println(params)
         
 //        var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
@@ -84,12 +85,13 @@ class CreateEventViewController: UIViewController, APIAddEventControllerProtocol
 //        self.navigationController.popToRootViewControllerAnimated(true)
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-//        if (segue!.identifier == "inviteFriendSegue"){
-//            var followersViewController:FollowersViewController = segue!.destinationViewController as FollowersViewController
-//            followersViewController.newEventId = newEventId
-//        }
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue!.identifier == "inviteFriendSegue"){
+            var followersViewController:FollowersViewController = segue!.destinationViewController as FollowersViewController
+            followersViewController.params = params
+        }
+    }
+    
     
 }
     

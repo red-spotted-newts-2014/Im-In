@@ -40,7 +40,6 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
         connection.start()
         println("Sending request")
     }
-
     
     @IBAction func buttonPressed(sender: AnyObject) {
         

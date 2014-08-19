@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KX1-of-CHy">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
@@ -78,7 +79,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-7045" y="-8695"/>
+            <point key="canvasLocation" x="-6937" y="-8695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="moS-aJ-uPJ">
@@ -231,11 +232,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Event Feed" id="34E-oK-CEj">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="txP-6h-sDD">
-                            <connections>
-                                <segue destination="1SV-tU-FbS" kind="push" id="jo4-gL-4eO"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="txP-6h-sDD"/>
                         <barButtonItem key="rightBarButtonItem" title="My Events" id="ZtY-R2-0Eb">
                             <connections>
                                 <segue destination="8z3-BH-QXL" kind="push" identifier="toCreatedEvents" id="aBK-QG-fBT"/>
@@ -316,11 +313,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="j4z-qQ-QLa" id="dF6-5W-Jpp"/>
+                        <segue destination="8z3-BH-QXL" kind="push" identifier="backToCreated" id="4Pi-AB-3MU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqG-QZ-QQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5524" y="-8751"/>
+            <point key="canvasLocation" x="-5500" y="-8635"/>
         </scene>
         <!--Friends Attending View Controller-->
         <scene sceneID="5nZ-2c-cgP">
@@ -478,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAo-nE-Tdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6040" y="-7997"/>
+            <point key="canvasLocation" x="-6022" y="-7997"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="326-Nh-tOA">
@@ -599,7 +597,7 @@
         <!--My Events-->
         <scene sceneID="Yvj-sl-Kjp">
             <objects>
-                <tableViewController id="8z3-BH-QXL" customClass="EventFeedTableViewController" customModule="im_in_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8z3-BH-QXL" customClass="EventFeedTableViewController" customModule="im_in_ios" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OkW-j6-Wj4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -610,6 +608,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kfT-hu-WBU" id="7yN-1b-f9o">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1SV-tU-FbS" kind="push" identifier="showDetails" id="Skz-FY-HMW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -620,10 +621,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableVIew" destination="OkW-j6-Wj4" id="qjm-8E-GqM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgw-bH-MGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5990" y="-9195"/>
+            <point key="canvasLocation" x="-6022" y="-9439"/>
         </scene>
         <!--Event Show View Controller-->
         <scene sceneID="sNS-rf-6fB">
@@ -877,7 +881,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pp3-vB-idl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5990" y="-9807"/>
+            <point key="canvasLocation" x="-6022" y="-8695"/>
         </scene>
         <!--Create Event View Controller-->
         <scene sceneID="noW-ob-YKH">
@@ -985,7 +989,7 @@
                                 <rect key="frame" x="11" y="203" width="298" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -1163,4 +1167,7 @@
             <size key="landscapeSize" width="568" height="320"/>
         </simulatedScreenMetrics>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Pi-AB-3MU"/>
+    </inferredMetricsTieBreakers>
 </document>
