@@ -8,38 +8,35 @@
 
 import Foundation
 
-protocol APIShowEventDetailsViewControllerProtocol {
+protocol APIEventShowControllerProtocol {
     func didReceiveAPIResults(results: NSDictionary)
 }
 
-class APIShowEventDetailsViewController {
+class APIEventShowController {
     
-    var delegate: APIShowEventDetailsViewControllerProtocol?
+    var delegate: APIEventShowControllerProtocol?
     
     init() {
         
     }
     
-    func loadAllEvents() {
-        println("APIController#loadAllEvents")
-        let urlPath = "http://10.0.2.26:3000/events/1.json"
-        let url: NSURL = NSURL(string: urlPath)
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
-            println("Task completed")
-            if(error) {
-                // If there is an error in the web request, print it to the console
-                println(error.localizedDescription)
-            }
-            var err: NSError?
-            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
-            if(err != nil) {
-                // If there is an error parsing JSON, print it to the console
-                println("JSON Error \(err!.localizedDescription)")
-            }
-            self.delegate?.didReceiveAPIResults(jsonResult)
-        })
-        task.resume()
+    func sendLogInInfo(info: NSDictionary) {
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/users/login_ios"))
+        var session = NSURLSession.sharedSession()
+        request.HTTPMethod = "POST"
+        
+        var params = ["username": info.objectForKey("username"),"password": info.objectForKey("password")] as Dictionary
+        
+        var err: NSError?
+        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("\(countElements(params))", forHTTPHeaderField: "Content-Length")
+        
+        var connection = NSURLConnection(request: request, delegate: self, startImmediately: false)
+        
+        connection.start()
+        println("Sending request")
     }
     
 }
