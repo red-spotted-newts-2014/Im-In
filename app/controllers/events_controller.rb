@@ -2,9 +2,6 @@ class EventsController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def index
-    p "*********"
-    p session[:user_id]
-    p current_user
     @invited_events = current_user.invited_events
     @invitations = current_user.invitations
 
@@ -33,7 +30,7 @@ class EventsController < ApplicationController
     p params
     @event = current_user.created_events.create(event_params)
     p params[:users]
-    p count = params[:users].length-1
+    p count = params[:users].length-1 if params[:user].length > 0
     params[:users].each do |user|
       @event.invitations.create(user_id: user["id"], status: "pending")
     end

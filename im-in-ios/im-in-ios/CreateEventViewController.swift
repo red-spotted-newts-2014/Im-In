@@ -72,28 +72,28 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     @IBAction func startDateButton(sender: AnyObject) {
         
         showDatePicker()
-                hideEndDatePicker()
+        hideEndDatePicker()
     }
-
+    
     @IBAction func endDateButton(sender: AnyObject) {
         
         showEndDatePicker()
-                hideStartDatePicker()
+        hideStartDatePicker()
         
     }
     
     
     @IBAction func confirmDatesButton(sender: AnyObject) {
         
-                startTexTField.hidden = false
+        startTexTField.hidden = false
         
-                endTextField.hidden = false
+        endTextField.hidden = false
         
-                startTexTField.text = "\(datePicker.date)"
-                endTextField.text = "\(endDatePicker.date)"
+        startTexTField.text = "\(datePicker.date)"
+        endTextField.text = "\(endDatePicker.date)"
         
-                hideStartDatePicker()
-                hideEndDatePicker()
+        hideStartDatePicker()
+        hideEndDatePicker()
     }
     
     
@@ -138,7 +138,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     ////        println(results)
     //    }
     
-   
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -200,28 +200,28 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     //
     
     
-        func textFieldShouldBeginEditing(textField: UITextField!) -> Bool {
-            if (textField ==  startTexTField) {
-                showDatePicker()
-                hideEndDatePicker()
-                var start_time_from_date_picker = startTexTField
-                println("selected start time field")
-                println(datePicker.date)
-                return false;
-            }
-            else if( textField ==  endTextField){
-                showEndDatePicker()
-                hideStartDatePicker()
-                var end_time_from_date_picker = endTextField
-                println("selected end time field")
-                println(endDatePicker.date)
-                return false;
-            }
-            else {
-    
-            return true;
-            }
+    func textFieldShouldBeginEditing(textField: UITextField!) -> Bool {
+        if (textField ==  startTexTField) {
+            showDatePicker()
+            hideEndDatePicker()
+            var start_time_from_date_picker = startTexTField
+            println("selected start time field")
+            println(datePicker.date)
+            return false;
         }
+        else if( textField ==  endTextField){
+            showEndDatePicker()
+            hideStartDatePicker()
+            var end_time_from_date_picker = endTextField
+            println("selected end time field")
+            println(endDatePicker.date)
+            return false;
+        }
+        else {
+            
+            return true;
+        }
+    }
     
     //    func datePickerDidEndEditing(textField: UITextField!) -> Bool {
     //        if (textField ==  startTextField) {
@@ -273,3 +273,4 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
 
 
 
+ 

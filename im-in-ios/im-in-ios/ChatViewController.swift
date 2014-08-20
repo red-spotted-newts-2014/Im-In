@@ -20,17 +20,20 @@ class ChatViewController: GlobalController {
     var eventId: String = ""
     var eventName: String = ""
     
-    @IBOutlet var msgInput: UITextField!
-    @IBOutlet var tableView: UITableView!
     @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var msgInput: UITextField!
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
         urlPath = "https://amber-inferno-1117.firebaseio.com/" + eventId
         firebase = Firebase(url: urlPath)
-        nameLabel.text = eventName + " " + eventId
+        nameLabel.text = eventName
         name = appDelegate.currentUser!
+        
+        println(eventId)
+        println(name)
         
         var snapshot: FDataSnapshot = FDataSnapshot()
         
@@ -70,5 +73,6 @@ class ChatViewController: GlobalController {
         
         return cell
     }
+    
 
 }
