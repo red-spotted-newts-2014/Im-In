@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KX1-of-CHy">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
@@ -111,16 +112,6 @@
                                 <color key="textColor" red="0.67450982332229614" green="0.66666668653488159" blue="0.086274512112140656" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="center" minimumFontSize="17" id="qFO-84-05e">
-                                <rect key="frame" x="16" y="161" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="MR6-X5-dh9" id="SS1-ct-bpe"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" minimumFontSize="17" id="PuC-ud-KXC">
                                 <rect key="frame" x="16" y="199" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -128,18 +119,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
-                                    <outlet property="delegate" destination="MR6-X5-dh9" id="Pje-EE-G7l"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="dTT-05-SHK">
-                                <rect key="frame" x="22" y="364" width="276" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.023573720190035896" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="0.023573720190000001" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="MR6-X5-dh9" eventType="editingDidEnd" id="Oki-6b-ylc"/>
+                                    <outlet property="delegate" destination="MR6-X5-dh9" id="v5Y-iJ-k7B"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zyg-Im-YnS">
@@ -161,18 +141,35 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cfC-fS-2eY" kind="modal" id="Bsd-Lr-FPt"/>
+                                    <segue destination="cfC-fS-2eY" kind="modal" identifier="" id="Bsd-Lr-FPt"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="center" minimumFontSize="17" id="qFO-84-05e">
+                                <rect key="frame" x="17" y="161" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="MR6-X5-dh9" id="iuB-7a-vO1"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you have entered incorrect login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fFc-To-1Au" colorLabel="IBBuiltInLabel-Gray">
+                                <rect key="frame" x="37" y="400" width="246" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mLS-kw-jPN"/>
                     <connections>
-                        <outlet property="incorrectEntry" destination="dTT-05-SHK" id="P7b-Jm-kyW"/>
+                        <outlet property="label" destination="fFc-To-1Au" id="gS8-GP-9lX"/>
                         <outlet property="passwordField" destination="PuC-ud-KXC" id="u8D-GL-xl6"/>
                         <outlet property="usernameField" destination="qFO-84-05e" id="C9M-4N-ZgQ"/>
-                        <outlet property="view" destination="PzL-0x-kwK" id="Imw-fu-fyf"/>
+                        <segue destination="Qm8-U0-ZUD" kind="modal" identifier="logged" modalTransitionStyle="partialCurl" id="b6p-qt-y55"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEe-kY-ZZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
