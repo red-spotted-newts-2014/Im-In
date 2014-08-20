@@ -24,6 +24,7 @@ class EventShowViewController: UIViewController {
     var info: NSDictionary!
 
     @IBOutlet var areuin: UIButton!
+    @IBOutlet var chat: UIButton!
     
     var apiCtrl = APIEventShowController()
     var eventData:NSDictionary = NSDictionary()
@@ -36,10 +37,12 @@ class EventShowViewController: UIViewController {
                 areuin.backgroundColor = UIColor.purpleColor()
                 areuin.setTitle("I'M IN", forState: .Normal)
                 invitationStatus = "in"
+                chat.hidden = false;
             } else if (invitationStatus == "in") {
                 areuin.backgroundColor = UIColor.blueColor()
                 areuin.setTitle("ARE YOU IN?", forState: .Normal)
                 invitationStatus = "pending"
+                chat.hidden = true;
             }
             info = ["eventId": eventId, "invitationId": invitationId, "invitationStatus": invitationStatus] as NSDictionary
             apiCtrl.sendInvitationStatusInfo(info)
@@ -74,9 +77,11 @@ class EventShowViewController: UIViewController {
         if (invitationStatus == "pending") {
             areuin.backgroundColor = UIColor.blueColor()
             areuin.setTitle("ARE YOU IN ?", forState: .Normal)
+            chat.hidden = true;
         } else if (invitationStatus == "in") {
             areuin.backgroundColor = UIColor.purpleColor()
             areuin.setTitle("I'M IN", forState: .Normal)
+            chat.hidden = false;
         }
         
     }

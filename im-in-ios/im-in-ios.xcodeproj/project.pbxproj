@@ -180,6 +180,7 @@
 		13DAB2B0199DB5C20024D110 /* im-in-ios */ = {
 			isa = PBXGroup;
 			children = (
+				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13FD380E19A0F59E00D3887C /* Im'in.jpg */,
 				13DAB2B3199DB5C20024D110 /* AppDelegate.swift */,
 				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
@@ -202,7 +203,6 @@
 				13245BF019A1AAE000201E2F /* LogInViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
 				13FD37B419A0894B00D3887C /* Default@2x.png */,
-				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13245BD919A1AAE000201E2F /* untitled folder */,
 				13DAB2B1199DB5C20024D110 /* Supporting Files */,
 				6C2C489919A3E4E70074DC9C /* im-in-ios-Bridging-Header.h */,

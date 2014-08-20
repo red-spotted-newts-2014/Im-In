@@ -10,6 +10,8 @@ import UIKit
 
 class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
     
+
+    
 //    let alert = UIAlertView()
     var apiCtrl = APILogInController()
     
@@ -19,13 +21,22 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
 
     @IBOutlet var label: UILabel!
     
+    
+    override func viewDidLoad() {
+    }
+    
     func didReceiveAPIResults(results: NSDictionary) {
     println("LogInViewController#didReceiveAPIResults")
+        
         println("************")
+        
         println(results.objectForKey("response"))
+        
         if (results.objectForKey("response") as String == "Logged in" as String) {
-            self.performSegueWithIdentifier("logged" as String, sender: self)
-            println("HI")
+            dispatch_async(dispatch_get_main_queue(),{
+                self.performSegueWithIdentifier("logged" as String, sender: self)
+            })
+
         } else {
             println(label.text)
             label.textColor = UIColor.redColor()
