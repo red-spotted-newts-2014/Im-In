@@ -18,28 +18,11 @@ class LogInViewController: GlobalController, APILogInControllerProtocol, NSURLCo
     
     func didReceiveAPIResults(results: NSDictionary) {
         println("LogInViewController#didReceiveAPIResults")
+        println("************")
+        println(results)
     }
     @IBOutlet weak var incorrectEntry: UITextField!
     
-    
-    func sendLogInInfo(info: NSDictionary) {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http:localhost:3000/users/login_ios"))
-        var session = NSURLSession.sharedSession()
-        request.HTTPMethod = "POST"
-        
-        var params = ["username": info.objectForKey("username"),"password": info.objectForKey("password")] as Dictionary
-        
-        var err: NSError?
-        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("\(countElements(params))", forHTTPHeaderField: "Content-Length")
-        
-        var connection = NSURLConnection(request: request, delegate: self, startImmediately: false)
-        
-        connection.start()
-        println("Sending request")
-    }
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
@@ -47,6 +30,7 @@ class LogInViewController: GlobalController, APILogInControllerProtocol, NSURLCo
         println("pressed")
 
         var params = ["username": usernameField.text, "password": passwordField.text] as Dictionary
+        apiCtrl.delegate? = self
         apiCtrl.sendLogInInfo(params)
     }
 }

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
 
   post 'users/login' => 'users#login', as: 'login'
+  post 'users/login_ios' => 'users#login_ios', as: 'login_ios'
   get 'users/logout' => 'users#logout', as: 'logout'
 
   post 'users/follow' => 'users#follow', as: 'follow'

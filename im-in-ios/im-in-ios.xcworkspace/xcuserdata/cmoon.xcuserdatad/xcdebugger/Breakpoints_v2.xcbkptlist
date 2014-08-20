@@ -13,5 +13,123 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../final-project/Im-In/im-in-ios/im-in-ios/EventShowViewController.swift"
+            timestampString = "430194235.422472"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../final-project/Im-In/im-in-ios/im-in-ios/untitled folder/APIAddFriendsController.swift"
+            timestampString = "430195933.125692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/untitled folder/APILogInController.swift"
+            timestampString = "430196540.053705"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.APILogInController.(sendLogInInfo (im_in_ios.APILogInController) -&gt; (ObjectiveC.NSDictionary) -&gt; ()).(closure #1)"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/untitled%20folder/APILogInController.swift"
+                  timestampString = "430196557.609907"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "702">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.APILogInController.(sendLogInInfo (im_in_ios.APILogInController) -&gt; (ObjectiveC.NSDictionary) -&gt; ()).(closure #1)"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/untitled%20folder/APILogInController.swift"
+                  timestampString = "430196557.61024"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "914">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/untitled folder/APILogInController.swift"
+            timestampString = "430196542.109693"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.APILogInController.(sendLogInInfo (im_in_ios.APILogInController) -&gt; (ObjectiveC.NSDictionary) -&gt; ()).(closure #1)"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/untitled%20folder/APILogInController.swift"
+                  timestampString = "430196542.113014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1139">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.APILogInController.(sendLogInInfo (im_in_ios.APILogInController) -&gt; (ObjectiveC.NSDictionary) -&gt; ()).(closure #1)"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/untitled%20folder/APILogInController.swift"
+                  timestampString = "430196542.113398"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

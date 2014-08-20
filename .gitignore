@@ -11,6 +11,8 @@
 *.log
 log/development.log
 
+/im-in-ios/im-in-ios.xcworkspace/xcuserdata/
+
 ## Specific to RubyMotion:
 .dat*
 .repl_history

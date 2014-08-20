@@ -32,9 +32,16 @@ class APILogInController {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("\(countElements(params))", forHTTPHeaderField: "Content-Length")
         
-        var connection = NSURLConnection(request: request, delegate: self, startImmediately: false)
+         var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
+            var err: NSError?
+            var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as NSDictionary!
+            println(json)
+            self.delegate?.didReceiveAPIResults(json)
+        })
         
-        connection.start()
-        println("Sending request")
+        task.resume()
     }
+
+    
 }

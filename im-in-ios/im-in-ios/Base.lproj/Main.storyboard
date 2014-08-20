@@ -143,7 +143,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zyg-Im-YnS">
-                                <rect key="frame" x="102" y="254" width="117" height="36"/>
+                                <rect key="frame" x="102" y="254" width="118" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Let's Go!">
@@ -151,7 +151,6 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="MR6-X5-dh9" eventType="touchUpInside" id="WqH-nE-rcR"/>
-                                    <segue destination="Qm8-U0-ZUD" kind="push" id="HMa-3x-vBf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7LJ-RV-036">

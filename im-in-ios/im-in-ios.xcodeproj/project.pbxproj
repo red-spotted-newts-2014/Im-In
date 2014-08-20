@@ -31,7 +31,6 @@
 		13245C0C19A1AAE000201E2F /* ShowEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */; };
 		13245C0D19A1AAE000201E2F /* FriendsProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF219A1AAE000201E2F /* FriendsProfileViewController.swift */; };
 		13245C0E19A1AAE000201E2F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF319A1AAE000201E2F /* SignUpViewController.swift */; };
-		13245C0F19A1AAE000201E2F /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF419A1AAE000201E2F /* testController.swift */; };
 		13245C1119A1AE4000201E2F /* EventFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */; };
 		13245C1519A1AF2800201E2F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245C1419A1AF2800201E2F /* EventDetailViewController.swift */; };
 		13866D52199DB86C00F55B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13866D50199DB86C00F55B0A /* Main.storyboard */; };
@@ -75,7 +74,7 @@
 		13245BE119A1AAE000201E2F /* APIFollowingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFollowingController.swift; path = "untitled folder/APIFollowingController.swift"; sourceTree = "<group>"; };
 		13245BE219A1AAE000201E2F /* APIFriendsAttendingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFriendsAttendingController.swift; sourceTree = "<group>"; };
 		13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIInvitedEventController.swift; path = "untitled folder/APIInvitedEventController.swift"; sourceTree = "<group>"; };
-		13245BE419A1AAE000201E2F /* APILogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogInController.swift; sourceTree = "<group>"; };
+		13245BE419A1AAE000201E2F /* APILogInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APILogInController.swift; path = "untitled folder/APILogInController.swift"; sourceTree = "<group>"; };
 		13245BE519A1AAE000201E2F /* APIEventShowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIEventShowController.swift; path = "untitled folder/APIEventShowController.swift"; sourceTree = "<group>"; };
 		13245BE619A1AAE000201E2F /* APISignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISignUpController.swift; sourceTree = "<group>"; };
 		13245BE719A1AAE000201E2F /* APIFriendsProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFriendsProfileViewController.swift; path = "untitled folder/APIFriendsProfileViewController.swift"; sourceTree = "<group>"; };
@@ -85,11 +84,10 @@
 		13245BEC19A1AAE000201E2F /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FollowersViewController.swift; path = "untitled folder/FollowersViewController.swift"; sourceTree = "<group>"; };
 		13245BED19A1AAE000201E2F /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FollowingViewController.swift; path = "untitled folder/FollowingViewController.swift"; sourceTree = "<group>"; };
 		13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAttendingViewController.swift; sourceTree = "<group>"; };
-		13245BF019A1AAE000201E2F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		13245BF019A1AAE000201E2F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = "untitled folder/LogInViewController.swift"; sourceTree = "<group>"; };
 		13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEventDetailsViewController.swift; sourceTree = "<group>"; };
 		13245BF219A1AAE000201E2F /* FriendsProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsProfileViewController.swift; path = "untitled folder/FriendsProfileViewController.swift"; sourceTree = "<group>"; };
 		13245BF319A1AAE000201E2F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		13245BF419A1AAE000201E2F /* testController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
 		13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedTableViewController.swift; sourceTree = "<group>"; };
 		13245C1419A1AF2800201E2F /* EventDetailViewController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		13866D51199DB86C00F55B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,16 +146,13 @@
 				13245BDC19A1AAE000201E2F /* APIAttendingViewController.swift */,
 				13245BDF19A1AAE000201E2F /* APIEditProfileController.swift */,
 				13245BE219A1AAE000201E2F /* APIFriendsAttendingController.swift */,
-				13245BE419A1AAE000201E2F /* APILogInController.swift */,
 				13245BE619A1AAE000201E2F /* APISignUpController.swift */,
 				13245BE819A1AAE000201E2F /* AttendingViewController.swift */,
 				13245BE919A1AAE000201E2F /* CreatedEventsViewController.swift */,
 				13245BEB19A1AAE000201E2F /* EditProfileViewController.swift */,
 				13245BEE19A1AAE000201E2F /* FriendsAttendingViewController.swift */,
-				13245BF019A1AAE000201E2F /* LogInViewController.swift */,
 				13245BF119A1AAE000201E2F /* ShowEventDetailsViewController.swift */,
 				13245BF319A1AAE000201E2F /* SignUpViewController.swift */,
-				13245BF419A1AAE000201E2F /* testController.swift */,
 			);
 			path = "untitled folder";
 			sourceTree = "<group>";
@@ -203,6 +198,8 @@
 				13245BE119A1AAE000201E2F /* APIFollowingController.swift */,
 				13245BED19A1AAE000201E2F /* FollowingViewController.swift */,
 				6C4DAC5619A3B4C4000A45CE /* ProfileViewController.swift */,
+				13245BE419A1AAE000201E2F /* APILogInController.swift */,
+				13245BF019A1AAE000201E2F /* LogInViewController.swift */,
 				13DAB2BA199DB5C20024D110 /* Images.xcassets */,
 				13FD37B419A0894B00D3887C /* Default@2x.png */,
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
@@ -418,7 +415,6 @@
 				13245C0D19A1AAE000201E2F /* FriendsProfileViewController.swift in Sources */,
 				13245BF819A1AAE000201E2F /* APICreatedEventsController.swift in Sources */,
 				13245C0019A1AAE000201E2F /* APIEventShowController.swift in Sources */,
-				13245C0F19A1AAE000201E2F /* testController.swift in Sources */,
 				6C86CE2919A206A200FE0DA9 /* InvitedEventViewController.swift in Sources */,
 				13245C0B19A1AAE000201E2F /* LogInViewController.swift in Sources */,
 				13245C0919A1AAE000201E2F /* FriendsAttendingViewController.swift in Sources */,
