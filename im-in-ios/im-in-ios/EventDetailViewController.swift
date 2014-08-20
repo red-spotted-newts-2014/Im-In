@@ -41,6 +41,12 @@ class EventDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue!.identifier == "toChat"){
+            var chatViewController:ChatViewController = segue!.destinationViewController as ChatViewController
+            chatViewController.eventName = nameTextField.text
+        }
+    }
 
 }
 
