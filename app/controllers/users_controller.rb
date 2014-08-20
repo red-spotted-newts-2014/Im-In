@@ -29,6 +29,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def login_ios
+    # params[:password] = params[:user][:password]
+    # params[:username] = params[:user][:username]
+    @user = User.find_by(username: params[:username])
+    if @user && @user.authenticate(params[:password])
+      p "logged in!!"
+      session[:id] = @user.id
+      redirect_to events_path
+    else
+      p @error = "Invalid email or password"
+      redirect_to users_path
+    end
+  end
+
   def logout
     session.clear
     redirect_to root_path
