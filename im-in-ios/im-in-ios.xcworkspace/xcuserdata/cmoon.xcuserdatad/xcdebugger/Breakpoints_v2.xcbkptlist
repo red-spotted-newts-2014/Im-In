@@ -50,11 +50,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "im-in-ios/untitled folder/APILogInController.swift"
-            timestampString = "430196540.053705"
+            timestampString = "430198503.335227"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40">
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "sendLogInInfo(_:)"
+            landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -94,11 +96,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "im-in-ios/untitled folder/APILogInController.swift"
-            timestampString = "430196542.109693"
+            timestampString = "430198503.335227"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39">
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "sendLogInInfo(_:)"
+            landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -127,6 +131,130 @@
                   startingLineNumber = "40"
                   endingLineNumber = "40"
                   offsetFromSymbolStart = "1244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/untitled folder/LogInViewController.swift"
+            timestampString = "430206171.534302"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "LogInViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/untitled folder/LogInViewController.swift"
+            timestampString = "430206171.534302"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "didReceiveAPIResults(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/untitled folder/LogInViewController.swift"
+            timestampString = "430207766.905678"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "LogInViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.LogInViewController.__deallocating_deinit"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/untitled%20folder/LogInViewController.swift"
+                  timestampString = "430207766.908718"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc im_in_ios.LogInViewController.__ivar_destroyer"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/untitled%20folder/LogInViewController.swift"
+                  timestampString = "430207766.909032"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "im-in-ios/CreateEventViewController.swift"
+            timestampString = "430237152.984394"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "CreateEventViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "im_in_ios.CreateEventViewController.__deallocating_deinit"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/CreateEventViewController.swift"
+                  timestampString = "430237341.875906"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc im_in_ios.CreateEventViewController.__ivar_destroyer"
+                  moduleName = "im-in-ios"
+                  urlString = "file:///Users/cmoon/Desktop/stella/Im-In/im-in-ios/im-in-ios/CreateEventViewController.swift"
+                  timestampString = "430237341.876088"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "15">
                </Location>
             </Locations>
          </BreakpointContent>

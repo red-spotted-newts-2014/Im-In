@@ -8,29 +8,53 @@
 
 import UIKit
 
-class LogInViewController: GlobalController, APILogInControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
+class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
     
+
+    
+//    let alert = UIAlertView()
     var apiCtrl = APILogInController()
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+
+    @IBOutlet var label: UILabel!
+    
+    
+    override func viewDidLoad() {
+    }
     
     func didReceiveAPIResults(results: NSDictionary) {
-        println("LogInViewController#didReceiveAPIResults")
+    println("LogInViewController#didReceiveAPIResults")
+        
         println("************")
-        println(results)
+        
+        println(results.objectForKey("response"))
+        
+        if (results.objectForKey("response") as String == "Logged in" as String) {
+            dispatch_async(dispatch_get_main_queue(),{
+                self.performSegueWithIdentifier("logged" as String, sender: self)
+            })
+
+        } else {
+            println(label.text)
+            label.textColor = UIColor.redColor()
+            println("NOT LOGGED IN")
+        }
     }
-    @IBOutlet weak var incorrectEntry: UITextField!
+    
+//    func shouldPerformSegueWithIdentifier(identifier: "logged" as String, sender: AnyObject!) -> Bool {
+//        
+//    }
+    
     
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        
-
         println("pressed")
 
         var params = ["username": usernameField.text, "password": passwordField.text] as Dictionary
-        apiCtrl.delegate? = self
+        apiCtrl.delegate = self
         apiCtrl.sendLogInInfo(params)
     }
 }

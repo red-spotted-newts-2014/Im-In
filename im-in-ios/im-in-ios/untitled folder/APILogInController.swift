@@ -15,12 +15,13 @@ class APILogInController {
     
     var delegate: APILogInControllerProtocol?
     
+    
     init() {
         
     }
     
     func sendLogInInfo(info: NSDictionary) {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/users/login_ios"))
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://10.0.2.26:3000/users/login_ios"))
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
@@ -30,13 +31,14 @@ class APILogInController {
         request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("\(countElements(params))", forHTTPHeaderField: "Content-Length")
         
          var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
             var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
             var err: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as NSDictionary!
+            println("***")
             println(json)
+            println("***")
             self.delegate?.didReceiveAPIResults(json)
         })
         
