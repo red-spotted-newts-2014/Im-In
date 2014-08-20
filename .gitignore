@@ -36,3 +36,5 @@ build/
 .rvmrc
 
 *.DS_Store
+
+im-in-ios/im-in-ios.xcworkspace/xcuserdata/cmoon.xcuserdatad/UserInterfaceState.xcuserstate
