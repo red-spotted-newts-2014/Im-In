@@ -14,6 +14,26 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     
 {
     
+    
+    override func viewDidLoad() {
+        startTexTField.hidden = true
+        
+        endTextField.hidden = true
+        
+        startTexTField.userInteractionEnabled = false
+        
+        endTextField.userInteractionEnabled = false
+        
+        hideEndDatePicker()
+        hideStartDatePicker()
+        
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        
+        
+    }
+    
     override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
         let touch = event.allTouches().anyObject() as UITouch
         if nameTextField.isFirstResponder() && touch.view != nameTextField {
@@ -51,17 +71,15 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     
     @IBAction func startDateButton(sender: AnyObject) {
         
+        showDatePicker()
                 hideEndDatePicker()
-                showDatePicker()
-        datePicker.hidden = false
     }
 
     @IBAction func endDateButton(sender: AnyObject) {
         
+        showEndDatePicker()
                 hideStartDatePicker()
-                showEndDatePicker()
         
-        endDatePicker.hidden = false
     }
     
     
@@ -74,10 +92,22 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
                 startTexTField.text = "\(datePicker.date)"
                 endTextField.text = "\(endDatePicker.date)"
         
-                datePicker.hidden = true
-                endDatePicker.hidden = true
+                hideStartDatePicker()
+                hideEndDatePicker()
     }
     
+    
+    func showEndDatePicker() {
+        println("showing End Date Picker")
+        self.view.addSubview(endDatePicker)
+        endDatePicker.frame = CGRectMake(0,100,320, 50);
+        UIView.animateWithDuration(1.0, animations: animEndDatePicker)
+        endDatePicker.backgroundColor = UIColor( white:1, alpha:1)
+        self.view.backgroundColor = UIColor(white:1, alpha: 1)
+        datePicker.hidden = true
+        endDatePicker.hidden = false
+        
+    }
     
     
     func showDatePicker() {
@@ -88,15 +118,6 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
         datePicker.backgroundColor = UIColor( white:1, alpha:1)
         self.view.backgroundColor = UIColor(white:1, alpha: 1)
         endDatePicker.hidden = true
-    }
-    
-    func showEndDatePicker() {
-        println("showing End Date Picker")
-        self.view.addSubview(endDatePicker)
-        endDatePicker.frame = CGRectMake(0,100,320, 50);
-        UIView.animateWithDuration(1.0, animations: animEndDatePicker)
-        endDatePicker.backgroundColor = UIColor( white:1, alpha:1)
-        self.view.backgroundColor = UIColor(white:1, alpha: 1)
         datePicker.hidden = false
     }
     
@@ -117,23 +138,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     ////        println(results)
     //    }
     
-    override func viewDidLoad() {
-        startTexTField.hidden = true
-        
-        endTextField.hidden = true
-        
-        startTexTField.userInteractionEnabled = false
-        
-        endTextField.userInteractionEnabled = false
-        
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
-        hideEndDatePicker()
-        hideStartDatePicker()
-        
-    }
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -142,7 +147,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     
     
     @IBAction func addEventButton(sender: AnyObject) {
-        println("print this SHIT!")
+        println("Adding the Event To Rails!")
         params = ["name": nameTextField.text, "description": descTextField.text, "start_time": startTexTField.text, "end_time": endTextField.text, "venue": venueTextField.text, "location": locationTextField.text] as Dictionary
         //        apiCtrl.delegate = self
         //        apiCtrl.sendCreateEventInfo(params)

@@ -1021,7 +1021,6 @@
                                 </state>
                                 <connections>
                                     <action selector="addEventButton:" destination="qJd-hz-hSh" eventType="touchUpInside" id="rJD-CX-hj1"/>
-                                    <action selector="confirmDates:" destination="qJd-hz-hSh" eventType="touchUpInside" id="6MD-5d-ghz"/>
                                     <segue destination="GJO-zE-Wte" kind="push" identifier="inviteFriendSegue" id="aHa-0G-jS8"/>
                                 </connections>
                             </button>
@@ -1070,9 +1069,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="430250097.315525">
                                     <!--2014-08-20 17:54:57 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="endDateButton:" destination="qJd-hz-hSh" eventType="valueChanged" id="kiq-aB-Dti"/>
-                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
