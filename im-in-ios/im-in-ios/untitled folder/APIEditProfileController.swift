@@ -21,7 +21,7 @@
      }
      
      func sendEditProfileInfo(info: NSDictionary) {
-         var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/users/edit"))
+         var request = NSMutableURLRequest(URL: NSURL(string: "http://10.0.2.26:3000/users/edit"))
          var session = NSURLSession.sharedSession()
          request.HTTPMethod = "POST"
          

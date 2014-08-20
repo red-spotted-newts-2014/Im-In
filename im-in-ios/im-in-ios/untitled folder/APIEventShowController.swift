@@ -23,8 +23,8 @@ class APIEventShowController {
     func sendInvitationStatusInfo(info: AnyObject) {
         var eventId = info.objectForKey("eventId") as String
         var invitationId = info.objectForKey("invitationId") as String
-        println("http://localhost:3000/events/" + eventId + "/invitations/" + invitationId)
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/events/" + eventId + "/invitations/" + invitationId))
+        println("http://10.0.2.26:3000/events/" + eventId + "/invitations/" + invitationId)
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://10.0.2.26:3000/events/" + eventId + "/invitations/" + invitationId))
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "PATCH"
         
