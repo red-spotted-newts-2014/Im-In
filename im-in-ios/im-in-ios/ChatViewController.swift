@@ -12,9 +12,10 @@ import UIKit
 class ChatViewController: GlobalController {
     
     let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    
     var chat: NSMutableArray = NSMutableArray()
     var firebase: Firebase?
-    var name: String = "stella"
+    var name: String = ""
     var urlPath: String = ""
     var eventId: String = ""
     var eventName: String = ""
@@ -29,6 +30,7 @@ class ChatViewController: GlobalController {
         urlPath = "https://amber-inferno-1117.firebaseio.com/" + eventId
         firebase = Firebase(url: urlPath)
         nameLabel.text = eventName + " " + eventId
+        name = appDelegate.currentUser!
         
         var snapshot: FDataSnapshot = FDataSnapshot()
         

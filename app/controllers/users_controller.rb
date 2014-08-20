@@ -6,22 +6,25 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(username: params[:username],
-                        email: params[:email],
-                        password: params[:password])
-    session[:id] = @user.id
+    p session[:user_id]
+    @user = User.create(username: params[:user][:username],
+                        email: params[:user][:email],
+                        password: params[:user][:password])
+    session[:user_id] = @user.id
     redirect_to events_path
   end
 
   def login
-    @user = User.find_by(username: params[:username])
-    if @user && @user.authenticate(params[:password])
+    @user = User.find_by(username: params[:user][:username])
+    if @user && @user.authenticate(params[:user][:password])
+      
       p "logged in!!"
-      session[:id] = @user.id
+      
+      p session[:user_id] = @user.id
       redirect_to events_path
     else
       p @error = "Invalid email or password"
-      redirect_to users_path
+      redirect_to root_path
     end
   end
 
@@ -31,12 +34,12 @@ class UsersController < ApplicationController
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
       p @response = "Logged in"
-      session[:id] = @user.id
-      @id = session[:id]
+      session[:user_id] = @user.id
+      @id = session[:user_id]
     else
       p @response = "Invalid email or password"
     end
-    render :json => { :response => @response, :id => @id }
+    render :json => { :response => @response, :user_id => @user_id }
   end
 
   def logout

@@ -2,6 +2,9 @@ class EventsController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def index
+    p "*********"
+    p session[:user_id]
+    p current_user
     @invited_events = current_user.invited_events
     @invitations = current_user.invitations
 
