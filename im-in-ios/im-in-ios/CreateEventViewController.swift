@@ -19,6 +19,29 @@ class CreateEventViewController: UIViewController
     @IBOutlet var endTextField: UITextField!
     var params: NSDictionary?
     
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        let touch = event.allTouches().anyObject() as UITouch
+        if nameTextField.isFirstResponder() && touch.view != nameTextField {
+            nameTextField.resignFirstResponder()}
+            
+        else if descTextField.isFirstResponder() && touch.view != descTextField {
+            descTextField.resignFirstResponder()}
+        
+        else if venueTextField.isFirstResponder() && touch.view != venueTextField {
+            venueTextField.resignFirstResponder()}
+        
+        else if locationTextField.isFirstResponder() && touch.view != locationTextField {
+            locationTextField.resignFirstResponder()}
+        
+        else if startTextField.isFirstResponder() && touch.view != startTextField {
+            startTextField.resignFirstResponder()}
+        
+        else if endTextField.isFirstResponder() && touch.view != endTextField{
+            endTextField.resignFirstResponder()}
+        
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
     var inviteFriendsCtrl = FollowersViewController()
 //    var newEventId: NSString!
 //    var apiCtrl = APIAddEventController()

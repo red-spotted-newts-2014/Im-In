@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LogInViewController: GlobalController, APILogInControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
+class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
     
     var apiCtrl = APILogInController()
     
@@ -20,6 +20,20 @@ class LogInViewController: GlobalController, APILogInControllerProtocol, NSURLCo
         println("LogInViewController#didReceiveAPIResults")
     }
     @IBOutlet weak var incorrectEntry: UITextField!
+    
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        let touch = event.allTouches().anyObject() as UITouch
+        if usernameField.isFirstResponder() && touch.view != usernameField {
+            usernameField.resignFirstResponder()}
+            
+        else if passwordField.isFirstResponder() && touch.view != passwordField {
+            passwordField.resignFirstResponder()
+         }
+
+        super.touchesBegan(touches, withEvent: event)
+    }
+
+
     
     
     func sendLogInInfo(info: NSDictionary) {
