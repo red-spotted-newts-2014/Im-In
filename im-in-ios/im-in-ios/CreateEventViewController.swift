@@ -31,6 +31,29 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
         super.touchesBegan(touches, withEvent: event)
     }
     
+    override func viewDidLoad() {
+        startTextField.hidden = true
+        
+        endTextField.hidden = true
+        
+        startTextField.userInteractionEnabled = false
+        
+        endTextField.userInteractionEnabled = false
+        
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        
+        endDatePicker.hidden = true
+        startDatePicker.hidden = true
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     @IBOutlet var nameTextField: UITextField!
     
@@ -50,13 +73,11 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     @IBOutlet var endDatePicker: UIDatePicker!
     
     @IBAction func startDateButton(sender: AnyObject) {
-        startDatePicker.hidden = false
         hideEndDatePicker()
-        showDatePicker()
+        showStartDatePicker()
     }
     
     @IBAction func endDateButton(sender: AnyObject) {
-        endDatePicker.hidden = false
         hideStartDatePicker()
         showEndDatePicker()
     }
@@ -75,7 +96,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     }
  
     
-    func showDatePicker() {
+    func showStartDatePicker() {
             println("showing Start Date Picker")
             self.view.addSubview(startDatePicker)
             startDatePicker.frame = CGRectMake(0,100,320, 50);
@@ -112,28 +133,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
 ////        println(results)
 //    }
     
-    override func viewDidLoad() {
-        startTextField.hidden = true
-        
-        endTextField.hidden = true
-        
-        startTextField.userInteractionEnabled = false
-        
-        endTextField.userInteractionEnabled = false
-        
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        endDatePicker.hidden = true
-        startDatePicker.hidden = true
-       
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
     
     
     @IBAction func addEventButton(sender: AnyObject) {

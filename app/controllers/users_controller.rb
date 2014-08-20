@@ -31,7 +31,7 @@ class UsersController < ApplicationController
 
   def login_ios
     # params[:password] = params[:user][:password]
-    # params[:username] = params[:user][:username]
+    params[:username] = params[:user][:username]
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
       p @response = "Logged in"
@@ -91,12 +91,12 @@ class UsersController < ApplicationController
     redirect_to user_following_path unless current_user
     # if current_user
     # if current_user == @friend
-      # flash[:error] = "You cannot follow yourself."
-      # redirect_to user_following_path(current_user)
+    # flash[:error] = "You cannot follow yourself."
+    # redirect_to user_following_path(current_user)
     # else
-      current_user.follow(@friend)
-      # flash[:notice] = "You are now following #{@friend.username}."
-      redirect_to user_following_path(current_user)
+    current_user.follow(@friend)
+    # flash[:notice] = "You are now following #{@friend.username}."
+    redirect_to user_following_path(current_user)
     # end
     # end
   end
