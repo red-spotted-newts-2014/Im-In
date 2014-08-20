@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LogInViewController: GlobalController, APILogInControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
+class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLConnectionDataDelegate, NSURLConnectionDelegate {
     
     var apiCtrl = APILogInController()
     

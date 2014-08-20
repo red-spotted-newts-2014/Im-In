@@ -42,13 +42,6 @@
 		13E655DC19A1E55800B4C117 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E655DB19A1E55800B4C117 /* CreateEventViewController.swift */; };
 		13FD37B519A0894B00D3887C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FD37B419A0894B00D3887C /* Default@2x.png */; };
 		13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13FD380E19A0F59E00D3887C /* Im'in.jpg */; };
-		6C2C489D19A3E5170074DC9C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C489C19A3E5170074DC9C /* ChatViewController.swift */; };
-		6C2C489F19A3EC090074DC9C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2C489E19A3EC090074DC9C /* Security.framework */; };
-		6C2C48A119A3EC120074DC9C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2C48A019A3EC120074DC9C /* CFNetwork.framework */; };
-		6C2C48A319A3EC290074DC9C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2C48A219A3EC290074DC9C /* SystemConfiguration.framework */; };
-		6C2C48A519A3EC320074DC9C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2C48A419A3EC320074DC9C /* libicucore.dylib */; };
-		6C2C48A719A3EC3D0074DC9C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2C48A619A3EC3D0074DC9C /* libc++.dylib */; };
-		6C2C48A919A3FC840074DC9C /* GlobalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C48A819A3FC840074DC9C /* GlobalController.swift */; };
 		6C4DAC5719A3B4C4000A45CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4DAC5619A3B4C4000A45CE /* ProfileViewController.swift */; };
 		6C86CE2919A206A200FE0DA9 /* InvitedEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */; };
 		6C86CE2B19A20F4F00FE0DA9 /* EventShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */; };
@@ -104,15 +97,6 @@
 		13E655DB19A1E55800B4C117 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		13FD37B419A0894B00D3887C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images.xcassets/LaunchImage.launchimage/Default@2x.png"; sourceTree = "<group>"; };
 		13FD380E19A0F59E00D3887C /* Im'in.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Im'in.jpg"; sourceTree = "<group>"; };
-		4B093AA41F66471499FF45DA /* Pods-im-in-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-im-in-ios.xcconfig"; path = "Pods/Pods-im-in-ios.xcconfig"; sourceTree = "<group>"; };
-		6C2C489919A3E4E70074DC9C /* im-in-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "im-in-ios-Bridging-Header.h"; sourceTree = "<group>"; };
-		6C2C489C19A3E5170074DC9C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		6C2C489E19A3EC090074DC9C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		6C2C48A019A3EC120074DC9C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		6C2C48A219A3EC290074DC9C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6C2C48A419A3EC320074DC9C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		6C2C48A619A3EC3D0074DC9C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		6C2C48A819A3FC840074DC9C /* GlobalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalController.swift; sourceTree = "<group>"; };
 		6C4DAC5619A3B4C4000A45CE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedEventViewController.swift; sourceTree = "<group>"; };
 		6C86CE2A19A20F4F00FE0DA9 /* EventShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventShowViewController.swift; sourceTree = "<group>"; };
@@ -126,11 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2C48A719A3EC3D0074DC9C /* libc++.dylib in Frameworks */,
-				6C2C48A519A3EC320074DC9C /* libicucore.dylib in Frameworks */,
-				6C2C48A319A3EC290074DC9C /* SystemConfiguration.framework in Frameworks */,
-				6C2C48A119A3EC120074DC9C /* CFNetwork.framework in Frameworks */,
-				6C2C489F19A3EC090074DC9C /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +151,7 @@
 				13DAB2B0199DB5C20024D110 /* im-in-ios */,
 				13DAB2C3199DB5C20024D110 /* im-in-iosTests */,
 				13DAB2AF199DB5C20024D110 /* Products */,
-<<<<<<< HEAD
-				4B093AA41F66471499FF45DA /* Pods-im-in-ios.xcconfig */,
-				3B4579FFB7D9407BBBF8194A /* Frameworks */,
-=======
 				A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */,
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			);
 			sourceTree = "<group>";
 		};
@@ -216,14 +190,8 @@
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13245BD919A1AAE000201E2F /* untitled folder */,
 				13DAB2B1199DB5C20024D110 /* Supporting Files */,
-<<<<<<< HEAD
-				6C2C489919A3E4E70074DC9C /* im-in-ios-Bridging-Header.h */,
-				6C2C489C19A3E5170074DC9C /* ChatViewController.swift */,
-				6C2C48A819A3FC840074DC9C /* GlobalController.swift */,
-=======
 				E8BF32D019A3C8DC00D17B87 /* im-in-ios-Bridging-Header.h */,
 				E8BF32DD19A3CFC300D17B87 /* ChatViewController.swift */,
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			);
 			path = "im-in-ios";
 			sourceTree = "<group>";
@@ -253,18 +221,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3B4579FFB7D9407BBBF8194A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C2C48A619A3EC3D0074DC9C /* libc++.dylib */,
-				6C2C48A419A3EC320074DC9C /* libicucore.dylib */,
-				6C2C48A219A3EC290074DC9C /* SystemConfiguration.framework */,
-				6C2C48A019A3EC120074DC9C /* CFNetwork.framework */,
-				6C2C489E19A3EC090074DC9C /* Security.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,19 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13DAB2CA199DB5C20024D110 /* Build configuration list for PBXNativeTarget "im-in-ios" */;
 			buildPhases = (
-<<<<<<< HEAD
-				499ED5AA25454A23BDBA9304 /* Check Pods Manifest.lock */,
-				13DAB2AA199DB5C20024D110 /* Sources */,
-				13DAB2AB199DB5C20024D110 /* Frameworks */,
-				13DAB2AC199DB5C20024D110 /* Resources */,
-				B49D8AF0D993420B9BB4B6F3 /* Copy Pods Resources */,
-=======
 				883C08D134144655A675ACC7 /* Check Pods Manifest.lock */,
 				13DAB2AA199DB5C20024D110 /* Sources */,
 				13DAB2AB199DB5C20024D110 /* Frameworks */,
 				13DAB2AC199DB5C20024D110 /* Resources */,
 				5354616FCCF742DEB0C92D3B /* Copy Pods Resources */,
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			);
 			buildRules = (
 			);
@@ -373,57 +321,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-<<<<<<< HEAD
-		499ED5AA25454A23BDBA9304 /* Check Pods Manifest.lock */ = {
-=======
 		5354616FCCF742DEB0C92D3B /* Copy Pods Resources */ = {
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-<<<<<<< HEAD
-			name = "Check Pods Manifest.lock";
-=======
 			name = "Copy Pods Resources";
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-<<<<<<< HEAD
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B49D8AF0D993420B9BB4B6F3 /* Copy Pods Resources */ = {
-=======
 			shellScript = "\"${SRCROOT}/Pods/Pods-im-in-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		883C08D134144655A675ACC7 /* Check Pods Manifest.lock */ = {
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-<<<<<<< HEAD
-			name = "Copy Pods Resources";
-=======
 			name = "Check Pods Manifest.lock";
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-<<<<<<< HEAD
-			shellScript = "\"${SRCROOT}/Pods/Pods-im-in-ios-resources.sh\"\n";
-=======
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -439,7 +364,6 @@
 				13245BFD19A1AAE000201E2F /* APIFriendsAttendingController.swift in Sources */,
 				13245BF719A1AAE000201E2F /* APIAttendingViewController.swift in Sources */,
 				13245C1119A1AE4000201E2F /* EventFeedTableViewController.swift in Sources */,
-				6C2C48A919A3FC840074DC9C /* GlobalController.swift in Sources */,
 				6C4DAC5719A3B4C4000A45CE /* ProfileViewController.swift in Sources */,
 				13245C0419A1AAE000201E2F /* CreatedEventsViewController.swift in Sources */,
 				13245C0819A1AAE000201E2F /* FollowingViewController.swift in Sources */,
@@ -447,7 +371,6 @@
 				6C86CE2B19A20F4F00FE0DA9 /* EventShowViewController.swift in Sources */,
 				13245C0E19A1AAE000201E2F /* SignUpViewController.swift in Sources */,
 				13245BFE19A1AAE000201E2F /* APIInvitedEventController.swift in Sources */,
-				6C2C489D19A3E5170074DC9C /* ChatViewController.swift in Sources */,
 				13245C0319A1AAE000201E2F /* AttendingViewController.swift in Sources */,
 				13245C0619A1AAE000201E2F /* EditProfileViewController.swift in Sources */,
 				13245BF519A1AAE000201E2F /* AddFriendsViewController.swift in Sources */,
@@ -585,11 +508,7 @@
 		};
 		13DAB2CB199DB5C20024D110 /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< HEAD
-			baseConfigurationReference = 4B093AA41F66471499FF45DA /* Pods-im-in-ios.xcconfig */;
-=======
 			baseConfigurationReference = A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */;
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -599,19 +518,6 @@
 				INFOPLIST_FILE = "im-in-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-ObjC",
-					"-lc++",
-					"-licucore",
-					"-framework",
-					CFNetwork,
-					"-framework",
-					Firebase,
-					"-framework",
-					Security,
-					"-framework",
-					SystemConfiguration,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "im-in-ios/im-in-ios-Bridging-Header.h";
@@ -622,11 +528,7 @@
 		};
 		13DAB2CC199DB5C20024D110 /* Release */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< HEAD
-			baseConfigurationReference = 4B093AA41F66471499FF45DA /* Pods-im-in-ios.xcconfig */;
-=======
 			baseConfigurationReference = A6E20ADA89AC4BCCABC7CDFC /* Pods-im-in-ios.xcconfig */;
->>>>>>> 37218a3ec419e7fa08326f7905571e63e95bb455
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
