@@ -33,6 +33,8 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
         println(results.objectForKey("response"))
         
         if (results.objectForKey("response") as String == "Logged in" as String) {
+            let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+            appDelegate.currentUser = results.objectForKey("id")
             dispatch_async(dispatch_get_main_queue(),{
                 self.performSegueWithIdentifier("logged" as String, sender: self)
             })
