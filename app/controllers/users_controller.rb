@@ -14,10 +14,6 @@ class UsersController < ApplicationController
   end
 
   def login
-    p "here"
-    p params
-    params[:password] = params[:user][:password]
-    params[:username] = params[:user][:username]
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
       p "logged in!!"
@@ -36,10 +32,11 @@ class UsersController < ApplicationController
     if @user && @user.authenticate(params[:password])
       p @response = "Logged in"
       session[:id] = @user.id
+      @id = session[:id]
     else
       p @response = "Invalid email or password"
     end
-    render :json => { :response => @response }
+    render :json => { :response => @response, :id => @id }
   end
 
   def logout

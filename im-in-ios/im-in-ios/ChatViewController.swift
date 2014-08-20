@@ -11,6 +11,7 @@ import UIKit
 
 class ChatViewController: GlobalController {
     
+    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
     var chat: NSMutableArray = NSMutableArray()
     var firebase: Firebase?
     var name: String = "stella"
