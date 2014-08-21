@@ -20,6 +20,7 @@ class InvitedEventsCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var profilePic: UIImageView!
+   
     
     
     override func awakeFromNib() {

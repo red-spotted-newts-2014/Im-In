@@ -43,6 +43,7 @@ class ChatViewController: GlobalController {
             self.tableView.reloadData()
         })
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

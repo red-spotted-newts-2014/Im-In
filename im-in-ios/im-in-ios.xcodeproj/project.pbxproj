@@ -41,6 +41,28 @@
 		1344D01419A5F6B2000AB1F6 /* I'm In.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1344D01319A5F6B2000AB1F6 /* I'm In.jpeg */; };
 		1344D01619A5F8B6000AB1F6 /* are you in.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1344D01519A5F8B6000AB1F6 /* are you in.jpg */; };
 		1344D01819A5FDF0000AB1F6 /* IMG_20130316_052944.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1344D01719A5FDF0000AB1F6 /* IMG_20130316_052944.jpg */; };
+		1344D02D19A6308C000AB1F6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1344D01B19A6308C000AB1F6 /* OFL.txt */; };
+		1344D02E19A6308C000AB1F6 /* Questrial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D01C19A6308C000AB1F6 /* Questrial-Regular.ttf */; };
+		1344D02F19A6308C000AB1F6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1344D01E19A6308C000AB1F6 /* OFL.txt */; };
+		1344D03019A6308C000AB1F6 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D01F19A6308C000AB1F6 /* Quicksand-Bold.ttf */; };
+		1344D03119A6308C000AB1F6 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02019A6308C000AB1F6 /* Quicksand-Light.ttf */; };
+		1344D03219A6308C000AB1F6 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02119A6308C000AB1F6 /* Quicksand-Regular.ttf */; };
+		1344D03319A6308C000AB1F6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02319A6308C000AB1F6 /* OFL.txt */; };
+		1344D03419A6308C000AB1F6 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02419A6308C000AB1F6 /* Raleway-Bold.ttf */; };
+		1344D03519A6308C000AB1F6 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02519A6308C000AB1F6 /* Raleway-ExtraBold.ttf */; };
+		1344D03619A6308C000AB1F6 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02619A6308C000AB1F6 /* Raleway-ExtraLight.ttf */; };
+		1344D03719A6308C000AB1F6 /* Raleway-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02719A6308C000AB1F6 /* Raleway-Heavy.ttf */; };
+		1344D03819A6308C000AB1F6 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02819A6308C000AB1F6 /* Raleway-Light.ttf */; };
+		1344D03919A6308C000AB1F6 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02919A6308C000AB1F6 /* Raleway-Medium.ttf */; };
+		1344D03A19A6308C000AB1F6 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02A19A6308C000AB1F6 /* Raleway-Regular.ttf */; };
+		1344D03B19A6308C000AB1F6 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02B19A6308C000AB1F6 /* Raleway-SemiBold.ttf */; };
+		1344D03C19A6308C000AB1F6 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1344D02C19A6308C000AB1F6 /* Raleway-Thin.ttf */; };
+		1344D03E19A647F8000AB1F6 /* groups-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1344D03D19A647F8000AB1F6 /* groups-32.png */; };
+		1344D04019A648AB000AB1F6 /* groups-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1344D03F19A648AB000AB1F6 /* groups-50.png */; };
+		1344D04219A648ED000AB1F6 /* chat-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 1344D04119A648ED000AB1F6 /* chat-48.png */; };
+		1344D04419A6585B000AB1F6 /* group-2-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1344D04319A6585B000AB1F6 /* group-2-50.png */; };
+		1344D04719A65897000AB1F6 /* group-2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1344D04519A65897000AB1F6 /* group-2-32.png */; };
+		1344D04819A65897000AB1F6 /* group3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1344D04619A65897000AB1F6 /* group3.png */; };
 		13866D52199DB86C00F55B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13866D50199DB86C00F55B0A /* Main.storyboard */; };
 		13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2B3199DB5C20024D110 /* AppDelegate.swift */; };
 		13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DAB2BA199DB5C20024D110 /* Images.xcassets */; };
@@ -104,6 +126,28 @@
 		1344D01319A5F6B2000AB1F6 /* I'm In.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "I'm In.jpeg"; sourceTree = "<group>"; };
 		1344D01519A5F8B6000AB1F6 /* are you in.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "are you in.jpg"; sourceTree = "<group>"; };
 		1344D01719A5FDF0000AB1F6 /* IMG_20130316_052944.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20130316_052944.jpg; sourceTree = "<group>"; };
+		1344D01B19A6308C000AB1F6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		1344D01C19A6308C000AB1F6 /* Questrial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Questrial-Regular.ttf"; sourceTree = "<group>"; };
+		1344D01E19A6308C000AB1F6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		1344D01F19A6308C000AB1F6 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		1344D02019A6308C000AB1F6 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		1344D02119A6308C000AB1F6 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		1344D02319A6308C000AB1F6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		1344D02419A6308C000AB1F6 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		1344D02519A6308C000AB1F6 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1344D02619A6308C000AB1F6 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1344D02719A6308C000AB1F6 /* Raleway-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Heavy.ttf"; sourceTree = "<group>"; };
+		1344D02819A6308C000AB1F6 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		1344D02919A6308C000AB1F6 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		1344D02A19A6308C000AB1F6 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		1344D02B19A6308C000AB1F6 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		1344D02C19A6308C000AB1F6 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		1344D03D19A647F8000AB1F6 /* groups-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "groups-32.png"; sourceTree = "<group>"; };
+		1344D03F19A648AB000AB1F6 /* groups-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "groups-50.png"; sourceTree = "<group>"; };
+		1344D04119A648ED000AB1F6 /* chat-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-48.png"; sourceTree = "<group>"; };
+		1344D04319A6585B000AB1F6 /* group-2-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-2-50.png"; sourceTree = "<group>"; };
+		1344D04519A65897000AB1F6 /* group-2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-2-32.png"; sourceTree = "<group>"; };
+		1344D04619A65897000AB1F6 /* group3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group3.png; sourceTree = "<group>"; };
 		13866D51199DB86C00F55B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13DAB2AE199DB5C20024D110 /* im-in-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "im-in-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAB2B2199DB5C20024D110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,9 +197,15 @@
 		13245BD919A1AAE000201E2F /* untitled folder */ = {
 			isa = PBXGroup;
 			children = (
-				1344D01719A5FDF0000AB1F6 /* IMG_20130316_052944.jpg */,
 				1344D01519A5F8B6000AB1F6 /* are you in.jpg */,
+				1344D04319A6585B000AB1F6 /* group-2-50.png */,
+				1344D04519A65897000AB1F6 /* group-2-32.png */,
+				1344D04619A65897000AB1F6 /* group3.png */,
+				1344D03F19A648AB000AB1F6 /* groups-50.png */,
+				1344D04119A648ED000AB1F6 /* chat-48.png */,
+				1344D03D19A647F8000AB1F6 /* groups-32.png */,
 				1344D01319A5F6B2000AB1F6 /* I'm In.jpeg */,
+				1344D01719A5FDF0000AB1F6 /* IMG_20130316_052944.jpg */,
 				1344D00B19A5F46C000AB1F6 /* find_user-32.png */,
 				1344D00C19A5F46C000AB1F6 /* user_male4-32.png */,
 				1344D00D19A5F46C000AB1F6 /* group-32.png */,
@@ -173,6 +223,53 @@
 				13245BF319A1AAE000201E2F /* SignUpViewController.swift */,
 			);
 			path = "untitled folder";
+			sourceTree = "<group>";
+		};
+		1344D01919A6308C000AB1F6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1344D01A19A6308C000AB1F6 /* Questrial */,
+				1344D01D19A6308C000AB1F6 /* Quicksand */,
+				1344D02219A6308C000AB1F6 /* Raleway */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		1344D01A19A6308C000AB1F6 /* Questrial */ = {
+			isa = PBXGroup;
+			children = (
+				1344D01B19A6308C000AB1F6 /* OFL.txt */,
+				1344D01C19A6308C000AB1F6 /* Questrial-Regular.ttf */,
+			);
+			path = Questrial;
+			sourceTree = "<group>";
+		};
+		1344D01D19A6308C000AB1F6 /* Quicksand */ = {
+			isa = PBXGroup;
+			children = (
+				1344D01E19A6308C000AB1F6 /* OFL.txt */,
+				1344D01F19A6308C000AB1F6 /* Quicksand-Bold.ttf */,
+				1344D02019A6308C000AB1F6 /* Quicksand-Light.ttf */,
+				1344D02119A6308C000AB1F6 /* Quicksand-Regular.ttf */,
+			);
+			path = Quicksand;
+			sourceTree = "<group>";
+		};
+		1344D02219A6308C000AB1F6 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				1344D02319A6308C000AB1F6 /* OFL.txt */,
+				1344D02419A6308C000AB1F6 /* Raleway-Bold.ttf */,
+				1344D02519A6308C000AB1F6 /* Raleway-ExtraBold.ttf */,
+				1344D02619A6308C000AB1F6 /* Raleway-ExtraLight.ttf */,
+				1344D02719A6308C000AB1F6 /* Raleway-Heavy.ttf */,
+				1344D02819A6308C000AB1F6 /* Raleway-Light.ttf */,
+				1344D02919A6308C000AB1F6 /* Raleway-Medium.ttf */,
+				1344D02A19A6308C000AB1F6 /* Raleway-Regular.ttf */,
+				1344D02B19A6308C000AB1F6 /* Raleway-SemiBold.ttf */,
+				1344D02C19A6308C000AB1F6 /* Raleway-Thin.ttf */,
+			);
+			path = Raleway;
 			sourceTree = "<group>";
 		};
 		13DAB2A5199DB5C20024D110 = {
@@ -198,6 +295,7 @@
 		13DAB2B0199DB5C20024D110 /* im-in-ios */ = {
 			isa = PBXGroup;
 			children = (
+				1344D01919A6308C000AB1F6 /* fonts */,
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
 				1344D00919A5DE5F000AB1F6 /* InvitedEventsCell.swift */,
@@ -350,13 +448,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1344D02D19A6308C000AB1F6 /* OFL.txt in Resources */,
+				1344D02E19A6308C000AB1F6 /* Questrial-Regular.ttf in Resources */,
 				1344D01219A5F46C000AB1F6 /* chat-32.png in Resources */,
+				1344D04419A6585B000AB1F6 /* group-2-50.png in Resources */,
+				1344D03819A6308C000AB1F6 /* Raleway-Light.ttf in Resources */,
+				1344D03119A6308C000AB1F6 /* Quicksand-Light.ttf in Resources */,
+				1344D03C19A6308C000AB1F6 /* Raleway-Thin.ttf in Resources */,
+				1344D03E19A647F8000AB1F6 /* groups-32.png in Resources */,
+				1344D03219A6308C000AB1F6 /* Quicksand-Regular.ttf in Resources */,
 				1344D01619A5F8B6000AB1F6 /* are you in.jpg in Resources */,
+				1344D03519A6308C000AB1F6 /* Raleway-ExtraBold.ttf in Resources */,
+				1344D03319A6308C000AB1F6 /* OFL.txt in Resources */,
+				1344D04819A65897000AB1F6 /* group3.png in Resources */,
+				1344D03B19A6308C000AB1F6 /* Raleway-SemiBold.ttf in Resources */,
+				1344D03719A6308C000AB1F6 /* Raleway-Heavy.ttf in Resources */,
 				13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */,
 				1344D01419A5F6B2000AB1F6 /* I'm In.jpeg in Resources */,
+				1344D02F19A6308C000AB1F6 /* OFL.txt in Resources */,
 				1344D01119A5F46C000AB1F6 /* group-32.png in Resources */,
+				1344D03619A6308C000AB1F6 /* Raleway-ExtraLight.ttf in Resources */,
 				1344D01019A5F46C000AB1F6 /* user_male4-32.png in Resources */,
+				1344D03019A6308C000AB1F6 /* Quicksand-Bold.ttf in Resources */,
+				1344D04719A65897000AB1F6 /* group-2-32.png in Resources */,
+				1344D04019A648AB000AB1F6 /* groups-50.png in Resources */,
+				1344D03419A6308C000AB1F6 /* Raleway-Bold.ttf in Resources */,
 				13866D52199DB86C00F55B0A /* Main.storyboard in Resources */,
+				1344D04219A648ED000AB1F6 /* chat-48.png in Resources */,
+				1344D03919A6308C000AB1F6 /* Raleway-Medium.ttf in Resources */,
+				1344D03A19A6308C000AB1F6 /* Raleway-Regular.ttf in Resources */,
 				1344D01819A5FDF0000AB1F6 /* IMG_20130316_052944.jpg in Resources */,
 				1344D00F19A5F46C000AB1F6 /* find_user-32.png in Resources */,
 			);

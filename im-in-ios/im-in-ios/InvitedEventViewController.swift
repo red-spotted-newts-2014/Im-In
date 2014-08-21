@@ -35,12 +35,24 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         //
         println("EventViewController#tableView")
+        let nsdDisplay = NSDateFormatter();
+        nsdDisplay.dateFormat = "MMM dd";
+        
+        let nsdParse = NSDateFormatter()
+        nsdParse.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+
+        
+
+        
         let cell: InvitedEventsCell = tableView!.dequeueReusableCellWithIdentifier("CustomCell", forIndexPath: indexPath) as InvitedEventsCell
         
         cell.authorName.text = invitedEvents[indexPath.row].objectForKey("username") as? String
         
         cell.eventName.text =  invitedEvents[indexPath.row].objectForKey("venue") as? String
-        cell.dateLabel.text = invitedEvents[indexPath.row].objectForKey("start_time") as? String
+        
+        var startTimeString = invitedEvents[indexPath.row].objectForKey("start_time") as? String
+        var startTime = nsdParse.dateFromString(startTimeString)
+        cell.dateLabel.text = nsdDisplay.stringFromDate(startTime)
 
         var eventId = invitedEvents[indexPath.row].objectForKey("id").stringValue as String
         var invitationEventId = invitations[indexPath.row].objectForKey("event_id").stringValue as String
@@ -83,11 +95,16 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         println("EventViewController#viewDidLoad")
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl)
+        
+        self.view.backgroundColor = UIColor.clearColor()
         
         apiCtrl.delegate = self
         apiCtrl.loadAllEvents()
