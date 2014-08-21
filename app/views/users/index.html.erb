@@ -1,46 +1,47 @@
+
 <div class="container">
     <h2><strong>SIGN UP</strong></h2>
     <%= form_for @user, url: {action: "create"} do |f| %>
-      <div class="form-group">
-          <%= f.label :username %>
-          <%= f.text_field :username %>
-      </div>
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email %>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password %>
-      </div>
-
-<br>
-      <div class="form-group">
+         
+        <table>
+          <tr>
+            <td><%= f.label :username %></td>
+            <td><%= f.text_field :username %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :email %></td>
+            <td><%= f.email_field :email %></td>
+          </tr>
+                    <tr>
+            <td><%= f.label :password %></td>
+            <td><%= f.password_field :password %></td>
+          </tr>
+        </table>  
 
         <%= f.submit "Sign up", class: "button" %>
-
-      </div>
     <% end %>
 </div>
 
 <div class="container">
+  Already have an account? <button class="login">Login</button>
+</div>
+
+<div class="container hidden">
       <h2><strong>LOG IN</strong></h2>
     <%= form_for @user, url: login_path do |f| %>
 
-      <div class="form-group">
-          <%= f.label :username %>
-          <%= f.text_field :username %>
-      </div>
-      <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password %>
-      </div>
-
-  <br>
-      <div class="form-group">
+      <table>
+        <tr>
+          <td><%= f.label :username %></td>
+          <td><%= f.text_field :username %></td>
+        </tr>
+        <tr>
+          <td><%= f.label :password %></td>
+          <td><%= f.password_field :password %></td>
+        </tr>
+      </table>
         <%= f.submit "Login", class: "button" %>
-      </div>
     <% end %>
 </div>
+
 
