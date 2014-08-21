@@ -35,8 +35,12 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         //
         println("EventViewController#tableView")
-        let cell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
+        let cell: InvitedEventsCell = tableView!.dequeueReusableCellWithIdentifier("CustomCell", forIndexPath: indexPath) as InvitedEventsCell
+        
+        cell.authorName.text = invitedEvents[indexPath.row].objectForKey("username") as? String
+        
+        cell.eventName.text =  invitedEvents[indexPath.row].objectForKey("venue") as? String
+        cell.dateLabel.text = invitedEvents[indexPath.row].objectForKey("start_time") as? String
 
         var eventId = invitedEvents[indexPath.row].objectForKey("id").stringValue as String
         var invitationEventId = invitations[indexPath.row].objectForKey("event_id").stringValue as String
@@ -49,7 +53,7 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
             if (invitationsEventId == eventId) {
                 var status = invitations[index-1].objectForKey("status") as String
                 if (status == "in") {
-                    cell.backgroundColor = UIColor.purpleColor()
+                    cell.backgroundColor = UIColor.lightGrayColor()
                 } else {
                     cell.backgroundColor = UIColor.clearColor()
                 }

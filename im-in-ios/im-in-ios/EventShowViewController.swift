@@ -34,12 +34,12 @@ class EventShowViewController: UIViewController {
     
         @IBAction func areuin(sender: AnyObject) {
             if (invitationStatus == "pending") {
-                areuin.backgroundColor = UIColor.purpleColor()
+                areuin.backgroundColor = UIColor.lightGrayColor()
                 areuin.setTitle("I'M IN", forState: .Normal)
                 invitationStatus = "in"
                 chat.hidden = false;
             } else if (invitationStatus == "in") {
-                areuin.backgroundColor = UIColor.blueColor()
+                areuin.backgroundColor = UIColor.grayColor()
                 areuin.setTitle("ARE YOU IN?", forState: .Normal)
                 invitationStatus = "pending"
                 chat.hidden = true;
@@ -75,11 +75,11 @@ class EventShowViewController: UIViewController {
         invitationId = invitationData.objectForKey("id").stringValue as String
         
         if (invitationStatus == "pending") {
-            areuin.backgroundColor = UIColor.blueColor()
+            areuin.backgroundColor = UIColor.grayColor()
             areuin.setTitle("ARE YOU IN ?", forState: .Normal)
             chat.hidden = true;
         } else if (invitationStatus == "in") {
-            areuin.backgroundColor = UIColor.purpleColor()
+            areuin.backgroundColor = UIColor.lightGrayColor()
             areuin.setTitle("I'M IN", forState: .Normal)
             chat.hidden = false;
         }
