@@ -3,6 +3,9 @@ import UIKit
 // APIControllerProtocol
 class InvitedEventViewController: UIViewController, APIInvitedEventControllerProtocol, UITableViewDataSource, UITableViewDelegate {
     
+    
+    @IBOutlet  var creatorName: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
     
     var events: NSMutableArray = NSMutableArray();
@@ -32,10 +35,15 @@ class InvitedEventViewController: UIViewController, APIInvitedEventControllerPro
         
     }
     
+    @IBOutlet var creatorName: UILabel!
+    
     func tableView(tableView:UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         //
         println("EventViewController#tableView")
         let cell = tableView!.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        
+        
+        creatorName.text:"HI"
         cell.textLabel.text = invitedEvents[indexPath.row].objectForKey("name") as? String
 
         var eventId = invitedEvents[indexPath.row].objectForKey("id").stringValue as String

@@ -33,6 +33,7 @@
 		13245C0E19A1AAE000201E2F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245BF319A1AAE000201E2F /* SignUpViewController.swift */; };
 		13245C1119A1AE4000201E2F /* EventFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */; };
 		13245C1519A1AF2800201E2F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13245C1419A1AF2800201E2F /* EventDetailViewController.swift */; };
+		1340E99119A5B632002F174D /* Get In.png in Resources */ = {isa = PBXBuildFile; fileRef = 1340E99019A5B632002F174D /* Get In.png */; };
 		13866D52199DB86C00F55B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13866D50199DB86C00F55B0A /* Main.storyboard */; };
 		13DAB2B4199DB5C20024D110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DAB2B3199DB5C20024D110 /* AppDelegate.swift */; };
 		13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DAB2BA199DB5C20024D110 /* Images.xcassets */; };
@@ -90,6 +91,7 @@
 		13245BF319A1AAE000201E2F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		13245C1019A1AE4000201E2F /* EventFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedTableViewController.swift; sourceTree = "<group>"; };
 		13245C1419A1AF2800201E2F /* EventDetailViewController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		1340E99019A5B632002F174D /* Get In.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Get In.png"; sourceTree = "<group>"; };
 		13866D51199DB86C00F55B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13DAB2AE199DB5C20024D110 /* im-in-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "im-in-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAB2B2199DB5C20024D110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				13866D50199DB86C00F55B0A /* Main.storyboard */,
 				13FD380E19A0F59E00D3887C /* Im'in.jpg */,
+				1340E99019A5B632002F174D /* Get In.png */,
 				13DAB2B3199DB5C20024D110 /* AppDelegate.swift */,
 				13245BE319A1AAE000201E2F /* APIInvitedEventController.swift */,
 				6C86CE2819A206A200FE0DA9 /* InvitedEventViewController.swift */,
@@ -334,6 +337,7 @@
 			files = (
 				13FD380F19A0F59E00D3887C /* Im'in.jpg in Resources */,
 				13FD37B519A0894B00D3887C /* Default@2x.png in Resources */,
+				1340E99119A5B632002F174D /* Get In.png in Resources */,
 				13DAB2BB199DB5C20024D110 /* Images.xcassets in Resources */,
 				13866D52199DB86C00F55B0A /* Main.storyboard in Resources */,
 			);
