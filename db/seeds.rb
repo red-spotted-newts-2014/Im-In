@@ -10,7 +10,7 @@ user3 = User.create(email: "vincechase@imin.com",
                    username: "VincentChase",
                    password: "password")
 user4 = User.create(email: "stella@imin.com",
-                   username: "StellaKim",
+                   username: "StellaArtoisKim",
                    password: "password")
 user5 = User.create(email: "cmoon@imin.com",
                    username: "ChristianTheLegendMoon",
@@ -145,4 +145,24 @@ user6.follow(user2)
 user7.follow(user2)
 user8.follow(user2)
 user9.follow(user2)
+
+user5.follow(user2)
+user5.follow(user3)
+user5.follow(user4)
+user5.follow(user1)
+user5.follow(user6)
+user5.follow(user7)
+user5.follow(user8)
+user5.follow(user9)
+user5.follow(user10)
+
+user1.follow(user5)
+user3.follow(user5)
+user4.follow(user5)
+user2.follow(user5)
+user5.follow(user5)
+user6.follow(user5)
+user7.follow(user5)
+user8.follow(user5)
+user9.follow(user5)
 
