@@ -30,7 +30,7 @@ class EventsController < ApplicationController
     p params
     @event = current_user.created_events.create(event_params)
     p params[:users]
-    p count = params[:users].length-1
+    p count = params[:users].length-1 if params[:user].length > 0
     params[:users].each do |user|
       @event.invitations.create(user_id: user["id"], status: "pending")
     end

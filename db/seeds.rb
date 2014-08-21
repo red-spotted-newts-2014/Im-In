@@ -19,7 +19,7 @@ user3 = User.create(email: "vincechase@imin.com",
                    last_name: "Chase",
                    password: "password")
 user4 = User.create(email: "stella@imin.com",
-                   username: "StellaKim",
+                   username: "StellaArtoisKim",
                    phone_number: "4163273627",
                    first_name: "Stella",
                    last_name: "Kim",
@@ -156,13 +156,43 @@ killingtime.invitations.create(user_id: 3, status: "in")
 killingtime.invitations.create(user_id: 4, status: "pending")
 killingtime.invitations.create(user_id: 5, status: "pending")
 
-user1.follow(user2)
-user1.follow(user3)
-user1.follow(user4)
-user1.follow(user5)
-
 user2.follow(user1)
-user3.follow(user1)
-user4.follow(user1)
+user2.follow(user3)
+user2.follow(user4)
+user2.follow(user5)
+user2.follow(user6)
+user2.follow(user7)
+user2.follow(user8)
+user2.follow(user9)
+user2.follow(user10)
+
+user1.follow(user2)
+user3.follow(user2)
+user4.follow(user2)
+user5.follow(user2)
+user5.follow(user2)
+user6.follow(user2)
+user7.follow(user2)
+user8.follow(user2)
+user9.follow(user2)
+
+user5.follow(user2)
+user5.follow(user3)
+user5.follow(user4)
 user5.follow(user1)
+user5.follow(user6)
+user5.follow(user7)
+user5.follow(user8)
+user5.follow(user9)
+user5.follow(user10)
+
+user1.follow(user5)
+user3.follow(user5)
+user4.follow(user5)
+user2.follow(user5)
+user5.follow(user5)
+user6.follow(user5)
+user7.follow(user5)
+user8.follow(user5)
+user9.follow(user5)
 

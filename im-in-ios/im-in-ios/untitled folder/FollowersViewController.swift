@@ -22,13 +22,15 @@ class FollowersViewController: UIViewController, APIFollowersControllerProtocol,
     @IBAction func inviteFriendsButton(sender: AnyObject) {
         var users: NSMutableArray = []
         println("********HERE**********")
-        for index in 0...(followers.count-1) {
-            var user = followers[index] as NSDictionary
-            if (user.objectForKey("invite") as NSString == "true") {
-                println(user)
-                users.addObject(user)
+        if followers.count > 0 {
+            for index in 0...(followers.count-1) {
+                var user = followers[index] as NSDictionary
+                if (user.objectForKey("invite") as NSString == "true") {
+                    println(user)
+                    users.addObject(user)
+                }
             }
-        }        
+        }
         apiPOSTCtrl.sendInviteInfo(users, params: params)
     }
 

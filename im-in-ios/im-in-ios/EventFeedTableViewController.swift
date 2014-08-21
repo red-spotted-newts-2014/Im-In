@@ -93,11 +93,13 @@ class EventFeedTableViewController: UITableViewController, APICreatedEventsContr
             var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()
             var eventDetailViewController:EventDetailViewController = segue!.destinationViewController as EventDetailViewController
             eventDetailViewController.eventData = events.objectAtIndex(selectedIndexPath.row) as NSDictionary
+            println(eventDetailViewController.eventData)
         }
     }
-    
-    
 }
+    
+    
+
 
 
 

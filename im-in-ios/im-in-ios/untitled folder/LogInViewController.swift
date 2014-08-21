@@ -31,8 +31,14 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
         println("************")
         
         println(results.objectForKey("response"))
+        println(results.objectForKey("username"))
+        println(results.objectForKey("id"))
         
         if (results.objectForKey("response") as String == "Logged in" as String) {
+            var appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+            appDelegate.currentUserUsername = results.objectForKey("username") as String
+            appDelegate.currentUserId = results.objectForKey("id").stringValue as String
+            println(appDelegate.currentUserId)
             dispatch_async(dispatch_get_main_queue(),{
                 self.performSegueWithIdentifier("logged" as String, sender: self)
             })
@@ -44,10 +50,17 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
         }
     }
     
-//    func shouldPerformSegueWithIdentifier(identifier: "logged" as String, sender: AnyObject!) -> Bool {
-//        
-//    }
-    
+
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+        let touch = event.allTouches().anyObject() as UITouch
+        if usernameField.isFirstResponder() && touch.view != usernameField {
+            usernameField.resignFirstResponder()}
+            
+        else if passwordField.isFirstResponder() && touch.view != passwordField {
+            passwordField.resignFirstResponder()}
+        
+        super.touchesBegan(touches, withEvent: event)
+    }
     
     
     @IBAction func buttonPressed(sender: AnyObject) {

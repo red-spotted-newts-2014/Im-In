@@ -82,7 +82,7 @@ class FriendsAttendingViewController: UIViewController, APIFriendsAttendingContr
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue!.identifier == "test"){
+        if (segue!.identifier == "friendsProfile"){
             println("here")
             println(self.tableView.indexPathForSelectedRow())
             var selectedIndexPath:NSIndexPath = self.tableView.indexPathForSelectedRow()

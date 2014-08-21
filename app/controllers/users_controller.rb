@@ -6,45 +6,50 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(username: params[:username],
-                        email: params[:email],
-                        password: params[:password])
-    session[:id] = @user.id
+    p session[:user_id]
+    @user = User.create(username: params[:user][:username],
+                        email: params[:user][:email],
+                        password: params[:user][:password])
+    session[:user_id] = @user.id
     redirect_to events_path
   end
 
   def login
-    p "here"
-    p params
-    params[:password] = params[:user][:password]
-    params[:username] = params[:user][:username]
-    @user = User.find_by(username: params[:username])
-    if @user && @user.authenticate(params[:password])
+    @user = User.find_by(username: params[:user][:username])
+    if @user && @user.authenticate(params[:user][:password])
+      
       p "logged in!!"
-      session[:id] = @user.id
+      
+      p session[:user_id] = @user.id
       redirect_to events_path
     else
       p @error = "Invalid email or password"
-      redirect_to users_path
+      redirect_to root_path
     end
   end
 
   def login_ios
     # params[:password] = params[:user][:password]
-    # params[:username] = params[:user][:username]
+    params[:username] = params[:user][:username]
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
       p @response = "Logged in"
-      session[:id] = @user.id
+      session[:user_id] = @user.id
+      @username = @user.username
     else
       p @response = "Invalid email or password"
     end
-    render :json => { :response => @response }
+    render :json => { :response => @response, :username => @username, :id => @user.id }
   end
 
   def logout
     session.clear
     redirect_to root_path
+  end
+
+  def logout_ios
+    session.clear
+    render json: { logout: "logged out"}
   end
 
   def attending
@@ -91,12 +96,12 @@ class UsersController < ApplicationController
     redirect_to user_following_path unless current_user
     # if current_user
     # if current_user == @friend
-      # flash[:error] = "You cannot follow yourself."
-      # redirect_to user_following_path(current_user)
+    # flash[:error] = "You cannot follow yourself."
+    # redirect_to user_following_path(current_user)
     # else
-      current_user.follow(@friend)
-      # flash[:notice] = "You are now following #{@friend.username}."
-      redirect_to user_following_path(current_user)
+    current_user.follow(@friend)
+    # flash[:notice] = "You are now following #{@friend.username}."
+    redirect_to user_following_path(current_user)
     # end
     # end
   end
@@ -123,6 +128,13 @@ class UsersController < ApplicationController
       format.html
       format.json { render :json => { :user => @user } }
     end
+  end
+
+  def profile
+    p current_user
+    p session[:user_id]
+    @user = User.find(session[:user_id])
+    render json: { :user => current_user }
   end
 
   private

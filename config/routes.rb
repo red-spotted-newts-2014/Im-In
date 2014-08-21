@@ -5,13 +5,16 @@ Rails.application.routes.draw do
   post 'events/create_ios' => 'events#create_ios'
   get 'events/:id/attending' => 'events#attending', as: "events_users_attending"
 
+  post 'users/login' => 'users#login', as: 'login'
+  post 'users/login_ios' => 'users#login_ios', as: 'login_ios'
+  get 'users/logout' => 'users#logout', as: 'logout'
+  get 'users/logout_ios' => 'users#logout_ios'
+  get 'users/profile' => 'users#profile', as: 'profile'
+
   resources :events do
     resources :invitations, only: [:create, :new, :update]
   end
 
-  post 'users/login' => 'users#login', as: 'login'
-  post 'users/login_ios' => 'users#login_ios', as: 'login_ios'
-  get 'users/logout' => 'users#logout', as: 'logout'
 
   post 'users/follow' => 'users#follow', as: 'follow'
   post 'users/unfollow' => 'users#unfollow', as: 'unfollow'

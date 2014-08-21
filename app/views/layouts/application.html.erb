@@ -9,16 +9,16 @@
 </head>
 <body>
   <nav>
-    <% if current_user == User.find(1) %>
-    <button>
-      <%= link_to "FOLLOWING", user_following_path(current_user) %>
-    </button>
-    <button>
-      <%= link_to "FOLLOWERS", user_followers_path(current_user) %>
-    </button>
-    <button>
-      <%= link_to "LOG OUT", logout_path %>
-    </button>
+    <% if current_user %>
+      <button>
+        <%= link_to "FOLLOWING", user_following_path(current_user) %>
+      </button>
+      <button>
+        <%= link_to "FOLLOWERS", user_followers_path(current_user) %>
+      </button>
+      <button>
+        <%= link_to "LOG OUT", logout_path %>
+      </button>
     <% end %>
   </nav>
 
