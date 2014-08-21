@@ -18,11 +18,17 @@ class LogInViewController: UIViewController, APILogInControllerProtocol, NSURLCo
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var loginButton: UIButton!
 
+    @IBAction func passwordTextField(sender: AnyObject) {
+        loginButton.hidden = false
+    }
     @IBOutlet var label: UILabel!
     
     
     override func viewDidLoad() {
+        loginButton.hidden = true
+        
     }
     
     func didReceiveAPIResults(results: NSDictionary) {
