@@ -25,7 +25,8 @@ Want more details? Access the event specific chat room and swiftly interact with
 
 <strong>Heroku</strong>
 
-* I’m In!
+* <a href="http://areuin.herokuapp.com">I'm in</a>
+
 
 
 <strong>App Store</strong>
