@@ -1,42 +1,42 @@
 <div class="container">
 
 <%= form_for @event, url: {action: "create"} do |f| %>
-<div>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</div>
-<div>
-  <%= f.label :description %>
-  <%= f.text_field :description %>
-</div>
-<div>
-  <%= f.label :start_time %>
-  <%= f.datetime_select :start_time %>
-</div>
-<div>
-  <%= f.label :end_time %>
-  <%= f.datetime_select :end_time %>
-</div>
-<div>
-  <%= f.label :venue %>
-  <%= f.text_field :venue %>
-</div>
-<div>
-  <%= f.label :location %>
-  <%= f.text_field :location %>
-</div>
-<div>
-  <%= f.label :notify_user? %>
-  <%= f.text_field :notify_user? %>
-</div>
-<div>
-  <%= f.label :notify_hours_until_event %>
-  <%= f.text_field :notify_hours_until_event %>
-</div>
-<br><br>
-<div>
+<table>
+  <tr>
+    <td><%= f.label :name %></td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+    <tr>
+    <td><%= f.label :description %></td>
+    <td><%= f.text_field :description %></td>
+  </tr>
+    <tr>
+    <td><%= f.label :start_time %></td>
+    <td><%= f.datetime_select :start_time %></td>
+  </tr>
+    <tr>
+    <td><%= f.label :end_time %></td>
+    <td><%= f.datetime_select :end_time %></td>
+  </tr>
+    <tr>
+    <td><%= f.label :venue %></td>
+    <td><%= f.text_field :venue %></td>
+  </tr>
+    <tr>
+    <td><%= f.label :location %></td>
+    <td><%= f.text_field :location %></td>
+  </tr>
+    <tr>
+    <td><%= f.label :notify_user? %></td>
+    <td><%= f.text_field :notify_user? %></td>
+  </tr>
+    <tr>
+    <td><%= f.label :notify_hours_until_event %></td>
+    <td><%= f.text_field :notify_hours_until_event %></td>
+  </tr>
+
+</table>
   <%= f.submit "submit", :class => 'button' %>
-</div>
 <% end %>
 
 </div>

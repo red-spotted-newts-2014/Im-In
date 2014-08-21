@@ -65,3 +65,7 @@ h3 {
 nav {
   text-align: right;
 }
+
+table {
+  margin: 10px auto;
+}
