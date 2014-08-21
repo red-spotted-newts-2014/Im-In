@@ -22,6 +22,17 @@ class EventDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let nsd = NSDateFormatter()
+        
+        nsd.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        var start_time = nsd.dateFromString(eventData.objectForKey("start_time") as String)
+        var end_time = nsd.dateFromString(eventData.objectForKey("end_time") as String)
+        
+        let display = NSDateFormatter()
+        display.dateFormat = "MMM,dd,yyyy, hh:mm a "
+        var correct_start_time_format = display.stringFromDate(start_time)
+        var correct_end_time_format = display.stringFromDate(end_time)
+        
         nameTextField.userInteractionEnabled = false
         descTextField.userInteractionEnabled = false
         venueTextField.userInteractionEnabled = false
@@ -33,8 +44,8 @@ class EventDetailViewController: UIViewController {
         descTextField.text = eventData.objectForKey("description") as String
         venueTextField.text = eventData.objectForKey("venue") as String
         locationTextField.text = eventData.objectForKey("location") as String
-        startTextField.text = eventData.objectForKey("start_time") as String
-        endTextField.text = eventData.objectForKey("end_time") as String
+        startTextField.text = correct_start_time_format
+        endTextField.text = correct_end_time_format
     }
 
     override func didReceiveMemoryWarning() {
