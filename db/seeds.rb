@@ -2,33 +2,63 @@ require 'faker'
 
 user1 = User.create(email: "AriGold@imin.com",
                    username: "AriGold",
+                   first_name: "Ari",
+                   last_name: "Gold",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 user2 = User.create(email: "elztheman@imin.com",
+                   first_name: "Joel",
+                   last_name: "Yawili",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    username: "elztheman",
                    password: "password")
 user3 = User.create(email: "vincechase@imin.com",
                    username: "VincentChase",
+                   first_name: "Vincent",
+                   last_name: "Chase",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 user4 = User.create(email: "stella@imin.com",
                    username: "StellaArtoisKim",
+                   first_name: "Stella",
+                   last_name: "Kim",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 user5 = User.create(email: "cmoon@imin.com",
                    username: "ChristianTheLegendMoon",
+                   first_name: "Christian",
+                   last_name: "Moon",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 user6 = User.create(email: "fahiamoh@imin.com",
                    username: "FahiaMohSwag",
+                   first_name: "Fahia",
+                   last_name: "Mohamed",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 user7 = User.create(email: "denzel@imin.com",
                    username: "DenzelWashington",
+                   first_name: "Denzel",
+                   last_name: "Washington",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
-user8 = User.create(email: "denzel@imin.com",
-                   username: "denzelwashington",
+user8 = User.create(email: "barackobama@imin.com",
+                   username: "BarackObama",
+                   first_name: "Barack",
+                   last_name: "Obama",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 user9 = User.create(email: "chrisbrown@imin.com",
                    username: "chrisbrown",
+                   first_name: "Chris",
+                   last_name: "Brown",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 user10 = User.create(email: "parkleesung@imin.com",
                    username: "Parkjsung",
+                   first_name: "Sung",
+                   last_name: "Park",
+                   phone_number: Faker::PhoneNumber.phone_number,
                    password: "password")
 
 party = user1.created_events.create(name: "Party at the Ritz",
