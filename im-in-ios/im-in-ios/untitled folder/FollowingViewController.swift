@@ -88,7 +88,7 @@ class FollowingViewController: UIViewController, APIFollowingControllerProtocol,
         apiCtrl.delegate = self
         apiCtrl.loadAllEvents()
     }
-    
+
     
 }
 

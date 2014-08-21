@@ -1111,7 +1111,7 @@
                     <navigationItem key="navigationItem" title="FollowIN" id="Z7C-Cv-X0e">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="9Sa-yK-rdc">
                             <connections>
-                                <segue destination="gHR-mJ-vrt" kind="push" id="cig-Ji-9Rf"/>
+                                <segue destination="gHR-mJ-vrt" kind="push" identifier="toProfile" id="cig-Ji-9Rf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1224,6 +1224,10 @@
                                 <state key="normal" title="LOG OUT">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="logoutButton:" destination="gHR-mJ-vrt" eventType="touchUpInside" id="Vsr-Sf-Idh"/>
+                                    <segue destination="MR6-X5-dh9" kind="push" identifier="logoutSegue" id="cBM-K1-9oF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1443,6 +1447,7 @@
         </simulatedScreenMetrics>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="cBM-K1-9oF"/>
         <segue reference="ow5-Yi-m5j"/>
     </inferredMetricsTieBreakers>
 </document>

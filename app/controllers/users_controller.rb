@@ -39,12 +39,17 @@ class UsersController < ApplicationController
     else
       p @response = "Invalid email or password"
     end
-    render :json => { :response => @response, :username => @username }
+    render :json => { :response => @response, :username => @username, :id => @user.id }
   end
 
   def logout
     session.clear
     redirect_to root_path
+  end
+
+  def logout_ios
+    session.clear
+    render json: { logout: "logged out"}
   end
 
   def attending
@@ -123,6 +128,13 @@ class UsersController < ApplicationController
       format.html
       format.json { render :json => { :user => @user } }
     end
+  end
+
+  def profile
+    p current_user
+    p session[:user_id]
+    @user = User.find(session[:user_id])
+    render json: { :user => current_user }
   end
 
   private

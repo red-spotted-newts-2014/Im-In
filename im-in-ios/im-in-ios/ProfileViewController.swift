@@ -16,19 +16,29 @@ class ProfileViewController: UIViewController, APIProfileControllerProtocol {
     @IBOutlet var phoneField: UITextField!
     @IBOutlet var emailField: UITextField!
     
-    var profileData: NSDictionary
+    var profileData: NSDictionary!
     
-    var apiCtrl = APIProfileViewController()
+    var apiCtrl = APIProfileController()
     
     func didReceiveAPIResults(results: NSDictionary) {
-        println("FollowingViewController#didReceiveAPIResults")
-        profileData = results
+        println("ProfileViewController#didReceiveAPIResults")
+        println(results["user"])
+        profileData = results["user"] as NSDictionary
         println(profileData)
-//        dispatch_async(dispatch_get_main_queue(),{
-//            self.tableView.reloadData()
-//        })
     }
     
+    func didLogOut(results: NSDictionary) {
+        println("logged out")
+        println(results)
+    }
+    
+    @IBAction func logoutButton(sender: AnyObject) {
+        apiCtrl.logout()
+        dispatch_async(dispatch_get_main_queue(),{
+            self.performSegueWithIdentifier("logoutSegue" as String, sender: self)
+        })
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,15 +47,26 @@ class ProfileViewController: UIViewController, APIProfileControllerProtocol {
         usernameField.userInteractionEnabled = false
         phoneField.userInteractionEnabled = false
         emailField.userInteractionEnabled = false
-
         
-        firstNameField.text = profileData.objectForKey("name") as String
-        lastNameField.text = profileData.objectForKey("username") as String
-        usernameField.text = profileData.objectForKey("description") as String
-        phoneField.text = profileData.objectForKey("venue") as String
-        emailField.text = profileData.objectForKey("location") as String
+        apiCtrl.delegate = self
+        apiCtrl.loadProfile()
         
+        println(firstNameField.text)
+        
+//        firstNameField.text = profileData.objectForKey("first_name") as? String
+//       lastNameField.text = profileData.objectForKey("last_name") as? String
+//     usernameField.text = profileData.objectForKey("username") as? String
+//       phoneField.text = profileData.objectForKey("phone_number") as? String
+//      emailField.text = profileData.objectForKey("email") as? String
+//
+        
+//        firstNameField.text = profileData["first_name"].stringValue
+//        lastNameField.text = profileData["last_name"].stringValue
+//        usernameField.text = profileData["username"].stringValue
+//        phoneField.text = profileData["phone_number"].stringValue
+//        emailField.text = profileData["email"].stringValue
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

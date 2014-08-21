@@ -30,7 +30,7 @@ class ChatViewController: GlobalController {
         urlPath = "https://amber-inferno-1117.firebaseio.com/" + eventId
         firebase = Firebase(url: urlPath)
         nameLabel.text = eventName
-        name = appDelegate.currentUser!
+        name = appDelegate.currentUserUsername!
         
         println(eventId)
         println(name)
