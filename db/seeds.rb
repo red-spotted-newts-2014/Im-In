@@ -2,33 +2,63 @@ require 'faker'
 
 user1 = User.create(email: "AriGold@imin.com",
                    username: "AriGold",
+                   phone_number: "4383984323",
+                   first_name: "Ari",
+                   last_name: "Gold",
                    password: "password")
 user2 = User.create(email: "elztheman@imin.com",
                    username: "elztheman",
+                   phone_number: "0987893232",
+                   first_name: "Elz",
+                   last_name: "Theman",
                    password: "password")
 user3 = User.create(email: "vincechase@imin.com",
                    username: "VincentChase",
+                   phone_number: "4168323284",
+                   first_name: "Vincent",
+                   last_name: "Chase",
                    password: "password")
 user4 = User.create(email: "stella@imin.com",
                    username: "StellaArtoisKim",
+                   phone_number: "4163273627",
+                   first_name: "Stella",
+                   last_name: "Kim",
                    password: "password")
 user5 = User.create(email: "cmoon@imin.com",
                    username: "ChristianTheLegendMoon",
+                   phone_number: "4163728732",
+                   first_name: "ChristianTheLegend",
+                   last_name: "Moon",
                    password: "password")
 user6 = User.create(email: "fahiamoh@imin.com",
                    username: "FahiaMohSwag",
+                   phone_number: "4163892343",
+                   first_name: "Fahia",
+                   last_name: "Moh",
                    password: "password")
 user7 = User.create(email: "denzel@imin.com",
                    username: "DenzelWashington",
+                   phone_number: "4169984567",
+                   first_name: "Denzel",
+                   last_name: "Washington",
                    password: "password")
-user8 = User.create(email: "denzel@imin.com",
-                   username: "denzelwashington",
+user8 = User.create(email: "bradpitt@imin.com",
+                   username: "bpitt",
+                   phone_number: "4167738873",
+                   first_name: "Brad",
+                   last_name: "Pitt",
                    password: "password")
 user9 = User.create(email: "chrisbrown@imin.com",
                    username: "chrisbrown",
+                   phone_number: "4163273617",
+                   first_name: "Chris",
+                   last_name: "Brown",
                    password: "password")
 user10 = User.create(email: "parkleesung@imin.com",
                    username: "Parkjsung",
+                   phone_number: "4163272127",
+                   first_name: "Park",
+                   last_name: "Sung",
                    password: "password")
 
 party = user1.created_events.create(name: "Party at the Ritz",
