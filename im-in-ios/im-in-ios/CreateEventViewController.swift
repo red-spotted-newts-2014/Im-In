@@ -56,6 +56,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate
     @IBOutlet var nameTextField: UITextField!
     
     @IBOutlet var descTextField: UITextView!
+    
     @IBOutlet var venueTextField: UITextField!
     
     @IBOutlet var locationTextField: UITextField!

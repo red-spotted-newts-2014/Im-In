@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KX1-of-CHy">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
@@ -171,7 +172,7 @@
             </objects>
             <point key="canvasLocation" x="-6727" y="-7314.9999999999982"/>
         </scene>
-        <!--Event Feed-->
+        <!--Invited Events-->
         <scene sceneID="z8W-q9-Bsf">
             <objects>
                 <viewController id="Qm8-U0-ZUD" customClass="InvitedEventViewController" customModule="im_in_ios" sceneMemberID="viewController">
@@ -221,7 +222,7 @@
                             <outletCollection property="gestureRecognizers" destination="SwC-eu-8xh" appends="YES" id="ayC-G1-1ru"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Event Feed" id="34E-oK-CEj">
+                    <navigationItem key="navigationItem" title="Invited Events" id="34E-oK-CEj">
                         <barButtonItem key="leftBarButtonItem" systemItem="action" id="txP-6h-sDD">
                             <connections>
                                 <segue destination="p7i-LP-9QA" kind="push" identifier="toFollowers" id="zxK-V9-egy"/>
@@ -322,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRj-pc-RHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5826" y="-5872"/>
+            <point key="canvasLocation" x="-5849" y="-5810"/>
         </scene>
         <!--Friends Attending View Controller-->
         <scene sceneID="5nZ-2c-cgP">
@@ -598,7 +599,7 @@
             </objects>
             <point key="canvasLocation" x="-5390" y="-5810"/>
         </scene>
-        <!--My Events-->
+        <!--Event Feed-->
         <scene sceneID="Yvj-sl-Kjp">
             <objects>
                 <tableViewController id="8z3-BH-QXL" customClass="EventFeedTableViewController" customModule="im_in_ios" sceneMemberID="viewController">
@@ -618,7 +619,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Events" id="2Bn-5g-Bmv">
+                    <navigationItem key="navigationItem" title="Event Feed" id="2Bn-5g-Bmv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8gP-6Q-Pu5">
                             <connections>
                                 <segue destination="qJd-hz-hSh" kind="push" identifier="" id="RQf-Oa-T5X"/>
@@ -891,6 +892,13 @@
                                     <segue destination="Bau-mH-xMF" kind="push" identifier="toChat" id="ow5-Yi-m5j"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PkD-H1-ukA">
+                                <rect key="frame" x="109" y="480" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Attending">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1018,7 +1026,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outlet property="delegate" destination="qJd-hz-hSh" id="O8A-hV-AND"/>
+                                    <outlet property="delegate" destination="qJd-hz-hSh" id="CV8-jg-Dhi"/>
                                 </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bbt-YS-3Mc">
@@ -1084,7 +1092,7 @@
                     <navigationItem key="navigationItem" id="VJP-0j-iV3"/>
                     <connections>
                         <outlet property="datePicker" destination="un8-eY-vQx" id="nCq-O9-BGl"/>
-                        <outlet property="descTextField" destination="bH6-13-0AP" id="Iln-sL-opd"/>
+                        <outlet property="descTextField" destination="bH6-13-0AP" id="HwM-IV-oP5"/>
                         <outlet property="endDatePicker" destination="3CF-fV-T2m" id="HhQ-RT-7dO"/>
                         <outlet property="endTextField" destination="8PQ-RI-xUH" id="RGV-Nn-3b3"/>
                         <outlet property="locationTextField" destination="iww-4s-j8p" id="QyE-Am-8eS"/>
